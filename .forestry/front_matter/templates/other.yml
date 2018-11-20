@@ -1,0 +1,10 @@
+---
+label: other
+hide_body: false
+is_partial: false
+fields:
+- type: text
+  default: value
+  label: value
+  name: value
+- type: textarea
