@@ -8,3 +8,5 @@ fields:
   label: value
   name: value
 - type: textarea
+pages:
+- title.md
