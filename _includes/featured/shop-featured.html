@@ -1,0 +1,9 @@
+<ul>
+{% for item in include.datas.items %}
+    <li>
+       <div> brand: {{ item.brand }} </div>
+       <div> color: {{ item.color }} </div>
+       <div> price: {{ item.price }} </div>
+    </li>
+{% endfor %}
+</ul>

@@ -1,0 +1,11 @@
+type: 'shoes'
+items:
+  - brand: 'lovers'
+    color: blue
+    price: 2.00
+  - brand: 'yutapai'
+    color: white
+    price: 5.00
+  - brand: 'shupameao'
+    color: churre
+    price: 3.00
