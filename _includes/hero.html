@@ -1,0 +1,9 @@
+<div>
+    <h1>This header is from {{ include.header.product-name }} and price {{ include.header.product-price }} {{ include.header.product-meta }}</h1>
+    <ul>
+        {% for item in include.header.items %}
+        <li> {{item.name}} - {{item.age}} </li>
+        {% endfor %}
+    </ul>
+    {{include.header.items[0].name}}
+</div>
