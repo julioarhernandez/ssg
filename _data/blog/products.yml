@@ -1,0 +1,8 @@
+product-name: 'product is este'
+product-price: 20.00
+product-meta: 'metas'
+items: 
+  - name: pepe
+    age: 12
+  - name: juan
+    age: 32

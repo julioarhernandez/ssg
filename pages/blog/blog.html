@@ -1,7 +1,10 @@
 ---
 title: Blog
+permalink: /blog/
 ---
 <h1>Latest Posts</h1>
+
+{% include hero.html header=site.data.blog.products %}
 
 <ul>
   {% for post in site.posts %}
