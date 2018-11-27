@@ -7,7 +7,6 @@ sections:
 - type: document
   path: _data/home/products.yml
   label: General
-  match: "**/*"
 - type: directory
   path: _shoes
   label: Shoes

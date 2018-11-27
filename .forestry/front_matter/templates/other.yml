@@ -10,3 +10,4 @@ fields:
 - type: textarea
 pages:
 - title.md
+- _shoes/sperry.md
