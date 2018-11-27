@@ -3,4 +3,13 @@ title: Shop
 permalink: /shop/
 ---
 <h1>Shoes</h1>
-{% include featured/shop-featured.html datas=site.data.products.shoes %}
+<!-- {% include featured/shop-featured.html datas=site.data.products.shoes %} -->
+
+{% for shoe in site.shoes %}
+  <h2>
+    <a href="{{ shoe.url }}">
+      {{ shoe.name }} - {{ shoe.position }}
+    </a>
+  </h2>
+  <p>{{ shoe.content | markdownify }}</p>
+{% endfor %}
