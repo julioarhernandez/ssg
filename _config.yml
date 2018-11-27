@@ -33,6 +33,8 @@ plugins:
 collections:
   authors:
     output: true    
+  shoes:
+    output: true
 
 defaults:
   - scope:
