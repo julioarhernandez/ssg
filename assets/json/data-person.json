@@ -1,0 +1,13 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Person",
+    "name": "Yudi Ramos",
+    "alternateName": "Yudeisy",
+    "url": "https://www.facebook.com/bizmarketing.us",
+    "image": "https://www.bizmarketing.us/img/ceo.jpg",
+    "jobTitle": "CEO",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Bizmarketing.us"
+    }  
+  }

@@ -1,0 +1,39 @@
+{
+    "@context": "http://schema.org/", 
+    "@type": "Product", 
+    "name": "Product name",
+    "image": "https://kpdt1q-ogyvi6tz68ij.cloudmaestro.com/1NOD1cflt/1501-large_default/aapple-powder-organic.jpg.pagespeed.ic.bFWlqeKJ5B.webp",
+    "description": "The nike apple is an apple that taste very delicious and can be bitten in different angles even it is rounded",
+    "brand": "NikeApple",
+    "offers": {
+      "@type": "Offer",
+      "priceCurrency": "USD",
+      "price": "10",
+      "priceValidUntil": "2018-11-30",
+      "availability": "http://schema.org/InStock",
+      "itemCondition": "http://schema.org/NewCondition"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5",
+      "bestRating": "5",
+      "worstRating": "4",
+      "ratingCount": "1",
+      "reviewCount": "1"
+    },
+    "reviews": {
+      "@context": "http://schema.org/",
+      "@type": "Review",
+      "name": "Reviewer Person1",
+      "reviewBody": "This apple is amazing, it taste really good even is rounded",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5",
+        "worstRating": "4"
+      },
+      "datePublished": "2018-11-09",
+      "author": {"@type": "Person", "name": "Pepe"},
+      "publisher": {"@type": "Organization", "name": "Google"}
+    }
+  }

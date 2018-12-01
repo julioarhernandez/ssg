@@ -1,23 +1,19 @@
-{{!-- This is the base layout for your project, and will be used on every page. --}}
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    {{!— Required meta tags --}}
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    {{>meta-header datas=meta-data}}
-    <link rel="preload" href="{{root}}assets/css/app.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="{{root}}assets/css/app.css"></noscript>   
-    {{>jsonld data=jsonld}}
+    {% include seo/meta.html metas=page.metas %}
+    <link rel="preload" href="assets/css/styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="assets/css/app.css"></noscript>
+    {% include seo/json-ld.html metas=page.metas %}
 </head>
 <body>
-    {{>navigation data=navigation}}
     <div class="wrapper">
-        {{> body}}
+        {{ content }}
     </div>
-    {{>footer-6 data=footer-6}}
-    <script src="{{root}}assets/js/app.js"></script>
+    <script src="assets/js/app.js"></script>
     <!-- <script>
         if ('serviceWorker' in navigator) {
             window.addEventListener('load', () => {

@@ -7,10 +7,12 @@ cssnano = require('gulp-cssnano'),
 autoprefixer = require('gulp-autoprefixer'),
 stripComments = require('gulp-strip-json-comments'),
 browserSync = require('browser-sync').create(),
+embedJSON = require('gulp-embed-json'),
 gulpSequence = require('gulp-sequence'),
 sitemap = require('gulp-sitemap'),
 stripJS = require('gulp-strip-comments'),
 uglify = require('gulp-uglify'),
+htmlmin = require('gulp-htmlmin'),
 siteRoot = '_site',
 cssFiles = 'devassets/scss/app.scss';
 
@@ -33,6 +35,25 @@ gulp.task('manifest', function () {
     gulp.src('manifest.json')
         .pipe(gulp.dest(siteRoot));
 });
+
+// Generate Embed JSON
+gulp.task('embedjson', function () {
+    gulp.src(siteRoot + '/**/*.html')
+        .pipe(embedJSON({
+            mimeTypes: 'application/ld+json',
+            root: './assets/json/',
+            minify: true
+        }))
+        .pipe(gulp.dest(siteRoot));
+});
+
+// Generate Minified html
+gulp.task('minhtml', function () {
+    gulp.src(siteRoot + '/**/*.html')
+        .pipe(htmlmin({ collapseWhitespace: true }))
+        .pipe(gulp.dest(siteRoot));
+});
+
 
 // Generate Sitemaps
 gulp.task('sitemap', function () {
@@ -110,4 +131,5 @@ gulp.task('scripts', function () {
 
 gulp.watch(cssFiles, ['css']);
 
-gulp.task('default', gulpSequence(['css', 'scripts', 'sitemap', 'jekyll', 'manifest', 'serve']));
+gulp.task('production', gulpSequence(['css', 'scripts', 'jekyll', 'manifest', 'sitemap', 'serve'], ['embedjson', 'minhtml']));
+gulp.task('default', gulpSequence(['css', 'scripts', 'jekyll', 'manifest', 'sitemap', 'serve'], ['embedjson']));

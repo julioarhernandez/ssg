@@ -1,0 +1,39 @@
+{
+  "@context": "http://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Bizmarketing.us",
+  "image": [ 
+      "https://www.bizmarketing.us/img/image.jpg", 
+      "https://www.bizmarketing.us/img/image.jpg]"
+  ],
+  "@id": "https://www.bizmarketing.us/",
+  "url": "https://www.bizmarketing.us/",
+  "telephone": "+1-786-520-5860",
+  "priceRange": "$",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "11780sw 18th st",
+    "addressLocality": "Miami",
+    "addressRegion": "FL",
+    "postalCode": "33175",
+    "addressCountry": "US"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.7501651,
+    "longitude": -80.3863111
+  },
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday"
+    ],
+    "opens": "10:00",
+    "closes": "18:00"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Corporation",
+  "name": "Bizmarketing.us",
+  "url": "https://www.bizmarketing.us",
+  "logo": "https://www.bizmarketing.us/img/logo.svg",
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+1-786-520-5860",
+    "contactType": "customer service",
+    "contactOption": "TollFree",
+    "areaServed": "US",
+    "availableLanguage": ["English","Spanish"]
+  },
+  "sameAs": [
+    "www.facebook.com/bizmarketing.us",
+    "www.twitter.com/bizmarketing.us"
+  ]
+}
