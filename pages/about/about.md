@@ -1,4 +1,5 @@
 ---
+layout: default.1
 title: About
 permalink: /about/
 ---

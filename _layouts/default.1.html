@@ -1,3 +1,14 @@
+---
+data:
+    transparent: false
+    background-color: bg-white
+    navlink-align: right
+    showsocial: true
+    navbrand:
+        src: /assets/img/logo.png
+        text: 
+        alt: alternative
+---
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,15 +16,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     {% include seo/meta.html metas=page.metas %}
-    <link rel="preload" href="assets/css/styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="assets/css/app.css"></noscript>
+    <link rel="preload" href="/assets/css/styles.css " as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="/assets/css/app.css"></noscript>
     {% include seo/json-ld.html metas=page.metas %}
 </head>
 <body>
+    {% include navigation/mocks-navigation.html data=layout.data%}
     <div class="wrapper">
         {{ content }}
     </div>
-    <script src="assets/js/app.js"></script>
+    <script src="/assets/js/app.js"></script>
     <!-- <script>
         if ('serviceWorker' in navigator) {
             window.addEventListener('load', () => {

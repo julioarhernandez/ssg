@@ -17,7 +17,7 @@ siteRoot = '_site',
 cssFiles = 'devassets/scss/app.scss';
 
 gulp.task('css', () => {
-  gulp.src(cssFiles)
+  gulp.src(['node_modules/bootstrap/scss/bootstrap.scss', cssFiles])
     .pipe(sass({ 
         outputStyle: 'compressed',
         sourceComments: 'map',
@@ -129,7 +129,15 @@ gulp.task('scripts', function () {
 });
 
 
-gulp.watch(cssFiles, ['css']);
+// gulp.watch(cssFiles, ['css']);
+// Watches for changes while gulp is running
+gulp.task('watch', ['css'], function () {
+    // Live reload with BrowserSync
+    browserSync.reload;
+    gulp.watch(['src/assets/js/**/*.js'], ['scripts', browserSync.reload]);
+    gulp.watch(['node_modules/bootstrap/scss/bootstrap.scss', 'devassets/scss/**/*.scss'], ['css', browserSync.reload]);
+    console.log('Watching for changes');
+});
 
-gulp.task('production', gulpSequence(['css', 'scripts', 'jekyll', 'manifest', 'sitemap', 'serve'], ['embedjson', 'minhtml']));
-gulp.task('default', gulpSequence(['css', 'scripts', 'jekyll', 'manifest', 'sitemap', 'serve'], ['embedjson']));
+gulp.task('production', gulpSequence(['css', 'scripts', 'jekyll', 'manifest', 'sitemap', 'serve', 'watch'], ['embedjson', 'minhtml']));
+gulp.task('default', gulpSequence(['css', 'scripts', 'jekyll', 'manifest', 'sitemap', 'serve', 'watch'], ['embedjson']));

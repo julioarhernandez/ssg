@@ -21,10 +21,78 @@ description: >- # this means to ignore newlines until "baseurl:"
   Google search results) and in your feed.xml site description.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
+
+# Head
 fonts:
   - 'Montserrat:400,700,200'
   - 'Open Sans Condensed:700'
   - 'Abril Fatface'
+
+# Navigation
+showsocial: true
+navlinks:
+  - text: 'Home'
+    href: '#'
+  - text: 'Others'
+    href: '#'
+    subitems:
+      -
+        text: 'Features'
+        href: '/mocks/features'
+      -
+        text: 'Projects'
+        href: '/mocks/awesome-projects'
+      -
+        text: 'Team'
+        href: '/mocks/awesome-team'
+      -
+        text: 'Blog-posts'
+        href: '/mocks/blog-posts'
+      -
+        text: 'Contact-us'
+        href: '/mocks/contact-us'
+      -
+        text: 'Footers'
+        href: '/mocks/footers'
+      -
+        text: 'Headers'
+        href: '/mocks/headers'
+      -
+        text: 'Pricing'
+        href: '/mocks/pricing'
+      -
+        text: 'Services'
+        href: '/mocks/services'
+      -
+        text: 'Subscribe'
+        href: '/mocks/subscribe'
+      -
+        text: 'Testimonial'
+        href: '/mocks/testimonial'
+
+# Social
+social:
+  -
+    icon: 'fa-twitter'
+    name: 'twitter' 
+    href: '#'
+    btn: 'btn-twitter'
+  -
+    icon: 'fa-facebook-square'
+    name: 'facebook'
+    href: '#'
+    btn: 'btn-facebook'
+  -
+    icon: 'fa-instagram'
+    name: 'instagram'
+    href: '#'
+    btn: 'btn-instagram'
+  -
+    icon: 'fa-google-plus'
+    name: 'google'
+    href: '#'
+    btn: 'btn-google'
+
 twitter_username: jekyllrb
 github_username:  jekyll
 
