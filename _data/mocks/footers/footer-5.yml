@@ -1,0 +1,94 @@
+# footer-color: 'white'
+id: ""
+footer-color: 'black'
+navbrand:
+  href: '/'
+  title: 'title'
+  text: 'logo'
+  src: ''
+col1:
+  title: 'About us'
+  items: 
+    -
+      href: '#'
+      text: 'Blog'
+    -
+      href: '#'
+      text: 'About'
+    -
+      href: '#'
+      text: 'Contact us'
+    -
+      href: '#'
+      text: 'Services'
+col2:
+  title: 'About us'
+  items: 
+    -
+      href: '#'
+      text: 'Blog'
+    -
+      href: '#'
+      text: 'About'
+    -
+      href: '#'
+      text: 'Contact us'
+    -
+      href: '#'
+      text: 'Services'
+col3:
+  title: 'Social Feeds'
+  items:
+    -
+      icon: 'fab fa-twitter'
+      text: '<p>How to handle ethical disagreements with your clients.</p>'
+      href: '#'
+    -
+      icon: 'fab fa-twitter'
+      text: '<p>The tangible benefits of designing at 1x pixel density.</p>'
+      href: '#'
+    -
+      icon: 'fab fa-facebook-square'
+      text: '<p>How to handle ethical disagreements with your clients.</p>'
+      href: '#'
+col4:
+  title: 'Instagram Feed'
+  items:
+    -
+      href: '#'
+      src: '/assets/img/olivia.jpg'
+      alt: ''
+    -
+      href: '#'
+      src: '/assets/img/michael.jpg'
+      alt: ''
+    -
+      href: '#'
+      src: '/assets/img/emily.jpg'
+      alt: ''
+    -
+      href: '#'
+      src: '/assets/img/marie.jpg'
+      alt: ''
+    -
+      href: '#'
+      src: '/assets/img/usher.jpg'
+      alt: ''
+    -
+      href: '#'
+      src: '/assets/img/mike.jpg'
+      alt: ''
+links:
+  -
+    text: 'About'
+    href: '#'
+  -
+    text: 'Blogs'
+    href: '#'
+  -
+    text: 'Licence'
+    href: '#'
+  -
+    text: 'Terms and conditions'
+    href: '#'
+      

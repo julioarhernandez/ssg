@@ -1,0 +1,12 @@
+title: 'The hero title2 of the page'
+id: ""
+subtitle: |
+  The riding of waves has likely existed since humans began swimming in the ocean. 
+  In this sense, bodysurfing is the oldest type of wave-catching. 
+  Standing up on what is now called a surfboard is a relatively recent innovation developed by the Polynesians.
+background-image: /assets/img/bg17.jpg
+filter: false # false
+content-align: 'left' # 'left'
+button: 
+  text: 'Read more'
+  href: '#'

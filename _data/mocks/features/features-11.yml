@@ -1,0 +1,109 @@
+background-image: '/assets/img/bg3.jpg' 
+title: 'Our specials'
+id: ""
+title-class: 'text-uppercase'
+subtitle: 'Need a hair treatment?'
+subtitle-class: ''
+description: "Havenly is a convenient, personal and affordable way to redecorate your home room by room. Collaborate with our professional interior designers on our online platform."
+description-class: ''
+items:
+  -
+    image:
+      src: '/assets/img/emily.jpg'
+      alt: 'alt'
+      title: ''
+    background-image: '/assets/img/bg4.jpg'
+    title: 'Hair center'
+    subtitle: 'from <span class="h3 font-weight-bold">$37</span>'
+    subtitle-class: 'text-primary text-left'
+    description: ''
+    items: 
+      -
+        text: 'item 1 description'
+      - 
+        text: 'item 1 description'
+      - 
+        text: 'item 1 description'
+      - 
+        text: 'item 1 description'
+    button: true
+    link:
+      class: 'btn btn-primary btn-round'
+      text: 'Find More...'
+      href: '#'
+      icon-class: ''
+  -
+    image:
+      src: '/assets/img/emily.jpg'
+      alt: 'alt'
+      title: ''
+    background-image: '/assets/img/bg5.jpg'
+    title: 'Hair center'
+    subtitle: 'from <span class="h3 font-weight-bold">$37</span>'
+    subtitle-class: 'text-primary text-left'
+    description: ""
+    items: 
+      -
+        text: 'item 1 description'
+      - 
+        text: 'item 1 description'
+      - 
+        text: 'item 1 description'
+      - 
+        text: 'item 1 description'
+    button: true
+    link:
+      class: 'btn btn-primary btn-round'
+      text: 'Find More...'
+      href: '#'
+      icon-class: ''
+  -
+    image:
+      src: '/assets/img/emily.jpg'
+      alt: 'alt'
+      title: ''
+    background-image: '/assets/img/bg6.jpg'
+    title: 'Hair center'
+    subtitle: 'from <span class="h3 font-weight-bold">$37</span>'
+    subtitle-class: 'text-primary text-left'
+    description: ""
+    items: 
+      -
+        text: 'item 1 description'
+      - 
+        text: 'item 1 description'
+      - 
+        text: 'item 1 description'
+      - 
+        text: 'item 1 description'
+    button: true
+    link:
+      class: 'btn btn-primary btn-round'
+      text: 'Find More...'
+      href: '#'
+      icon-class: ''
+  -
+    image:
+      src: '/assets/img/emily.jpg'
+      alt: 'alt'
+      title: ''
+    background-image: '/assets/img/bg7.jpg'
+    title: 'Hair center'
+    subtitle: 'from <span class="h3 font-weight-bold">$37</span>'
+    subtitle-class: 'text-primary text-left'
+    description: ""
+    items: 
+      -
+        text: 'item 1 description'
+      - 
+        text: 'item 1 description'
+      - 
+        text: 'item 1 description'
+      - 
+        text: 'item 1 description'
+    button: true
+    link:
+      class: 'btn btn-primary btn-round'
+      text: 'Find More...'
+      href: '#'
+      icon-class: ''

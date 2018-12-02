@@ -1,0 +1,82 @@
+background-image: '/assets/img/bg31.jpg'
+title: 'Choose a plan for your next projecttttttt'
+id: ""
+description: "You have Free Unlimited Updates and Premium Support on each package. You also have 20 days to request a refund if you're not happy with your purchase."
+buttons:
+  left-text: 'Expensive'
+  right-text: 'Cheaper'
+tab-one:
+  -
+    title: 'Plus'
+    tab-class: 'col-md-6'
+    card-class: 'card-raised'
+    price: ' <small>$</small>100'
+    button:
+      text: 'Buy Now!'
+      class: 'btn-primary'
+      href: '#'
+    items:
+    -
+      title: '<b>15</b> Projects'
+    -
+      title: '<b>5GB</b> Storage'
+    -
+      title: '<b>Unlimited</b> users'
+    -
+      title: '<b>No time</b> tracking'
+  -
+    title: 'Maximum'
+    tab-class: 'col-md-6'
+    card-class: 'card-plain'
+    price: '<small>$</small>120'
+    button:
+      text: 'Buy Now!'
+      class: 'btn-primary'
+      href: '#'
+    items:
+    -
+      title: '<b>25</b> Projects'
+    -
+      title: '<b>15GB</b> Storage'
+    -
+      title: '<b>Unlimited</b> users'
+    -
+      title: '<b>No time</b> tracking'
+tab-two:
+  -
+    title: 'Standard'
+    tab-class: 'col-md-6'
+    card-class: 'card-raised'
+    price: ' <small>$</small>20'
+    button:
+      text: 'Buy Now!'
+      class: 'btn-primary'
+      href: '#'
+    items:
+    -
+      title: '<b>15</b> Projects'
+    -
+      title: '<b>5GB</b> Storage'
+    -
+      title: '<b>Unlimited</b> users'
+    -
+      title: '<b>No time</b> tracking'
+  -
+    title: 'Premium'
+    tab-class: 'col-md-6'
+    card-class: 'card-plain'
+    price: '<small>$</small>60'
+    button:
+      text: 'Buy Now!'
+      class: 'btn-primary'
+      href: '#'
+    items:
+    -
+      title: '<b>25</b> Projects'
+    -
+      title: '<b>15GB</b> Storage'
+    -
+      title: '<b>Unlimited</b> users'
+    -
+      title: '<b>No time</b> tracking'
+  

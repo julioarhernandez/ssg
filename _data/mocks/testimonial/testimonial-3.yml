@@ -1,0 +1,40 @@
+header-section: true
+title: 'What Clients Say'
+id: ""
+columnClass: 'col-md-6 ml-auto mr-auto text-center'
+cardclass:  'card card-testimonial card-plain'
+items:
+  -
+    link: '#'
+    image:
+      src: '/assets/img/michael.jpg'
+      alt: 'alt'
+      title: ''
+    title: 'Isaac Hunter'
+    description: "Don't walk behind me; I may not lead. Don't walk in front of me; I may not follow. Just walk beside me and be my friend."
+    subtitle: 'Loan Counselor'
+    columnClass: 'col-md-4'
+
+  -
+    link: '#'
+    image:
+      src: '/assets/img/michael.jpg'
+      alt: 'alt'
+      title: ''
+    title: 'Alexa Hailey'
+    description: "Don't walk behind me; I may not lead. Don't walk in front of me; I may not follow. Just walk beside me and be my friend."
+    subtitle: 'Interpreter OR Translator'
+    columnClass: 'col-md-4'
+
+  -
+    link: '#'
+    image:
+      src: '/assets/img/michael.jpg'
+      alt: 'alt'
+      title: ''
+    title: 'Joshiah Luke'
+    description: "Don't walk behind me; I may not lead. Don't walk in front of me; I may not follow. Just walk beside me and be my friend."
+    subtitle: 'HR Specialist'
+    columnClass: 'col-md-4'
+    
+ 

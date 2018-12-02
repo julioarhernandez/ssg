@@ -1,0 +1,61 @@
+header-section: true
+title: 'Latest Blogposts 2'
+id: ""
+first-row:
+  -
+    image:
+      src: '/assets/img/card-blog3.jpg'
+      alt: 'alt'
+      title: ''
+    link: '#'
+    title: 'Warner Music Group buys concert discovery service Songkick'
+    subtitle: 'Enterprise'
+    description: "Warner Music Group announced today it’s acquiring the selected assets of the music platform Songkick, including its app for finding concerts and the company’s trademark. Songkick has been involved in a lawsuit against the major…"
+    more-title: "Read More"
+    link-more: "#"
+    author: 'Lolo Perez'
+    link-author:  '#'
+    class: 'text-info'
+  -
+    image:
+      src: '/assets/img/card-blog3.jpg'
+      alt: 'alt'
+      title: ''
+    link: '#'
+    title: 'Warner Music Group buys concert discovery service Songkick'
+    subtitle: 'Enterprise'
+    description: "Warner Music Group announced today it’s acquiring the selected assets of the music platform Songkick, including its app for finding concerts and the company’s trademark. Songkick has been involved in a lawsuit against the major…"
+    more-title: "Read More"
+    link-more: "#"
+    author: 'Lolo Perez'
+    link-author:  '#'
+    class: 'text-info '
+second-row:
+  -
+    image:
+      src: '/assets/img/card-blog3.jpg'
+      alt: 'alt'
+      title: ''
+    link: '#'
+    title: 'Warner Music Group buys concert discovery service Songkick'
+    subtitle: 'Enterprise'
+    description: "Warner Music Group announced today it’s acquiring the selected assets of the music platform Songkick, including its app for finding concerts and the company’s trademark. Songkick has been involved in a lawsuit against the major…"
+    more-title: "Read More"
+    link-more: "#"
+    author: 'Lolo Perez'
+    link-author:  '#'
+    class: 'text-info'
+  -
+    image:
+      src: '/assets/img/card-blog3.jpg'
+      alt: 'alt'
+      title: ''
+    link: '#'
+    title: 'Warner Music Group buys concert discovery service Songkick'
+    subtitle: 'Enterprise'
+    description: "Warner Music Group announced today it’s acquiring the selected assets of the music platform Songkick, including its app for finding concerts and the company’s trademark. Songkick has been involved in a lawsuit against the major…"
+    more-title: "Read More"
+    link-more: "#"
+    author: 'Lolo Perez'
+    link-author:  '#'
+    class: 'text-info'

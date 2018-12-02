@@ -26,13 +26,11 @@
                 </li>
                 {% endunless %}
                 {% if nav.subitems %}
-                <li class="nav-item dropdown">
-                    
+                <li class="nav-item dropdown"> 
                     <a href="{{ nav.href }}" class="nav-link dropdown-toggle" id="navbarDropdownMenuLink1" data-toggle="dropdown" aria-expanded="true">
                         <i class="now-ui-icons design_app"></i>
                         <p>{{ nav.text }}</p>
                     </a>
-                    
                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink1">
                         {% for item in nav.subitems %}
                         <a class="dropdown-item" href="{{item.href}}">

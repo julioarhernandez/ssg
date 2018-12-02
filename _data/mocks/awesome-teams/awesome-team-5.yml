@@ -1,0 +1,97 @@
+header-section: true
+background-image: '/assets/img/bg9.jpg'
+title: 'Our Awesome Team 5'
+id: ""
+description: "This is the paragraph where you can write more details about your team. Keep you user engaged by providing meaningful information."
+items:
+  -
+    link: '#'
+    image:
+      src: '/assets/img/michael.jpg'
+      alt: 'alt'
+      title: ''
+    title: 'Oliver Atticus'
+    subtitle: 'Web Developer'
+    description: "If you want to know what a man's like, take a good look at how he treats his inferiors.."
+    icons:
+      -
+        text: 'facebook'
+        link: '#fb'
+        class: 'fab fa-facebook-square'
+      -
+        text: 'Dribble'
+        link: '#db'
+        class: 'fab fa-dribbble'
+      -
+        text: 'Google'
+        link: '#gg'
+        class: 'fab fa-google'
+      -
+        text: 'Twitter'
+        link: '#tw'
+        class: 'fab fa-twitter'
+      -
+        text: 'LinkedIn'
+        link: '#lk'
+        class: 'fab fa-linkedin'
+  -
+    link: '#'
+    image:
+      src: '/assets/img/michael.jpg'
+      alt: 'alt'
+      title: ''
+    title: 'Oliver Atticus'
+    subtitle: 'Web Developer'
+    description: "If you want to know what a man's like, take a good look at how he treats his inferiors.."
+    icons:
+      -
+        text: 'facebook'
+        link: '#fb'
+        class: 'fab fa-facebook-square'
+      -
+        text: 'Dribble'
+        link: '#db'
+        class: 'fab fa-dribbble'
+      -
+        text: 'Google'
+        link: '#gg'
+        class: 'fab fa-google'
+      -
+        text: 'Twitter'
+        link: '#tw'
+        class: 'fab fa-twitter'
+      -
+        text: 'LinkedIn'
+        link: '#lk'
+        class: 'fab fa-linkedin'
+  -
+    link: '#'
+    image:
+      src: '/assets/img/michael.jpg'
+      alt: 'alt'
+      title: ''
+    title: 'Oliver Atticus'
+    subtitle: 'Web Developer'
+    description: "If you want to know what a man's like, take a good look at how he treats his inferiors.."
+    icons:
+      -
+        text: 'facebook'
+        link: '#fb'
+        class: 'fab fa-facebook-square'
+      -
+        text: 'Dribble'
+        link: '#db'
+        class: 'fab fa-dribbble'
+      -
+        text: 'Google'
+        link: '#gg'
+        class: 'fab fa-google'
+      -
+        text: 'Twitter'
+        link: '#tw'
+        class: 'fab fa-twitter'
+      -
+        text: 'LinkedIn'
+        link: '#lk'
+        class: 'fab fa-linkedin'
+ 

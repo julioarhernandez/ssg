@@ -1,0 +1,23 @@
+<div class="features-1"  {% if data.id}}id="{{data.id}}"{% endif %}>
+    <div class="container">
+        <div class="row">
+        <div class="col-md-8 ml-auto mr-auto">
+            <h2 class="title">{{data.title}}</h2>
+            <div class="h4 description">{{data.description}}</div>
+        </div>
+        </div>
+        <div class="row">
+        {% for data.items}}
+        <div class="col-md-4">
+            <div class="info info-hover">
+            <div class="icon {% if icon-color}}{{icon-color}}{{else}}icon-primary{% endif %}">
+                <i class="now-ui-icons {% if icon-type}}{{icon-type}}{{else}}ui-2_chat-round{% endif %}"></i>
+            </div>
+            <h3 class="h4 info-title">{{title}}</h3>
+            <p class="description">{{description}}</p>
+            </div>
+        </div>
+        {% endfor %}
+        </div>
+    </div>
+</div>

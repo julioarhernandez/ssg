@@ -1,0 +1,98 @@
+<div class="header-3"  {% if data.id}}id="{{data.id}}"{% endif %}>
+        <div id="carouselExampleIndicators" class="carousel slide">
+            <ol class="carousel-indicators">
+            {% for data.slider}}
+            {% if forloop.index }}
+            <li data-target="#carouselExampleIndicators" data-slide-to="{{{{ forloop.index }}}}"></li>
+            {{else}}
+            <li data-target="#carouselExampleIndicators" data-slide-to="{{{{ forloop.index }}}}" class="active"></li>
+            {% endif %}
+            {% endfor %}
+            </ol>
+            <div class="carousel-inner" role="listbox">
+            {% for data.slider}}
+            {% if forloop.index }}
+            <div class="carousel-item">
+            {{else}}
+            <div class="carousel-item active">
+            {% endif %}
+                <div class="page-header header-filter">
+                <div class="page-header-image" data-bg-style="{{background-image}}"></div>
+                <div class="content-center">
+                    {% ifequal type 'A'}}
+                    <div class="container text-left">
+                    <div class="content-center">
+                        <div class="row">
+                        <div class="col-md-5">
+                            <div class="iframe-container">
+                            <iframe height="250" src="{{video-url}}" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                        <div class="col-md-6 ml-auto mr-auto text-right">
+                            <h1 class="title">{{title}}</h1>
+                            <div class="h4 description ">{{subtitle}}</div>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                    {{/ifequal}}
+                    {% ifequal type 'B'}}
+                    <div class="container">
+                        <div class="content-center">
+                            <div class="row">
+                                <div class="col-md-8 ml-auto mr-auto text-center">
+                                    <h1 class="title">{{title}}</h1>
+                                    <div class="h4 description ">{{subtitle}}</div>
+                                    <br />
+                                    {% if social}}
+                                    <div class="h5">{{Connect}}</div>
+                                    <div class="buttons">
+                                    {% for ../global.social}}
+                                    <a href="{{href}}" class="btn btn-icon btn-neutral btn-danger btn-round mt-2">
+                                        <i class="fab {{icon}}"></i>
+                                    </a>
+                                    {% endfor %}
+                                    </div>
+                                    {% endif %}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {{/ifequal}}
+                    {% ifequal type 'C'}}
+                    <div class="container">
+                        <div class="content-center">
+                            <div class="row">
+                            <div class="col-md-6 text-left">
+                                <h1 class="title">{{title}}</h1>
+                                <div class="h4 description ">{{subtitle}}</div>
+                                <br />
+                                {% if buttons}}
+                                <div class="buttons">
+                                <a href="{{buttons.more.href}}" class="btn btn-neutral btn-primary btn-lg mr-1">
+                                    <i class="now-ui-icons files_single-copy-04"></i> {{buttons.more.text}}
+                                </a>
+                                <a href="{{buttons.more.subscribe}}" class="btn btn-primary btn-lg">
+                                    <i class="now-ui-icons arrows-1_share-66"></i> {{buttons.subscribe.text}}
+                                </a>
+                                </div>
+                                {% endif %}
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    {{/ifequal}}
+
+                </div>
+                </div>
+            </div>
+            {% endfor %}
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <i class="now-ui-icons arrows-1_minimal-left"></i>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <i class="now-ui-icons arrows-1_minimal-right"></i>
+            </a>
+        </div>
+    </div>

@@ -1,0 +1,35 @@
+header-section: true
+background-color: 'gray'
+title: 'Some of Our Awesome Projects - 4'
+id: ""
+subtitle: "Our Work"
+first-row:
+  content-left:
+    background-image: '/assets/img/project14.jpg'
+    link: '#'
+    description: "The 'crazy idea that could lead to a big future commission' project."
+    bottom-content: true
+    icon: 'objects_globe'
+    icon-description: 'The “Crazy idea” project'
+  content-right:
+    background-image: '/assets/img/project15.jpg'
+    link: '#'
+    description: "The next time you’re on vacation, take advantage of all the work you can get done..."
+    bottom-content: true
+    icon: 'education_paper'
+    icon-description: 'The “I’m on vacation” project'
+second-row:
+  content-right:
+    background-image: '/assets/img/project16.jpg'
+    link: '#'
+    description: "Performing a Project Premortem"
+    bottom-content: true
+    icon: 'media-2_sound-wave'
+    icon-description: 'The "Premortem" project'
+  content-left:
+    background-image: '/assets/img/project17.jpg'
+    link: '#'
+    description: "The 'crazy idea that could lead to a big future commission' project."
+    bottom-content: true
+    icon: 'design_app'
+    icon-description: 'The "Agile Project" project'

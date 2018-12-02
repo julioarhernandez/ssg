@@ -1,0 +1,19 @@
+title: 'Full-Funnel Social Analytics'
+id: ""
+description: "Insight to help you create, connect, and convert. Understand Your Audience's Interests, Influence, Interactions, and Intent. Discover emerging topics and influencers to reach new audiences."
+items:
+  -
+    icon-type: 'ui-2_chat-round'
+    icon-color: 'icon-primary'
+    title: 'Social Conversations'
+    description: "Gain access to the demographics, psychographics, and location of unique people."
+  -
+    icon-type: 'business_chart-pie-36'
+    icon-color: 'icon-success'
+    title: 'Analyze Performance'
+    description: "Unify data from Facebook, Instagram, Twitter, LinkedIn, and Youtube to gain rich insights."
+  -
+    icon-type: 'design-2_ruler-pencil'
+    icon-color: 'icon-warning'
+    title: 'Measure Conversions'
+    description: "Track actions taken on your website, understand the impact on your bottom line."

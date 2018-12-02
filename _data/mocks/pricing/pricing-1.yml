@@ -1,0 +1,74 @@
+header-section: true
+title: 'Pick the best plan for you'
+id: ""
+description: "You have Free Unlimited Updates and Premium Support on each package."
+background-image: '/assets/img/pricing1.jpg'
+columnClass: 'col-md-3'
+cards:
+  -
+    category: 'Bravo Pack'
+    icon: 'objects_diamond'
+    icon-color: 'icon-warning'
+    price: '$10'
+    items: 
+      - 
+        title: 'Complete documentation'
+      -
+        title: 'Working materials in Sketch'
+      - 
+        title: 'Complete documentation'
+    button:
+      link: '#'
+      text: 'Add to cart'
+      class: 'btn-neutral btn-primary'
+  -
+    category: 'Bravo Pack'
+    icon: 'objects_diamond'
+    icon-color: 'icon-primary'
+    price: '$10'
+    highlight: true
+    items: 
+      - 
+        title: 'Complete documentation'
+      -
+        title: 'Working materials in Sketch'
+      - 
+        title: 'Complete documentation'
+    button:
+      link: '#'
+      text: 'Add to cart'
+      class: 'btn-primary'
+  -
+    category: 'Bravo Pack'
+    icon: 'objects_diamond'
+    icon-color: 'icon-warning'
+    price: '$10'
+    items: 
+      - 
+        title: 'Complete documentation'
+      -
+        title: 'Working materials in Sketch'
+      - 
+        title: 'Complete documentation'
+    button:
+      link: '#'
+      text: 'Add to cart'
+      class: 'btn-neutral btn-primary'
+  -
+    category: 'Bravo Pack'
+    icon: 'objects_diamond'
+    icon-color: 'icon-warning'
+    price: '$10'
+    items: 
+      - 
+        title: 'Complete documentation'
+      -
+        title: 'Working materials in Sketch'
+      - 
+        title: 'Complete documentation'
+    button:
+      link: '#'
+      text: 'Add to cart'
+      class: 'btn-neutral btn-primary'
+
+ 

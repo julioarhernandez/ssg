@@ -1,0 +1,50 @@
+id: ""
+navbrand:
+  href: '/'
+  title: 'title'
+  text: ''
+  src: '/assets/img/logo.png'
+  alt: 'Logo'
+showsocial: false
+transparent: false
+background-color: 'bg-white'
+navlink-align: 'right' 
+# navlink-align: 'right' 
+navlinks:
+    text: 'Components'
+    href: '#'
+    page: 'services'
+    subitems:
+      -
+        text: 'Features'
+        href: '/mocks/features'
+      -
+        text: 'Projects'
+        href: '/mocks/awesome-projects'
+      -
+        text: 'Team'
+        href: '/mocks/awesome-team'
+      -
+        text: 'Blog-posts'
+        href: '/mocks/blog-posts'
+      -
+        text: 'Contact-us'
+        href: '/mocks/contact-us'
+      -
+        text: 'Footers'
+        href: '/mocks/footers'
+      -
+        text: 'Headers'
+        href: '/mocks/headers'
+      -
+        text: 'Pricing'
+        href: '/mocks/pricing'
+      -
+        text: 'Services'
+        href: '/mocks/services'
+      -
+        text: 'Subscribe'
+        href: '/mocks/subscribe'
+      -
+        text: 'Testimonial'
+        href: '/mocks/testimonial'

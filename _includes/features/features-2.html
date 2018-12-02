@@ -1,0 +1,23 @@
+<div class="features-2 section-image" data-bg-style="{{data.background-image}}"  {% if data.id}}id="{{data.id}}"{% endif %}>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-8 mr-auto ml-auto">
+          <h2 class="title">{{data.title}}</h2>
+          <div class="h4 description">{{data.description}}</div>
+        </div>
+      </div>
+      <div class="row">
+        {% for data.items}}
+        <div class="col-md-4">
+          <div class="info">
+            <div class="icon {% if icon-color}}{{icon-color}}{{else}}icon-primary{% endif %} icon-circle">
+              <i class="now-ui-icons {% if icon-type}}{{icon-type}}{{else}}users_single-02{% endif %}"></i>
+            </div>
+            <h3 class="h4 info-title">{{title}}</h3>
+            <p class="description">{{description}}</p>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>

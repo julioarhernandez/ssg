@@ -1,0 +1,29 @@
+id: ""
+navbrand:
+  href: '/'
+  title: 'title'
+  text: ''
+  src: '/assets/img/logo.png'
+  alt: 'Logo'
+showsocial: false
+transparent: false
+background-color: 'bg-white'
+navlink-align: 'right' 
+# navlink-align: 'right' 
+navlinks:
+  -
+    text: 'Home'
+    href: ''
+    page: 'index'
+  -
+    text: 'Services'
+    href: 'mocks/services/'
+    page: 'services'
+  -
+    text: 'About us'
+    href: '#about'
+    page: 'about'
+  -
+    text: 'Contact us'
+    href: '#contact-us'
+    page: 'contact'

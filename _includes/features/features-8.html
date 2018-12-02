@@ -1,0 +1,26 @@
+<div class="features-8 section-image" data-bg-style="{{data.background-image}}"  {% if data.id}}id="{{data.id}}"{% endif %}>
+  <div class="col-md-8 ml-auto mr-auto text-center">
+    <h2 class="title">{{data.title}}</h2>
+    <div class="h4 description">{{data.description}}</div>
+  </div>
+  <div class="container">
+    <div class="row">
+      {% for data.items}}
+      <div class="col-md-3">
+        <div class="card">
+          <div class="card-image">
+            <img data-img-src="{{image.src}}" class="rounded" alt="{{image.alt}}" title="{{image.title}}">
+          </div>
+          <div class="info text-center">
+            <div class="icon">
+              <i class="now-ui-icons {% if icon-type}}{{icon-type}}{% endif %}"></i>
+            </div>
+            <h3 class="h4 info-title">{{title}}</h3>
+            <p class="description">{{description}}</p>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>

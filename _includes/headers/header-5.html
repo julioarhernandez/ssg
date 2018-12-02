@@ -1,0 +1,15 @@
+      <!--     *********     HEADER 5      *********      -->
+      <div class="header-1"  {% if data.id}}id="{{data.id}}"{% endif %}>
+            <div class="page-header{% if data.filter}} header-filter{% endif %}">
+              <div class="page-header-image" data-bg-style="{{data.background-image}}"></div>
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-7{% ifequal hero-1.content-align 'right'}} ml-auto text-right{{/ifequal}}{% ifequal hero-1.content-align 'left'}} mr-auto text-left{{/ifequal}}">
+                    <div class="h6 text-muted">{{data.title}}</div>
+                    <h1 class="title {{data.subtitle.class}} h1-reponsive">{{{data.subtitle.text}}}</h1>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      <!--     *********    END HEADER 5      *********      -->

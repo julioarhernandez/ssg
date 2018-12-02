@@ -1,0 +1,42 @@
+header-section: true
+background-image: '/assets/img/bg19.jpg'
+title: 'What is ALPHA?'
+id: ""
+description: "If you’re selected for ALPHA you’ll also get 3 tickets, opportunity to access Investor Office Hours and Mentor Hours and much more all for €850."
+columnClass: 'col-md-4'
+items:
+  -
+    link: '#'
+    image:
+      src: '/assets/img/james.jpg'
+      alt: 'alt'
+      title: ''
+    title: 'Michael Elijah'
+    description: "If you want to know what a man's like, take a good look at how he treats his inferiors.."
+    icon:  'fa-quote-right'
+    category: '@michaelelijah'
+    columnClass: 'col-md-4'
+
+  -
+    link: '#'
+    image:
+      src: '/assets/img/james.jpg'
+      alt: 'alt'
+      title: ''
+    title: 'Michael Elijah'
+    description: "The connections you make at Web Summit are unparalleled, we met users all over the world."
+    icon:  'fa-quote-right'
+    category: '@oliviaharper'
+    columnClass: 'col-md-4'
+
+  -
+    link: '#'
+    image:
+      src: '/assets/img/james.jpg'
+      alt: 'alt'
+      title: ''
+    title: 'James Logan'
+    description: "Web Summit will increase your appetite, your inspiration, and your network."
+    icon:  'fa-quote-right'
+    category: '@jameslogan'
+    columnClass: 'col-md-4'

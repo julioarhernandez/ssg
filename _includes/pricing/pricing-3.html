@@ -1,0 +1,35 @@
+<div class="pricing-3 section-image" data-bg-style="{{data.background-image}}" id="pricing-3">
+  <div class="container">
+    {% if data.header-section}}
+    <div class="row">
+      <div class="col-md-6 ml-auto mr-auto text-center">
+        <h2 class="title">{{data.title}}</h2>
+        <div class="h4 description">{{data.description}}</div>
+        <div class="section-space"></div>
+      </div>
+    </div>
+    {% endif %}
+    <div class="row">
+      {% for data.items}}
+      <div class="{{columnClass}}">
+        <div class="card card-pricing" {% if background-color}}data-background-color="{{background-color}}" {% endif %}>
+          <div class="card-body">
+            <h3 class="h5 category">{{title}}</h3>
+            <div class="h1 card-title">
+              {{{price}}}
+            </div>
+            <ul>
+              {% for items}}
+              <li>{{{title}}}</li>
+              {% endfor %}
+            </ul>
+            <a href="{{button.link}}" class="{{button.class}}">
+              {{button.text}}
+            </a>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>

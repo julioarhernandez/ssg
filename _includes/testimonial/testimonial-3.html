@@ -1,0 +1,30 @@
+<div class="testimonials-3"{% if data.id}} id="{{data.id}}"{% endif %}>
+  <div class="container">
+    <div class="row">
+          {% if data.header-section}}      
+      <div class="{{data.columnClass}}">
+        <div class="h2 title">{{data.title}}</div>
+      </div>
+      {% endif %}
+    </div>
+    <div class="row">
+      {% for data.items}}
+      <div class="{{columnClass}}">
+        <div class="{{../data.cardclass}}">
+          <div class="card-avatar">
+            <a href="{{link}}">
+              <img class="img img-raised rounded" data-img-src="{{image.src}}" alt="{{image.alt}}" title="{{image.title}}"/>
+            </a>
+          </div>
+          <div class="card-body">
+            <div class="h3 card-title">{{title}}</div>
+            <div class="h6 category text-primary">{{subtitle}}</div>
+            <p class="card-description">{{description}}
+            </p>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>

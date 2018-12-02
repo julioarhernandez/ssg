@@ -1,0 +1,110 @@
+<div class="projects-4" data-background-color="gray"  {% if include.data.id %}id="{{include.data.id}}"{% endif %}>
+    <div class="container-fluid">
+        {% if include.data.header-section %}
+        <div class="row">
+        <div class="col-md-8 mr-auto ml-auto text-center">
+          <div class="h6 category text-muted">{{include.data.subtitle}}</div>
+          <h2 class="title">{{include.data.title}}</h2>
+        </div>
+      </div>
+      {% endif %}
+      <div class="row">
+        <div class="col-md-6 px-0">
+          <div class="card card-fashion card-background" data-bg-style="{{include.data.first-row.content-left.background-image}}">
+            <div class="card-body">
+              <div class="card-title text-left">
+                <h3 class="h2">
+                  <a href="{{include.data.first-row.content-left.link}}" >
+                      {{include.data.first-row.content-left.description}}
+                  </a>
+                </h3>
+              </div>
+              <div class="card-footer text-left">
+                <div class="stats">
+                  {% if include.data.first-row.content-left.bottom-content %}
+                  <span>
+                    <i class="now-ui-icons {{include.data.first-row.content-left.icon}}"></i>{{include.data.first-row.content-left.icon-description}}
+                  </span>
+                  {% endif %}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 px-0">
+          <div class="card-container">
+            <div class="card card-fashion">
+              <div class="card-title">
+                <a href="{{include.data.first-row.content-right.link}}">
+                  <h4>
+                    <a href="{{include.data.first-row.content-right.link}}">
+                        {{include.data.first-row.content-right.description}}
+                    </a>
+                  </h4>
+                </a>
+              </div>
+              <div class="card-body">
+                <div class="card-footer">
+                  <div class="stats">
+                    {% if include.data.first-row.content-left.bottom-content %}
+                      <span>
+                      <i class="now-ui-icons {{include.data.first-row.content-right.icon}}"></i> {{include.data.first-row.content-right.icon-description}}
+                    </span>
+                    {% endif %}
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card card-fashion card-background" data-bg-style="{{include.data.first-row.content-right.background-image}}">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 px-0">
+          <div class="card-container">
+            <div class="card card-fashion card-background" data-bg-style="{{include.data.second-row.content-left.background-image}}">
+            </div>
+            <div class="card card-fashion arrow-left">
+              <div class="card-title">
+                <h4>
+                  <a href="{{include.data.second-row.content-left.link}}">
+                      {{include.data.second-row.content-left.description}}
+                  </a>
+                </h4>
+              </div>
+              <div class="card-body">
+                <div class="card-footer">
+                  <div class="stats">
+                    {% if include.data.first-row.content-left.bottom-content %}
+                      <span>
+                      <i class="now-ui-icons {{include.data.second-row.content-left.icon}}"></i>{{include.data.second-row.content-left.icon-description}}
+                    </span>
+                    {% endif %}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 px-0">
+          <div class="card card-fashion card-background" data-bg-style="{{include.data.second-row.content-right.background-image}}">
+            <div class="card-body">
+              <div class="card-title text-left">
+                <h3 class="h2">
+                  <a href="{{include.data.second-row.content-right.link}}">{{include.data.second-row.content-right.description}}</a>
+                </h3>
+              </div>
+              <div class="card-footer text-left">
+                <div class="stats">
+                  <span>
+                    <i class="now-ui-icons {{include.data.second-row.content-right.icon}}"></i>{{include.data.second-row.content-right.icon-description}}
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

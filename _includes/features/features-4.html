@@ -1,0 +1,28 @@
+<div class="features-4" {% if data.id}}id="{{data.id}}"{% endif %}>  
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8 ml-auto mr-auto text-center">
+                <h2 class="title">{{data.title}}</h2>
+                <div class="h4 description">{{data.description}}</div>
+            </div>
+          </div>
+          <div class="row">
+            {% for data.items}}
+            <div class="col-md-4">
+              <div class="card card-background card-raised" data-background-color data-bg-style="{{background-image}}">
+                <div class="info">
+                  <div class="icon {% if icon-color}}{{icon-color}}{{else}}icon-white{% endif %}">
+                    <i class="now-ui-icons {% if icon-type}}{{icon-type}}{{else}}business_bulb-63{% endif %}"></i>
+                  </div>
+                  <div class="description">
+                    <h3 class="h4 info-title">{{title}}</h3>
+                    <p>{{description}}</p>
+                    <a href="{{link.href}}" class="ml-3">{{link.text}}</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            {% endfor %}
+          </div>
+        </div>
+      </div>

@@ -1,0 +1,27 @@
+id: ""
+slider:
+  -
+    type: 'A'
+    background-image: '/assets/img/bg20.jpg'
+    video-url: 'https://www.youtube.com/embed/rmfmdKOLzVI?rel=0&amp;controls=0&amp;showinfo=0'
+    title: 'On the run tour.'
+    subtitle: "On the Run Tour: Beyoncé and Jay Z is a 2014 concert special which documents the September 12 and 13, 2014, shows of American singers' Beyoncé and Jay-Z joint co-headlining venture On the Run Tour."
+  -
+    type: 'B'
+    background-image: '/assets/img/bg15.jpg'
+    title: 'Island of legends.'
+    subtitle: "The islands of Malta and Gozo are brilliant for a family holiday, packed with fun places to visit whatever your children’s ages. The islands’ small size means everywhere is within easy reach." 
+    social: true
+    Connect: 'Connect with us on:'
+  -
+    type: 'C'
+    background-image: '/assets/img/bg17.jpg'
+    title: 'Arctic Sea ice.'
+    subtitle: "According to the National Oceanic and Atmospheric Administration, Ted Scambos, NSIDC lead scientist, puts the potentially record low maximum sea ice extent this year down to low ice extent in the Pacific and a late drop in ice extent in the Barents Sea." 
+    buttons:
+      more:
+        href: '#'
+        text: 'Read More..'
+      subscribe:
+        href: '#'
+        text: 'Subscribe'

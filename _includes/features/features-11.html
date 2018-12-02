@@ -1,0 +1,46 @@
+<div class="features-4 features-11 {{data.class}}" data-bg-style="{{data.background-image}}"  {% if data.id}}id="{{data.id}}"{% endif %}>
+    <div class="container">
+      <div class="row">
+          <div class="col-md-8 ml-auto mr-auto text-center">
+            <div class="h6 text-muted {{data.subtitle-class}}">{{data.subtitle}}</div>
+            <h2 class="title {{data.title-class}}">{{data.title}}</h2>
+            <div class="h5 description {{data.description-class}}">{{data.description}}</div>
+            <div class="section-space"></div>
+          </div>
+      </div>
+      <div class="row">
+        {% for data.items}}
+        <div class="col-md-6 col-lg-3">
+            <div class="card card-profile card-profile-gay-2" data-bg-style="{{background-image}}">
+                <div class="card-avatar card-avatar-extra-small">
+                  <a href="{{link.href}}">
+                    <img class="img img-raised" data-img-src="{{image.src}}" alt="{{image.alt}}" title="{{image.title}}"/>
+                  </a>
+                </div>
+                <div class="card-body">
+                  <h3 class="h4 text-montserrat text-uppercase mb-1">{{{title}}}</h3>
+                  <div class="h6 category {{subtitle-class}}">{{{subtitle}}}</div>
+                  {% if description}}
+                  <p class="card-description">
+                    {{{description}}}
+                  </p>
+                  {% endif %}
+                  {% if items}}
+                    <ul class="nc-icon-ul">
+                      {% for items}}
+                      <li class="mb-1"><i class="now-ui-icons circle"></i>{{text}}</li>
+                      {% endfor %}
+                    </ul>
+                  {% endif %}
+                  {% if button}}
+                  <div class="card-footer">
+                    <a href="{{link.href}}" class="{{link.class}}"><i class="{{link.icon-class}}"></i>{{link.text}}</a>
+                  </div>
+                  {% endif %}
+                </div>
+              </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>

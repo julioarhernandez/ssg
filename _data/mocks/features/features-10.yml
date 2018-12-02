@@ -1,0 +1,28 @@
+filter: false
+header-section: 
+  active: true
+  class: 'col-md-6 ml-auto'
+title: 'Working its a pleasure'
+id: "about"
+description:  'This is the paragraph where you can write more details about your product. Keep you user engaged by providing meaningful information.'
+background-image: '/assets/img/bg2.jpg'
+right-items: 'col-md-6 ml-auto px-0'
+items:
+  -
+    icon-class: 'design-2_html5'
+    item-class: 'ml-0 p-0'
+    title: 'For Developers'
+    title-class: 'text-uppercase text-dark font-weight-bold'
+    description: "The moment you use Now UI Kit, you know you’ve never felt anything like it. With a single use, this powerfull UI Kit lets you do more than ever before."
+  -
+    icon-class: 'design_palette'
+    item-class: 'ml-0 p-0'
+    title: 'For Designers'
+    title-class: 'text-uppercase text-dark font-weight-bold'
+    description: "The moment you use Now UI Kit, you know you’ve never felt anything like it. With a single use lets you do more than ever before."
+  -
+    icon-class: 'design-2_ruler-pencil'
+    item-class: 'ml-0 p-0'
+    title: 'For Designers'
+    title-class: 'text-uppercase text-dark font-weight-bold'
+    description: "The moment you use Now UI Kit, you know you’ve never felt anything like it. With a single use lets you do more than ever before."

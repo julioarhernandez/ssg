@@ -1,0 +1,33 @@
+header-section: true
+title: 'Some of Our Awesome Products - 2'
+id: ""
+subtitle: 'Our Work'
+description: 'This is the paragraph where you can write more details about your projects. Keep you user engaged by providing meaningful information.'
+items:
+  -
+    image:
+      src: '/assets/img/opt_mk_thumbnail.jpg'
+      alt: 'alt'
+      title: ''
+    cardLink: '#'
+    cardTitle: 'Now UI Kit Free'
+    cardSubtitle: 'Free UI Kit'
+    cardDescription: "Now UI Kit is a Free Bootstrap UI Kit with a fresh, new design inspired by Invision. It's a great pleasure to introduce to you the Now UI concepts in an easy to use and beautiful set of components."
+  -
+    image:
+      src: '/assets/img/opt_mk_thumbnail.jpg'
+      alt: 'alt'
+      title: ''
+    cardLink: '#'
+    cardTitle: 'Now UI Kit Free'
+    cardSubtitle: 'Free UI Kit'
+    cardDescription: "Now UI Kit is a Free Bootstrap UI Kit with a fresh, new design inspired by Invision. It's a great pleasure to introduce to you the Now UI concepts in an easy to use and beautiful set of components."
+  -
+    image:
+      src: '/assets/img/opt_mk_thumbnail.jpg'
+      alt: ''
+      title: ''
+    cardLink: '#'
+    cardTitle: 'Now UI Kit Free'
+    cardSubtitle: 'Free UI Kit'
+    cardDescription: "Now UI Kit is a Free Bootstrap UI Kit with a fresh, new design inspired by Invision. It's a great pleasure to introduce to you the Now UI concepts in an easy to use and beautiful set of components."

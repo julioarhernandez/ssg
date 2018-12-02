@@ -1,0 +1,70 @@
+<div class="projects-5"  {% if include.data.id %}id="{{include.data.id}}"{% endif %}>
+    <div class="container">
+      {% if include.data.header-section %}
+      <div class="row">
+        <div class="col-md-8 ml-auto mr-auto text-center">
+          <h2 class="title">{{include.data.title}}</h2>
+          <div class="h4 description">{{include.data.description}}</div>
+          <div class="section-space"></div>
+        </div>
+      </div>
+      {% endif %}
+      <div class="row">
+        <div class="col-md-5 ml-auto">
+          <div class="card card-background card-background-product card-raised" data-bg-style="{{include.data.first-row.content-left.image}}">
+            <div class="card-body">
+              <h3 class="h2 card-title">{{include.data.first-row.content-left.title}}</h3>
+              <p class="card-description">
+                  {{include.data.first-row.content-left.description}}
+              </p>
+              <label class="badge badge-neutral">{{include.data.first-row.content-left.button.text}}</label>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-5 mr-auto">
+          {% for info in include.data.first-row.content-right %}
+          <div class="info info-horizontal">
+            <div class="icon icon-danger">
+              <i class="now-ui-icons {{info.icon}}"></i>
+            </div>
+            <div class="description">
+              <h4 class="info-title">{{info.title}}</h4>
+              <p class="description">
+                  {{info.description}}
+              </p>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+      <hr />
+      <div class="row">
+        <div class="col-md-5 ml-auto">
+          {% for info in include.data.second-row.content-left %}
+          <div class="info info-horizontal">
+            <div class="icon icon-warning">
+              <i class="now-ui-icons users_single-02"></i>
+            </div>
+            <div class="description">
+              <h4 class="info-title">{{info.title}}</h4>
+              <p class="description">
+                {{info.description}}
+              </p>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+        <div class="col-md-5 mr-auto">
+          <div class="card card-background card-background-product card-raised" data-bg-style="{{include.data.second-row.content-right.image}}">
+            <div class="card-body">
+              <h3 class="h2 card-title">{{include.data.second-row.content-right.title}}</h3>
+              <p class="card-description ">
+                  {{include.data.second-row.content-right.description}}
+              </p>
+              <label class="badge badge-neutral">{{include.data.second-row.content-right.button.text}}</label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

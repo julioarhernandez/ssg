@@ -1,0 +1,54 @@
+header-section: true
+title: 'Working is a pleasure'
+id: ""
+description: "Woodpecker.co is a follow-up automation SaaS founded in 2015. We’re an international team of 17, speaking 4 languages. Our mission is to enable all B2B companies to connect with their Ideal Customers."
+items:
+  -
+    link: '#'
+    image: 
+      src: '/assets/img/bg28.jpg'
+      alt: 'alt'
+      title: ''
+    title: 'Reply detection'
+    subtitle: 'Featured'
+    description: "If you get a reply, further follow-ups are automatically stopped."
+    footer-left-image: 
+      src: '/assets/img/julie.jpg'
+      alt: 'alt'
+      title: ''
+    footer-left-text: 'Mike John'
+    footer-right-icon: 'tech_watch-time'
+    footer-right-text: '5 min read'
+  -
+    link: '#'
+    image: 
+      src: '/assets/img/bg28.jpg'
+      alt: 'alt'
+      title: ''
+    title: 'Reply detection'
+    subtitle: 'Featured'
+    description: "If you get a reply, further follow-ups are automatically stopped."
+    footer-left-image: 
+      src: '/assets/img/julie.jpg'
+      alt: 'alt'
+      title: ''
+    footer-left-text: 'Mike John'
+    footer-right-icon: 'tech_watch-time'
+    footer-right-text: '5 min read'
+  -
+    link: '#'
+    image: 
+      src: '/assets/img/bg28.jpg'
+      alt: 'alt'
+      title: ''
+    title: 'Reply detection'
+    subtitle: 'Featured'
+    description: "If you get a reply, further follow-ups are automatically stopped."
+    footer-left-image: 
+      src: '/assets/img/julie.jpg'
+      alt: 'alt'
+      title: ''
+    footer-left-text: 'Mike John'
+    footer-right-icon: 'tech_watch-time'
+    footer-right-text: '5 min read'
+

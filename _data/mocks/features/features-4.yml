@@ -1,0 +1,31 @@
+title: 'Coming home, a pleasure!'
+id: "features"
+description: "Havenly is a convenient, personal and affordable way to redecorate your home room by room. Collaborate with our professional interior designers on our online platform."
+items:
+  -
+    icon-type: 'business_bulb-63'
+    icon-color: 'icon-white'
+    background-image: '/assets/img/bg24.jpg'
+    title: 'Collaborate on ideas'
+    description: "Your designer will come back to you with an initial set of ideas."
+    link:
+      text: 'Find More...'
+      href: '#'
+  -
+    icon-type: 'business_badge'
+    icon-color: 'icon-white'
+    background-image: '/assets/img/bg23.jpg'
+    title: 'Pick your designer'
+    description: "Havenly interior designers are vetted professionals and real people."
+    link:
+      text: 'Find More...'
+      href: '#'
+  -
+    icon-type: 'location_map-big'
+    icon-color: 'icon-white'
+    background-image: '/assets/img/bg25.jpg'
+    title: 'Visualize your room'
+    description: "Share a floor plan, and we'll create a visualization of your room."
+    link:
+      text: 'Find More...'
+      href: '#'

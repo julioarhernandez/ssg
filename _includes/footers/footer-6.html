@@ -1,0 +1,61 @@
+<footer class="footer footer-white footer-big"  {% if data.id}}id="{{data.id}}"{% endif %}>
+        <div class="container">
+          <div class="content">
+            <div class="row">
+              <div class="col-md-3">
+                <a class="" href="//{{global.url}}">
+                    {% if data.navbrand.src}}
+                    <img data-img-src="{{data.navbrand.src}}" width="30" height="30" alt="">
+                    {% endif %}
+                    {% if data.navbrand.text}}
+                    <h5>{{data.navbrand.text}}</h5>
+                    {% endif %}
+                </a>
+                {{{data.col1.description}}}
+              </div>
+              {% for data.cols}}
+              <div class="{{class}}">
+                <h5>{{title}}</h5>
+                <ul class="links-vertical">
+                    {% for items}}
+                  <li>
+                    <a href="{{href}}">
+                      {{text}}
+                    </a>
+                  </li>
+                  {% endfor %}
+                </ul>
+              </div>
+              {% endfor %}
+              <div class="col-md-3">
+                <h5>{{data.newsletter.title}}</h5>
+                {{{data.newsletter.description}}}
+                <form class="form form-newsletter" method="" action="">
+                  <div class="form-group">
+                    <input type="email" class="form-control" placeholder="{{data.newsletter.input.placeholder}}">
+                  </div>
+                  <button type="button" class="btn btn-primary btn-icon btn-round" name="button">
+                    <i class="now-ui-icons ui-1_email-85"></i>
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+          <hr />
+          <ul class="social-buttons">
+            {% for global.social}}
+            <li>
+                <a href="{{href}}" target="_blank" class="btn btn-icon btn-neutral btn-round {{btn}} btn-lg">
+                <i class="fab {{icon}}"></i>
+                </a>
+            </li>
+            {% endfor %}
+          </ul>
+          <div class="copyright pull-center">
+            Copyright &copy;
+            <script>
+              document.write(new Date().getFullYear())
+            </script> {{global.name}} All Rights Reserved.
+          </div>
+        </div>
+      </footer>

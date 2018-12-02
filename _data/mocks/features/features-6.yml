@@ -1,0 +1,30 @@
+header-section: true
+title: 'Working is a pleasure'
+id: ""
+description:  'This is the paragraph where you can write more details about your product. Keep you user engaged by providing meaningful information.'
+image:
+      src: '/assets/img/iphone2.png'
+      alt: 'alt'
+      title: ''
+items-left:
+  -
+    icon-color: 'icon-info'
+    icon-class: 'design-2_html5'
+    title: 'For Developers'
+    description: "The moment you use Now UI Kit, you know you’ve never felt anything like it. With a single use, this powerfull UI Kit lets you do more than ever before."
+  -
+    icon-color: 'icon-danger'
+    icon-class: 'design_palette'
+    title: 'For Designers'
+    description: "The moment you use Now UI Kit, you know you’ve never felt anything like it. With a single use lets you do more than ever before."
+items-right:  
+  -
+    icon-color: 'icon-primary'
+    icon-class: 'design-2_ruler-pencil'
+    title: 'Bootstrap Grid'
+    description: "The moment you use Now UI Kit, you know you’ve never felt anything like it. With a single use lets you do more than ever before."
+  -
+    icon-color: 'icon-success'
+    icon-class: 'files_single-copy-04'
+    title: 'Example Pages Included'
+    description: "The moment you use Now UI Kit, you know you’ve never felt anything like it. With a single use lets you do more than ever before."

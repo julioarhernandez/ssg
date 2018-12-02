@@ -1,0 +1,58 @@
+header-section: true
+title: 'Pick the best plan for you'
+id: ""
+description: "You have Free Unlimited Updates and Premium Support on each package."
+columnClass: 'col-md-4'
+items:
+  -
+    title: 'Bravo Pack'
+    price: '10'
+    raised: false
+    items: 
+      - 
+        title: '<b>100GB</b> Monthly Bandwidth'
+      -
+        title: '<b>100GB</b> Monthly Bandwidth'
+      - 
+        title: '<b>20</b> Email Accounts'
+      - 
+        title: '<b>Unlimited</b> subdomains'
+    button:
+      link: '#'
+      text: 'Add to cart'
+      class: 'btn-primary'
+  -
+    title: 'Bravo Pack'
+    price: '10'
+    raised: true
+    background-image: '/assets/img/pricing2.jpg'
+    items: 
+      - 
+        title: '<b>100GB</b> Monthly Bandwidth'
+      -
+        title: '<b>100GB</b> Monthly Bandwidth'
+      - 
+        title: '<b>20</b> Email Accounts'
+      - 
+        title: '<b>Unlimited</b> subdomains'
+    button:
+      link: '#'
+      text: 'Add to cart'
+      class: 'btn-primary'
+  -
+    title: 'Bravo Pack'
+    price: '10'
+    raised: false
+    items: 
+      - 
+        title: '<b>100GB</b> Monthly Bandwidth'
+      -
+        title: '<b>100GB</b> Monthly Bandwidth'
+      - 
+        title: '<b>20</b> Email Accounts'
+      - 
+        title: '<b>Unlimited</b> subdomains'
+    button:
+      link: '#'
+      text: 'Add to cart'
+      class: 'btn-primary'

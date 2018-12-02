@@ -1,0 +1,19 @@
+id: ""
+navbrand:
+  href: '/'
+  title: 'title'
+  text: 'logo'
+  src: ''
+links:
+  -
+    text: 'About'
+    href: '#'
+  -
+    text: 'Blogs'
+    href: '#'
+  -
+    text: 'Licence'
+    href: '#'
+  -
+    text: 'Terms and conditions'
+    href: '#'

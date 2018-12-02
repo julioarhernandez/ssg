@@ -1,0 +1,27 @@
+background-image:  '/assets/img/bg46.jpg' 
+title: 'Contact us'
+messages:
+  success: "<strong>Done!</strong> We'll be in touch with you as soon as possible"
+  error: "<strong>Ops!</strong> Something went wrong"
+id: ""
+class: 'col-lg-6 col-md-10'
+phone-info:
+  title: 'Give us a ring'
+  icon: 'tech_mobile'
+  content: 'Michael Jordan<br> +40 762 321 762<br> Mon - Fri, 8:00-22:00'
+address-info:
+  title: 'Find us at the office'
+  icon: 'location_pin'
+  content: 'Bld Mihail Kogalniceanu, nr. 8,<br> 7652 Bucharest,<br> Romania'
+form-name:
+  label: 'Full name'
+  placeholder: 'First Name...'
+  aria: 'Full name'
+form-email:
+  label: 'Email address'
+  placeholder: 'Email here...'
+  aria: 'Email address'
+form-submit:
+  text: 'Send Message'
+  class: 'btn-primary'
+check: "I'm not a robot"

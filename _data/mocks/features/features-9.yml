@@ -1,0 +1,52 @@
+class: 'bg-primary-lightest' 
+id: "features"
+title: 'Beauty / hair / nails'
+subtitle: 
+  text: 'Need a hair treatment?'
+  class: 'mt-2 font-weight-bold text-montserrat text-uppercase text-primary'
+description: "Havenly is a convenient, personal and affordable way to redecorate your home room by room. Collaborate with our professional interior designers on our online platform."
+button:
+    active: true
+    href: '#'
+    class: 'btn btn-primary btn-round text-uppercase'
+    text: 'Follow more...'
+items:
+  -
+    image:
+      src: '/assets/img/emily.jpg'
+      alt: 'alt'
+      title: ''
+    title: '<strong>Hair</strong> center'
+    description: "Your designer will come back to you with an initial set of ideas.Your designer will come back to you with an initial set of ideas."
+    button: true
+    link:
+      class: 'btn btn-primary btn-round'
+      text: 'Find More...'
+      href: '#'
+      icon-class: ''
+  -
+    image:
+      src: '/assets/img/emily.jpg'
+      alt: 'alt'
+      title: ''
+    title: '<strong>Hair</strong> center'
+    description: "Your designer will come back to you with an initial set of ideas.Your designer will come back to you with an initial set of ideas."
+    button: true
+    link:
+      class: 'btn btn-primary btn-round'
+      text: 'Find More...'
+      href: '#'
+      icon-class: ''
+  -
+    image:
+      src: '/assets/img/emily.jpg'
+      alt: 'alt'
+      title: ''
+    title: '<strong>Hair</strong> center'
+    description: "Your designer will come back to you with an initial set of ideas.Your designer will come back to you with an initial set of ideas."
+    button: true
+    link:
+      class: 'btn btn-primary btn-round'
+      text: 'Find More...'
+      href: '#'
+      icon-class: ''

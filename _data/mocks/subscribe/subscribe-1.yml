@@ -1,0 +1,14 @@
+filter: false
+background-image: '/assets/img/bg1.jpg'
+title: 'What Clients Say'
+id: ""
+title-class: ''
+description: 'Join our newsletter and get news in your inbox every week! We hate spam too, so no worries about this.'
+description-class: ''
+email:
+  placeholder: 'Your Email...'
+button:
+  text: 'Subscribe'
+  class: 'btn btn-primary btn-round btn-block'
+  aria: 'Subscribe'
+  href: '#'

@@ -1,0 +1,34 @@
+<div class="pricing-1 section-image" id="pricing-1" data-bg-style="{{data.background-image}}"  {% if data.id}}id="{{data.id}}"{% endif %}>
+<div class="container">
+        {% if data.header-section}}
+        <div class="row">
+          <div class="col-md-6 ml-auto mr-auto text-center">
+            <h2 class="title">{{data.title}}</h2>
+            <div class="h4 description ">{{data.description}}</div>
+            <div class="section-space"></div>
+          </div>
+        </div>
+        {% endif %}
+        <div class="row">
+        {% for data.cards}}
+         <div class="{{../data.columnClass}}">
+           <div class="card card-pricing {% if highlight}}{{else}}card-plain{% endif %}">
+              <div class="card-body">
+                <h3 class="h5 category ">{{category}}</h3>
+                <div class="icon {{icon-color}}">
+                  <i class="now-ui-icons {{icon}}"></i>
+                </div>
+                <div class="h3 card-title">{{price}}</div>
+                <ul>
+                {% for items}}
+                  <li>{{title}}</li>
+                {% endfor %}
+                </ul>
+                <a href="{{button.link}}" class="btn {{button.class}} btn-round">{{button.text}}</a>
+              </div>
+            </div>
+          </div>
+          {% endfor %}
+      </div>
+      </div>
+    </div>

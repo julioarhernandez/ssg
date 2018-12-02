@@ -1,0 +1,36 @@
+<div class="projects-2"  {% if include.data.id %}id="{{include.data.id}}"{% endif %}>
+  <div class="container">
+    {% if include.data.header-section %}
+    <div class="row">
+      <div class="col-md-8 ml-auto mr-auto text-center">
+        <div class="h6 text-muted">{{include.data.subtitle}}</div>
+        <h2 class="title">{{include.data.title}}</h2>
+        <div class="h5 description">{{include.data.description}}</div>
+        <div class="section-space"></div>
+      </div>
+    </div>
+    {% endif %}
+    <div class="row">
+      {% for item in include.data.items %}
+      <div class="col-md-4">
+        <div class="card card-plain">
+          <a href="{{item.cardLink}}" target="_blank">
+            <div class="cardImage">
+              <img class="img-raised rounded" data-img-src="{{item.image.src}}" alt="{{item.image.alt}}" title="{{item.image.title}}" />
+            </div>
+          </a>
+          <div class="card-body">
+            <a href="{{item.cardLink}}" target="_blank">
+              <h3 class="h4 cardTitle">{{item.cardTitle}}</h3>
+            </a>
+            <div class="h6 category text-primary">{{item.cardSubtitle}}</div>
+            <p class="card-description">
+              {{item.cardDescription}}
+            </p>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>

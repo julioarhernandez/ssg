@@ -1,0 +1,32 @@
+ <footer class="footer"  {% if data.id}}id="{{data.id}}"{% endif %}>
+    <div class="container">
+      <nav>
+        <ul>
+          <li>
+            <a href="//{{global.url}}" class="nav-link">
+                {% if data.navbrand.src}}
+                <img data-img-src="{{data.navbrand.src}}" width="30" height="30" alt="">
+                {% endif %}
+                {% if data.navbrand.text}}
+                {{data.navbrand.text}}
+                {% endif %}
+            </a>
+          </li>
+          {% for data.links}}
+          <li>
+            <a href="//{{href}}" class="nav-link">
+              {{text}}
+            </a>
+          </li>
+          {% endfor %}
+        </ul>
+      </nav>
+      <div class="copyright">
+        &copy;
+        <script>
+          document.write(new Date().getFullYear())
+        </script>, Designed by
+        <a href="https://www.bizmarketing.us" target="_blank" class="copyright-link">Bizmarketing.us</a>
+      </div>
+    </div>
+  </footer>

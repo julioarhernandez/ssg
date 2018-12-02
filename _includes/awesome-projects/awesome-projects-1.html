@@ -1,0 +1,48 @@
+<div class="projects-1"  {% if include.data.id %}id="{{include.data.id}}"{% endif %}>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-8 ml-auto mr-auto text-center">
+        <h6 class="text-muted">{{include.data.subtitle}}</h6>
+        <h2 class="title">{{include.data.title}}</h2>
+        <h5 class="description">{{include.data.description}}</h5>
+        <div class="section-space"></div>
+        <ul class="nav nav-pills {{include.data.nav-buttons-class}} justify-content-center" role="tablist">
+          {% for nav in include.data.nav-buttons %}
+          <li class="nav-item">
+            <a class="nav-link {% if nav.active %}active{% endif %}" data-toggle="tab" href="#pill{{ forloop.index }}" role="tablist">
+              {{ nav.text }}
+            </a>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+    <div class="section-space"></div>
+    <div class="tab-content tab-space">
+      {% for item in include.data.nav-tabs %}
+      <div class="tab-pane {% if item.active %}active{% endif %}" id="pill{{ forloop.index }}">
+        <div class="row">
+          {% for card in item.cards %}
+          <div class="{{card.card.layout-class}} px-0">
+            <div class="card {{card.class}} card-background card-background-product card-no-shadow" data-bg-style="{{card.background-image}}">
+              <div class="card-body">
+                <div class="h6 category">{{card.category}}</div>
+                <h3 class="card-title">
+                  {{card.title}}
+                </h3>
+                <p class="card-description">
+                  {{card.description}}
+                </p>
+                <a href="#pablo" class="btn btn-danger btn-round">
+                  <i class="now-ui-icons ui-1_send"></i> View Book
+                </a>
+              </div>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>

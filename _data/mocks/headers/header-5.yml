@@ -1,0 +1,8 @@
+title: 'Enjoy the experience'
+id: ""
+subtitle: 
+  text: 'Hair specialist <span class="text-primary">you deserve</span>'
+  class: 'text-uppercase text-dark text-abril h1-responsive'
+background-image: '/assets/img/hero1.jpg'
+filter: false # false
+content-align: 'left' # 'left'

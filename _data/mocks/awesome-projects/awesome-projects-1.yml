@@ -1,0 +1,208 @@
+header-section: true
+title: 'Some of Our Awesome Products - 1'
+id: ""
+subtitle: 'Our Work'
+description: 'This is the paragraph where you can write more details about your projects. Keep you user engaged by providing meaningful information.'
+nav-buttons-class: 'nav-pills-danger'
+nav-buttons:
+  -
+    active: true
+    text: all
+  - 
+    active: false
+    text: tab1
+  - 
+    active: false
+    text: tab2
+  - 
+    active: false
+    text: tab3
+nav-tabs:
+  -
+    active: true
+    cards:
+      -
+        layout-class: 'col-md-6'
+        background-image: '/assets/img/project1.jpg'
+        class: 'card-raised'
+        category: 'History'
+        title: 'The City Lost & Found'
+        description: 'Developed on the occasion of an exhibition of the same name, The City Lost & Found: Capturing New York...'
+        button:
+          class: 'btn-danger'
+          href: '#'
+          text: 'View book'
+      -
+        layout-class: 'col-md-6'
+        background-image: '/assets/img/project18.jpg'
+        class: 'card-raised'
+        category: 'History'
+        title: 'The City Lost & Found'
+        description: 'Developed on the occasion of an exhibition of the same name, The City Lost & Found: Capturing New York...'
+        button:
+          class: 'btn-danger'
+          href: '#'
+          text: 'View book'
+      -
+        layout-class: 'col-md-6'
+        background-image: '/assets/img/project20.jpg'
+        class: 'card-raised'
+        category: 'History'
+        title: 'The City Lost & Found'
+        description: 'Developed on the occasion of an exhibition of the same name, The City Lost & Found: Capturing New York...'
+        button:
+          class: 'btn-danger'
+          href: '#'
+          text: 'View book'
+      -
+        layout-class: 'col-md-6'
+        background-image: '/assets/img/project19.jpg'
+        class: 'card-raised'
+        category: 'History'
+        title: 'The City Lost & Found'
+        description: 'Developed on the occasion of an exhibition of the same name, The City Lost & Found: Capturing New York...'
+        button:
+          class: 'btn-danger'
+          href: '#'
+          text: 'View book'
+  -
+    active: false
+    cards:
+      -
+        layout-class: 'col-md-6'
+        background-image: '/assets/img/project1.jpg'
+        class: 'card-raised'
+        category: 'History'
+        title: 'A Confederacy of Dunces'
+        description: 'Developed on the occasion of an exhibition of the same name, The City Lost & Found: Capturing New York...'
+        button:
+          class: 'btn-danger'
+          href: '#'
+          text: 'View book'
+      -
+        layout-class: 'col-md-6'
+        background-image: '/assets/img/project18.jpg'
+        class: 'card-raised'
+        category: 'History'
+        title: 'A Confederacy of Dunces'
+        description: 'Developed on the occasion of an exhibition of the same name, A Confederacy of Dunces: Capturing New York...'
+        button:
+          class: 'btn-danger'
+          href: '#'
+          text: 'View book'
+      -
+        layout-class: 'col-md-6'
+        background-image: '/assets/img/project19.jpg'
+        class: 'card-raised'
+        category: 'History'
+        title: 'A Confederacy of Dunces'
+        description: 'Developed on the occasion of an exhibition of the same name, A Confederacy of Dunces: Capturing New York...'
+        button:
+          class: 'btn-danger'
+          href: '#'
+          text: 'View book'
+      -
+        layout-class: 'col-md-6'
+        background-image: '/assets/img/project20.jpg'
+        class: 'card-raised'
+        category: 'History'
+        title: 'A Confederacy of Dunces'
+        description: 'Developed on the occasion of an exhibition of the same name, A Confederacy of Dunces: Capturing New York...'
+        button:
+          class: 'btn-danger'
+          href: '#'
+          text: 'View book'
+  -
+    active: false
+    cards:
+      -
+        layout-class: 'col-md-6'
+        background-image: '/assets/img/project20.jpg'
+        class: 'card-raised'
+        category: 'History'
+        title: 'The Right Mistake'
+        description: 'Developed on the occasion of an exhibition of the same name, The City Lost & Found: Capturing New York...'
+        button:
+          class: 'btn-danger'
+          href: '#'
+          text: 'View book'
+      -
+        layout-class: 'col-md-6'
+        background-image: '/assets/img/project18.jpg'
+        class: 'card-raised'
+        category: 'History'
+        title: 'The Right Mistake'
+        description: 'Developed on the occasion of an exhibition of the same name, The Right Mistake: Capturing New York...'
+        button:
+          class: 'btn-danger'
+          href: '#'
+          text: 'View book'
+      -
+        layout-class: 'col-md-6'
+        background-image: '/assets/img/project1.jpg'
+        class: 'card-raised'
+        category: 'History'
+        title: 'The Sun Also Rises'
+        description: 'Developed on the occasion of an exhibition of the same name, The Sun Also Rises: Capturing New York...'
+        button:
+          class: 'btn-danger'
+          href: '#'
+          text: 'View book'
+      -
+        layout-class: 'col-md-6'
+        background-image: '/assets/img/project19.jpg'
+        class: 'card-raised'
+        category: 'History'
+        title: 'The Sun Also Rises'
+        description: 'Developed on the occasion of an exhibition of the same name, The Sun Also Rises: Capturing New York...'
+        button:
+          class: 'btn-danger'
+          href: '#'
+          text: 'View book'
+  -
+    active: false
+    cards:
+      -
+        layout-class: 'col-md-6'
+        background-image: '/assets/img/project19.jpg'
+        class: 'card-raised'
+        category: 'History'
+        title: 'The Sun Also Rises'
+        description: 'Developed on the occasion of an exhibition of the same name, The City Lost & Found: Capturing New York...'
+        button:
+          class: 'btn-danger'
+          href: '#'
+          text: 'View book'
+      -
+        layout-class: 'col-md-6'
+        background-image: '/assets/img/project20.jpg'
+        class: 'card-raised'
+        category: 'History'
+        title: 'The Sun Also Rises'
+        description: 'Developed on the occasion of an exhibition of the same name, The Sun Also Rises: Capturing New York...'
+        button:
+          class: 'btn-danger'
+          href: '#'
+          text: 'View book'
+      -
+        layout-class: 'col-md-6'
+        background-image: '/assets/img/project18.jpg'
+        class: 'card-raised'
+        category: 'History'
+        title: 'The Sun Also Rises'
+        description: 'Developed on the occasion of an exhibition of the same name, The Sun Also Rises: Capturing New York...'
+        button:
+          class: 'btn-danger'
+          href: '#'
+          text: 'View book'
+      -
+        layout-class: 'col-md-6'
+        background-image: '/assets/img/project1.jpg'
+        class: 'card-raised'
+        category: 'History'
+        title: 'The Sun Also Rises'
+        description: 'Developed on the occasion of an exhibition of the same name, The Sun Also Rises: Capturing New York...'
+        button:
+          class: 'btn-danger'
+          href: '#'
+          text: 'View book'

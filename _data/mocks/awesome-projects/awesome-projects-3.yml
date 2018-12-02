@@ -1,0 +1,20 @@
+header-section: true
+background-color: 'black'
+title: 'Some of Our Awesome Projects - 3'
+id: ""
+subtitle: "Our Work"
+items:
+  -
+    image-left: '/assets/img/project4.jpg'
+    image-right: '/assets/img/project21.jpg'
+    quote: '"Amber Interiors is available to assist in all aspects of a project from start to finish including consulting with Architects and Builders"'
+    title: 'Coco Kelley'
+    subtitle: 'Design'
+    description: "Amber Lewis’s interior design blog takes you inside the creative workings of her Los Angeles–based studio. Keep an eye on this website for an industry insider’s point of view."
+  -
+    image-left: '/assets/img/project24.jpg'
+    image-right: '/assets/img/project23.jpg'
+    quote: '"Amber Interiors is available to assist in all aspects of a project from start to finish including consulting with Architects and Builders"'
+    title: 'Coco Kelley'
+    subtitle: 'Design'
+    description: "Amber Lewis’s interior design blog takes you inside the creative workings of her Los Angeles–based studio. Keep an eye on this website for an industry insider’s point of view."

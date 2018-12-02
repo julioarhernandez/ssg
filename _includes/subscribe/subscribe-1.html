@@ -1,0 +1,33 @@
+<div class="subscribe-line subscribe-line-image {% ifequal data.filter false}}no-filter{{/ifequal}}" data-bg-style="{{data.background-image}}"{% if data.id}} id="{{data.id}}"{% endif %}>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 ml-auto mr-auto">
+          <div class="text-center">
+            <h2 class="h4 title {{title-class}}">{{data.title}}</h2>
+            <p class="description {{description-class}}">
+              {{{data.description}}}
+            </p>
+          </div>
+          <div class="card card-raised card-form-horizontal">
+            <div class="card-body">
+              <form method="" action="">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <div class="input-group">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text"><i class="now-ui-icons ui-1_email-85"></i></span>
+                      </div>
+                      <input type="email" class="form-control" placeholder="{{data.email.placeholder}}">
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <button type="button" class="{{data.button.class}}">{{data.button.text}}</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

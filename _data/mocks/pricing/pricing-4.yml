@@ -1,0 +1,70 @@
+header-section: true
+background-image: '/assets/img/pricing3.jpg'
+title: 'Pick the best plan for you'
+id: ""
+description: "You have Free Unlimited Updates and Premium Support on each package."
+columnClass: 'col-md-4'
+items:
+  -
+    title: 'Starter'
+    icon: 'tech_headphones'
+    icon-color: 'icon-danger'
+    price: '<small>$</small>10<small></small>'
+    columnClass: 'col-md-4'
+    cardClass: 'card card-pricing card-plain'
+    
+    items: 
+      - 
+        title: '1000 MB'
+      -
+        title: '3 email'
+      - 
+        title: '5 Databases'
+      
+    button:
+      link: '#'
+      text: 'Get it Now'
+      class: 'btn btn-danger btn-round'
+  -
+    title: 'Professional'
+    icon: 'tech_headphones'
+    icon-color: 'icon-primary'
+    price: '<small>$</small>40<small></small>'
+    background-color: 'orange'
+    columnClass: 'col-md-4'
+    cardClass: 'card card-pricing'
+    
+    items: 
+      - 
+        title: 'Unlimited MB'
+      -
+        title: 'Unlimited emails'
+      - 
+        title: 'Full Support'
+      
+    button:
+      link: '#'
+      text: 'Current Plan'
+      class: 'btn btn-neutral btn-primary btn-round'
+  -
+    title: 'Basic'
+    icon: 'tech_headphones'
+    icon-color: 'icon-warning'
+    price: '<small>$</small>20<small></small>'
+    columnClass: 'col-md-4'
+    cardClass: 'card card-pricing card-plain'
+    
+    items: 
+      - 
+        title: '1000 MB'
+      -
+        title: '3 email'
+      - 
+        title: 'No Support'
+      
+    button:
+      link: '#'
+      text: 'Upgrade Plan'
+      class: 'btn btn-warning btn-round'
+  
+ 

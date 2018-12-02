@@ -1,0 +1,20 @@
+<div class="services-2"  {% if data.id}}id="{{data.id}}"{% endif %}>
+    <div class="{{data.section-class}}">
+        <div class="row">
+            {% for data.items}}
+            <div class="{{../data.block-class}}">
+                <div class="services-1-block text-center text-md-left py-5 px-4 px-md-5 d-flex flex-column flex-md-row">
+                    <div class="left icon">
+                        <i class="mx-3 now-ui-icons {{icon-color}} {% if icon}}{{icon}}{% endif %}"></i>
+                    </div>
+                    <div class="right">
+                        <div class="numbers">{{number}}</div>
+                        <h3 class="h5 info-title mt-1 mb-4 {{title-class}}">{{title}}</h3>
+                        <p class="description {{subtitle-class}}">{{subtitle}}</p>                
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>

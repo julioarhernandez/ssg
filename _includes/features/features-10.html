@@ -1,0 +1,29 @@
+<div class="features-10 section-image {% ifequal data.filter false}}no-filter{{/ifequal}}" data-bg-style="{{data.background-image}}"  {% if data.id}}id="{{data.id}}"{% endif %}>
+  {% if data.header-section}}
+  <div class="container-fluid">
+    <div class="{{data.header-section.class}}">
+      <h2 class="title">{{data.title}}</h2>
+      <div class="h4 description">{{data.description}}</div>
+    </div>
+  </div>
+  {% endif %}
+  <div class="container-fluid">
+    <div class="row">
+      <div class="{{data.right-items}}">
+        <div class="col-sm-12">
+          {% for data.items}}
+          <div class="info info-horizontal {{item-class}}">
+            <div class="icon icon-primary">
+              <i class="now-ui-icons {{icon-class}}"></i>
+            </div>
+            <div class="description">
+              <h3 class="h5 info-title {{title-class}}">{{title}}</h3>
+              <p class="description">{{description}}</p>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

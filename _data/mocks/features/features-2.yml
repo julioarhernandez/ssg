@@ -1,0 +1,20 @@
+title: 'Trello lets you work more.'
+background-image: '/assets/img/bg22.jpg'
+id: ""
+description: "Trello’s boards, lists, and cards enable you to organize and prioritize your projects in a fun, flexible and rewarding way."
+items:
+  -
+    icon-type: 'users_single-02'
+    icon-color: 'icon-primary'
+    title: 'Work With Any Team'
+    description: "Whether it’s for work or even the next family vacation, Trello helps your team."
+  -
+    icon-type: 'business_chart-bar-32'
+    icon-color: 'icon-primary'
+    title: 'A Productivity Platform'
+    description: "Integrate the apps your team already uses directly into your workflow."
+  -
+    icon-type: 'design-2_ruler-pencil'
+    icon-color: 'icon-primary'
+    title: 'Always In Sync'
+    description: "TNo matter where you are, Trello stays in sync across all of your devices."

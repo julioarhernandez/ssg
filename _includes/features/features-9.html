@@ -1,0 +1,39 @@
+<div class="features-4 features-9 {{data.class}}" {% if data.id}}id="{{data.id}}"{% endif %}>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 col-lg-3">
+              <span class="title text-montserrat text-uppercase">{{data.title}}</span>
+              <h2 class="h3 {{data.subtitle.class}}">{{data.subtitle.text}}</h2>
+              <div class="h4 description">{{data.description}}</div>
+              {% if data.button.active}}
+              <a href="{{data.button.href}}" class="{{data.button.class}}">
+                {{data.button.text}}
+              </a>
+              {% endif %}
+            </div>
+            {% for data.items}}
+            <div class="col-md-6 col-lg-3">
+                <div class="card card-profile card-profile-gay">
+                    <div class="card-avatar card-avatar-small">
+                      <a href="{{link.href}}">
+                        <img class="img img-raised" data-img-src="{{image.src}}" alt="{{image.alt}}" title="{{image.title}}"/>
+                      </a>
+                    </div>
+                    <div class="card-body">
+                      <h3 class="h4 text-montserrat text-uppercase">{{{title}}}</h3>
+                      <div class="h6 category text-primary">{{subtitle}}</div>
+                      <p class="card-description">
+                        {{description}}
+                      </p>
+                      {% if button}}
+                      <div class="card-footer">
+                        <a href="{{link.href}}" class="{{link.class}}"><i class="{{link.icon-class}}"></i>{{link.text}}</a>
+                      </div>
+                      {% endif %}
+                    </div>
+                  </div>
+            </div>
+            {% endfor %}
+          </div>
+        </div>
+      </div>

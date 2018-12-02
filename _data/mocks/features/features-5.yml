@@ -1,0 +1,20 @@
+header-section: true
+title: 'Working is a pleasure'
+id: ""
+image:
+      src: '/assets/img/ipad2-inverted.png'
+      alt: 'alt'
+      title: ''
+items:
+  -
+    icon: 'location_world'
+    title: 'Hundreds of Components'
+    description: "The moment you use Now UI Kit, you know you’ve never felt anything like it. With a single use lets you do more than ever before."
+  -
+    icon: 'sport_user-run'
+    title: 'Hundreds of Components'
+    description: "The moment you use Now UI Kit, you know you’ve never felt anything like it. With a single use lets you do more than ever before."
+  -
+    icon: 'ui-2_time-alarm'
+    title: 'Hundreds of Components'
+    description: "The moment you use Now UI Kit, you know you’ve never felt anything like it. With a single use lets you do more than ever before."

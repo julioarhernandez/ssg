@@ -1,0 +1,70 @@
+<div class="pricing-5 section-pricing-5 section-image" id="pricing-5" data-bg-style="{{data.background-image}}">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <h2 class="title">{{data.title}}</h2>
+        <ul class="nav nav-pills nav-pills-primary" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" data-toggle="tab" href="#personal" role="tablist">
+                {{data.buttons.left-text}}
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#commercial" role="tablist">
+                {{data.buttons.right-text}}
+            </a>
+          </li>
+        </ul>
+        <p class="description">{{data.description}}</p>
+      </div>
+      <div class="col-md-7 ml-auto mr-auto">
+        <div class="tab-content tab-space">
+          <div class="tab-pane active" id="personal">
+            <div class="row">
+              {% for data.tab-one}}
+              <div class="{{tab-class}}">
+                <div class="card card-pricing {{card-class}}">
+                  <div class="card-body">
+                    <h3 class="h5 category">{{title}}</h3>
+                    <div class="h1 card-title">{{{price}}}</div>
+                    <ul>
+                      {% for items}}
+                        <li>{{{title}}}</li>
+                      {% endfor %}
+                    </ul>
+                    <a href="{{button.href}}" class="btn {{button.class}} btn-round">
+                      {{button.text}}
+                    </a>
+                  </div>
+                </div>
+              </div>
+              {% endfor %}
+            </div>
+          </div>
+          <div class="tab-pane" id="commercial">
+            <div class="row">
+                {% for data.tab-two}}
+                <div class="{{tab-class}}">
+                  <div class="card card-pricing {{card-class}}">
+                    <div class="card-body">
+                      <h3 class="h5 category">{{title}}</h3>
+                      <div class="h1 card-title">{{{price}}}</div>
+                      <ul>
+                        {% for items}}
+                          <li>{{{title}}}</li>
+                        {% endfor %}
+                      </ul>
+                      <a href="{{button.href}}" class="btn {{button.class}} btn-round">
+                        {{button.text}}
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                {% endfor %}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

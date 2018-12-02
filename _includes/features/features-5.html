@@ -1,0 +1,27 @@
+<div class="features-5"  {% if data.id}}id="{{data.id}}"{% endif %}>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-5">
+             {% if data.header-section}}
+              <h2 class="title">{{data.title}}</h2>
+              {% endif %}
+              {% for data.items}}
+              <div class="info info-horizontal">
+                <div class="icon icon-primary icon-circle">
+                  <i class="now-ui-icons {{icon}}"></i>
+                </div>
+                <div class="description">
+                  <h3 class="h4 info-title">{{title}}</h3>
+                  <p>{{description}}</p>
+                </div>
+              </div>
+              {% endfor %}
+            </div>
+            <div class="col-md-7">
+              <div class="tablet-container">
+                <img data-img-src="{{data.image.src}}"  alt="{{image.alt}}" title="{{image.title}}"/>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>

@@ -1,0 +1,31 @@
+<footer class="footer footer-white"  {% if data.id}}id="{{data.id}}"{% endif %}>
+        <div class="container">
+          <a class="footer-brand" href="{{data.navbrand.href}}">
+            {% if data.navbrand.src}}
+            <img data-img-src="{{data.navbrand.src}}" width="30" height="30" alt="">
+            {% endif %}
+            {% if data.navbrand.text}}
+            {{data.navbrand.text}}
+            {% endif %}
+          </a>
+          <ul class="pull-center">
+            {% for data.links}}
+            <li>
+              <a href="{{href}}" class="nav-link">
+                {{text}}
+              </a>
+            </li>
+            {% endfor %}
+          
+          </ul>
+          <ul class="social-buttons pull-right">
+            {% for global.social}}
+            <li>
+              <a href="{{href}}" target="_blank" class="btn btn-icon btn-neutral">
+                <i class="fab {{icon}}"></i>
+              </a>
+            </li>
+            {% endfor %}
+          </ul>
+        </div>
+      </footer>

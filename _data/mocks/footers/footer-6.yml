@@ -1,0 +1,75 @@
+footer-color: 'white'
+# footer-color: 'black'
+id: ""
+navbrand:
+  href: '/'
+  title: 'title'
+  text: 'logo'
+  src: ''
+
+col1:
+  title: 'About us'
+  description: "<p>Probably the best UI Kit in the world! We know you've been waiting for it, so don't be shy!</p>"
+cols:
+  -
+    class: 'col-md-2'
+    title: 'Blogs'
+    items:
+      -
+        href: '#'
+        text: 'About us'
+      -
+        href: '#'
+        text: 'About us'
+      -
+        href: '#'
+        text: 'About us'
+      -
+        href: '#'
+        text: 'About us'
+      -
+        href: '#'
+        text: 'About us'
+  -
+    class: 'col-md-2'
+    title: 'About'
+    items:
+      -
+        href: '#'
+        text: 'Another links'
+      -
+        href: '#'
+        text: 'Another links'
+      -
+        href: '#'
+        text: 'Another links'
+      -
+        href: '#'
+        text: 'Another links'
+      -
+        href: '#'
+        text: 'Another links'
+  -
+    class: 'col-md-2'
+    title: 'Presentatio'
+    items:
+      -
+        href: '#'
+        text: 'Terms and conditions'
+      -
+        href: '#'
+        text: 'Terms and conditions'
+      -
+        href: '#'
+        text: 'Terms and conditions'
+      -
+        href: '#'
+        text: 'Terms and conditions'
+      -
+        href: '#'
+        text: 'Terms and conditions'
+newsletter:
+  title: 'Subscribe to newsletter'
+  description: " <p>Join our newsletter and get news in your inbox every week! We hate spam too, so no worries about this.</p>"
+  input: 
+    placeholder: 'Email here...'

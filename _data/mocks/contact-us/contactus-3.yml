@@ -1,0 +1,18 @@
+image:  '/assets/img/contact1.jpg'
+header-section: true
+title: 'Get in Touch'
+id: ""
+contentleft: 'col-md-4'
+description: "You need more information? Check what other persons are saying about our product. They are very happy with their purchase."
+description-class: 'h5'
+content:
+      -
+        class: 'col-md-4'
+        icon: 'location_pin'
+        title: 'Find us at the offices'
+        description: 'Bld Mihail Kogalniceanu, nr. 8, <br> 7652 Bucharest, <br> Romania'
+      -
+        class: 'col-md-4'
+        icon: 'tech_mobile'
+        title: 'Give us a ring'
+        description: 'Michael Jordan <br> +40 762 321 762 <br> Mon - Fri, 8:00-22:00'

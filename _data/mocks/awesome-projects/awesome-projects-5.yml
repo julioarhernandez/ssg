@@ -1,0 +1,47 @@
+header-section: true
+title: 'Some of Our Awesome Projects - 5'
+id: ""
+description: "This is the paragraph where you can write more details about your projects. Keep you user engaged by providing meaningful information."
+first-row:
+  content-left:
+    image: '/assets/img/project8.jpg'
+    title: 'Social Analytics'
+    description: "Insight to help you create, connect, and convert. Understand Your Audience's Interests, Influence, Interactions, and Intent. Discover emerging topics and influencers to reach new audiences."
+    button:
+      link: '#'
+      text: 'Analytics'
+  content-right:
+    -
+      icon: 'ui-2_chat-round'
+      title: 'Listen to Social Conversations'
+      description: 'Gain access to the demographics, psychographics, and location of unique people who talk about your brand.'
+    -
+      icon: 'business_chart-pie-36'
+      title: 'Listen to Social Conversations 2'
+      description: 'Gain access to the demographics, psychographics, and location of unique people who talk about your brand.'
+    -
+      icon: 'design-2_ruler-pencil'
+      title: 'Listen to Social Conversations 3'
+      description: 'Gain access to the demographics, psychographics, and location of unique people who talk about your brand.'
+second-row:
+  content-right:
+    image: '/assets/img/project9.jpg'
+    title: 'Social Analytics'
+    description: "Insight to help you create, connect, and convert. Understand Your Audience's Interests, Influence, Interactions, and Intent. Discover emerging topics and influencers to reach new audiences."
+    button:
+      link: '#'
+      text: 'Analytics'
+  content-left:
+    -
+      icon: 'users_single-02'
+      title: 'Listen to Social Conversations'
+      description: 'Gain access to the demographics, psychographics, and location of unique people who talk about your brand.'
+    -
+      icon: 'business_chart-bar-32'
+      title: 'Listen to Social Conversations 2'
+      description: 'Gain access to the demographics, psychographics, and location of unique people who talk about your brand.'
+    -
+      icon: 'arrows-1_refresh-69'
+      title: 'Listen to Social Conversations 3'
+      description: 'Gain access to the demographics, psychographics, and location of unique people who talk about your brand.'
+
