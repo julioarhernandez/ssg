@@ -1,13 +1,13 @@
-<div class="services-1"  {% if data.id}}id="{{data.id}}"{% endif %}>
-    <div class="{{data.section-class}}">
+<div class="services-1"  {% if include.data.id}}id="{{ include.data.id}}"{% endif %}>
+    <div class="{{ include.data.section-class}}">
         <div class="row">
-            <div class="{{data.block-class}}">
-                <div class="services-1-block {{data.title-block-class}} p-5 -vertical-center">
-                    <h2  class="h6 title text-uppercase m-0 p-0 -vertical-center">{{{data.title}}}</h2>
-                    <span class="h4 subtitle m-0">{{data.subtitle}}</span>
+            <div class="{{ include.data.block-class}}">
+                <div class="services-1-block {{ include.data.title-block-class}} p-5 -vertical-center">
+                    <h2  class="h6 title text-uppercase m-0 p-0 -vertical-center">{{{ include.data.title}}}</h2>
+                    <span class="h4 subtitle m-0">{{ include.data.subtitle}}</span>
                 </div>
             </div>
-            {% for data.items}}
+            {% for include.data.items}}
             <div class="{{../data.block-class}}">
                 <div class="services-1-block text-center p-5">
                     <div class="icon mt-4">

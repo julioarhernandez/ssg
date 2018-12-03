@@ -1,15 +1,15 @@
-<footer class="footer footer-big {% ifequal data.footer-color 'white'}}footer-white{{/ifequal}}" {% ifequal data.footer-color 'black'}}data-background-color="black"{{/ifequal}}  {% if data.id}}id="{{data.id}}"{% endif %}>
+<footer class="footer footer-big {% ifequal include.data.footer-color 'white'}}footer-white{{/ifequal}}" {% ifequal include.data.footer-color 'black'}}data-background-color="black"{{/ifequal}}  {% if include.data.id}}id="{{ include.data.id}}"{% endif %}>
         <div class="container">
           <div class="content">
             <div class="row">
               <div class="col-md-4">
-                <h5>{{data.col1.title}}</h5>
-                {{{data.col1.description}}}
+                <h5>{{ include.data.col1.title}}</h5>
+                {{{ include.data.col1.description}}}
               </div>
               <div class="col-md-4">
-                <h5>{{data.col2.title}}</h5>
+                <h5>{{ include.data.col2.title}}</h5>
                 <div class="social-feed">
-                    {% for data.col2.items %}
+                    {% for include.data.col2.items %}
                     <div class="feed-line">
                         <i class="{{icon}}"></i>
                         <a href="{{href}}">
@@ -20,9 +20,9 @@
                 </div>
               </div>
               <div class="col-md-4">
-                <h5>{{data.col3.title}}</h5>
+                <h5>{{ include.data.col3.title}}</h5>
                 <div class="gallery-feed">
-                  {% for data.col3.items %}
+                  {% for include.data.col3.items %}
                   <img data-img-src="{{src}}" class="img img-raised rounded" alt="{{alt}}" />
                   {% endfor %}
                 </div>
@@ -31,7 +31,7 @@
           </div>
           <hr />
           <ul class="pull-left">
-            {% for data.links %}
+            {% for include.data.links %}
             <li>
                 <a href="//{{href}}">
                 {{text}}
@@ -43,7 +43,7 @@
             Copyright &copy;
             <script>
               document.write(new Date().getFullYear())
-            </script> {{global.name}} All Rights Reserved.
+            </script> {{site.name}} All Rights Reserved.
           </div>
         </div>
       </footer>

@@ -1,14 +1,14 @@
-<div class="testimonials-2 {{data.section-class}}" data-bg-style="{{data.background-image}}"  {% if data.id}}id="{{data.id}}"{% endif %}>
+<div class="testimonials-2 {{ include.data.section-class}}" data-bg-style="{{ include.data.background-image}}"  {% if include.data.id}}id="{{ include.data.id}}"{% endif %}>
         <div class="container">
           <div class="row">
-            <div class="{{data.columnClass}}">
+            <div class="{{ include.data.columnClass}}">
               <div id="carouselExampleIndicators2" class="carousel slide">
                 <ol class="carousel-indicators">
                   <li data-target="#carouselExampleIndicators2" data-slide-to="0" class="active"></li>
                   <li data-target="#carouselExampleIndicators2" data-slide-to="1"></li>
                 </ol>
                 <div class="carousel-inner" role="listbox">
-                {% for data.items}}
+                {% for include.data.items}}
                   <div class="carousel-item {{status}} justify-content-center">
                     <div class="card card-testimonial card-plain">
                       <div class="card-avatar">

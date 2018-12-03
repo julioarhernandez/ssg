@@ -1,11 +1,11 @@
-<footer class="footer footer-big {% ifequal data.footer-color 'white'}}footer-white{{/ifequal}}" {% ifequal data.footer-color 'black'}}data-background-color="black"{{/ifequal}}  {% if data.id}}id="{{data.id}}"{% endif %}>
+<footer class="footer footer-big {% ifequal include.data.footer-color 'white'}}footer-white{{/ifequal}}" {% ifequal include.data.footer-color 'black'}}data-background-color="black"{{/ifequal}}  {% if include.data.id}}id="{{ include.data.id}}"{% endif %}>
         <div class="container">
           <div class="content">
             <div class="row">
                 <div class="col-md-2">
-                <h5>{{data.col1.title}}</h5>
+                <h5>{{ include.data.col1.title}}</h5>
                   <ul class="links-vertical">
-                  {% for data.col1.items %}
+                  {% for include.data.col1.items %}
                   <li>
                     <a href="{{href}}" class="text-muted">
                       {{text}}
@@ -15,9 +15,9 @@
                 </ul>
               </div>
                <div class="col-md-2">
-                <h5>{{data.col2.title}}</h5>
+                <h5>{{ include.data.col2.title}}</h5>
                 <ul class="links-vertical">
-                {% for data.col2.items %}
+                {% for include.data.col2.items %}
                 <li>
                     <a href="{{href}}" class="text-muted">
                     {{text}}
@@ -27,9 +27,9 @@
                 </ul>
               </div>
               <div class="col-md-4">
-                <h5>{{data.col3.title}}</h5>
+                <h5>{{ include.data.col3.title}}</h5>
                 <div class="social-feed">
-                    {% for data.col3.items %}
+                    {% for include.data.col3.items %}
                     <div class="feed-line">
                         <i class="{{icon}}"></i>
                         <a href="{{href}}">
@@ -40,9 +40,9 @@
                 </div>
               </div>
               <div class="col-md-4">
-                <h5>{{data.col4.title}}</h5>
+                <h5>{{ include.data.col4.title}}</h5>
                 <ul class="social-buttons">
-                    {% for global.social %}
+                    {% for site.social %}
                     <li>
                         <a href="{{href}}" target="_blank" class="btn btn-icon btn-neutral btn-round {{btn}}">
                         <i class="fab {{icon}}"></i>
@@ -58,7 +58,7 @@
             Copyright &copy;
             <script>
               document.write(new Date().getFullYear())
-            </script> {{global.name}} All Rights Reserved.
+            </script> {{site.name}} All Rights Reserved.
           </div>
         </div>
       </footer>

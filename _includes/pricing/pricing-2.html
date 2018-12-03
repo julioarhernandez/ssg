@@ -2,15 +2,15 @@
     <div class="container">
       <div class="row">
         <div class="col-md-6 ml-auto mr-auto text-center">
-          <h2 class="title">{{data.title}}</h2>
-          {% if data.description}}
-          <div class="h4 description ">{{data.description}}</div>
+          <h2 class="title">{{ include.data.title}}</h2>
+          {% if include.data.description}}
+          <div class="h4 description ">{{ include.data.description}}</div>
           {% endif %}
           <div class="section-space"></div>
         </div>
       </div>
       <div class="row">
-        {% for data.items}}
+        {% for include.data.items}}
         <div class="{{../data.columnClass}}">
           <div class="card card-pricing {% if raised}}card-background card-raised{{else}}card-plain{% endif %}"{% if background-image}}data-bg-style="{{background-image}}"{% endif %}>
             <div class="card-body">

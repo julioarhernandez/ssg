@@ -1,17 +1,17 @@
-<div class="features-4 features-9 {{data.class}}" {% if data.id}}id="{{data.id}}"{% endif %}>
+<div class="features-4 features-9 {{ include.data.class}}" {% if include.data.id}}id="{{ include.data.id}}"{% endif %}>
         <div class="container">
           <div class="row">
             <div class="col-md-6 col-lg-3">
-              <span class="title text-montserrat text-uppercase">{{data.title}}</span>
-              <h2 class="h3 {{data.subtitle.class}}">{{data.subtitle.text}}</h2>
-              <div class="h4 description">{{data.description}}</div>
-              {% if data.button.active}}
-              <a href="{{data.button.href}}" class="{{data.button.class}}">
-                {{data.button.text}}
+              <span class="title text-montserrat text-uppercase">{{ include.data.title}}</span>
+              <h2 class="h3 {{ include.data.subtitle.class}}">{{ include.data.subtitle.text}}</h2>
+              <div class="h4 description">{{ include.data.description}}</div>
+              {% if include.data.button.active}}
+              <a href="{{ include.data.button.href}}" class="{{ include.data.button.class}}">
+                {{ include.data.button.text}}
               </a>
               {% endif %}
             </div>
-            {% for data.items %}
+            {% for include.data.items %}
             <div class="col-md-6 col-lg-3">
                 <div class="card card-profile card-profile-gay">
                     <div class="card-avatar card-avatar-small">

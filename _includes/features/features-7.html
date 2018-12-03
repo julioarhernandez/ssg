@@ -1,9 +1,9 @@
-<div class="features-7 section-image " data-bg-style="{{data.background-image}}"  {% if data.id}}id="{{data.id}}"{% endif %}>
-  {% if data.header-section}}
+<div class="features-7 section-image " data-bg-style="{{ include.data.background-image}}"  {% if include.data.id}}id="{{ include.data.id}}"{% endif %}>
+  {% if include.data.header-section}}
   <div class="container">
-    <div class="{{data.header-section.class}}">
-      <h2 class="title">{{data.title}}</h2>
-      <div class="h4 description">{{data.description}}</div>
+    <div class="{{ include.data.header-section.class}}">
+      <h2 class="title">{{ include.data.title}}</h2>
+      <div class="h4 description">{{ include.data.description}}</div>
     </div>
   </div>
   {% endif %}
@@ -11,7 +11,7 @@
     <div class="row">
       <div class="col-md-6 px-0">
         <div class="col-sm-12">
-          {% for data.items %}
+          {% for include.data.items %}
           <div class="info info-horizontal">
             <div class="icon">
               <i class="now-ui-icons {{icon-class}}"></i>
@@ -26,7 +26,7 @@
       </div>
       <div class="col-md-6">
         <div class="image-container">
-          <img data-img-src="{{data.image.src}}" alt="{{data.image.alt}}" title="{{data.image.title}}">
+          <img data-img-src="{{ include.data.image.src}}" alt="{{ include.data.image.alt}}" title="{{ include.data.image.title}}">
         </div>
       </div>
     </div>

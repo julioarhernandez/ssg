@@ -1,11 +1,11 @@
-<div class="header-2"  {% if data.id}}id="{{data.id}}"{% endif %}>
+<div class="header-2"  {% if include.data.id}}id="{{ include.data.id}}"{% endif %}>
     <div class="page-header header-filter">
-        <div class="page-header-image" data-bg-style="{{data.background-image}}"></div>
+        <div class="page-header-image" data-bg-style="{{ include.data.background-image}}"></div>
         <div class="container">
         <div class="row">
             <div class="col-md-8 ml-auto mr-auto text-center">
-            <h1 class="title">{{data.title}}</h1>
-            <div class="h4 description">{{data.subtitle}}</div>
+            <h1 class="title">{{ include.data.title}}</h1>
+            <div class="h4 description">{{ include.data.subtitle}}</div>
             </div>
             <div class="col-md-10 ml-auto mr-auto">
             <div class="card card-raised card-form-horizontal card-plain" data-background-color>

@@ -1,13 +1,13 @@
-<div class="features-4" {% if data.id}}id="{{data.id}}"{% endif %}>  
+<div class="features-4" {% if include.data.id}}id="{{ include.data.id}}"{% endif %}>  
         <div class="container">
           <div class="row">
             <div class="col-md-8 ml-auto mr-auto text-center">
-                <h2 class="title">{{data.title}}</h2>
-                <div class="h4 description">{{data.description}}</div>
+                <h2 class="title">{{ include.data.title}}</h2>
+                <div class="h4 description">{{ include.data.description}}</div>
             </div>
           </div>
           <div class="row">
-            {% for data.items %}
+            {% for include.data.items %}
             <div class="col-md-4">
               <div class="card card-background card-raised" data-background-color data-bg-style="{{background-image}}">
                 <div class="info">

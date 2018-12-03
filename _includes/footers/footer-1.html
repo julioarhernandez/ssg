@@ -1,15 +1,15 @@
-<footer class="footer footer-white"  {% if data.id}}id="{{data.id}}"{% endif %}>
+<footer class="footer footer-white"  {% if include.data.id}}id="{{ include.data.id}}"{% endif %}>
         <div class="container">
-          <a class="footer-brand" href="{{data.navbrand.href}}">
-            {% if data.navbrand.src}}
-            <img data-img-src="{{data.navbrand.src}}" width="30" height="30" alt="">
+          <a class="footer-brand" href="{{ include.data.navbrand.href}}">
+            {% if include.data.navbrand.src}}
+            <img data-img-src="{{ include.data.navbrand.src}}" width="30" height="30" alt="">
             {% endif %}
-            {% if data.navbrand.text}}
-            {{data.navbrand.text}}
+            {% if include.data.navbrand.text}}
+            {{ include.data.navbrand.text}}
             {% endif %}
           </a>
           <ul class="pull-center">
-            {% for data.links %}
+            {% for include.data.links %}
             <li>
               <a href="{{href}}" class="nav-link">
                 {{text}}
@@ -19,7 +19,7 @@
           
           </ul>
           <ul class="social-buttons pull-right">
-            {% for global.social %}
+            {% for site.social %}
             <li>
               <a href="{{href}}" target="_blank" class="btn btn-icon btn-neutral">
                 <i class="fab {{icon}}"></i>

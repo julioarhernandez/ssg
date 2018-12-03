@@ -1,11 +1,11 @@
-<div class="features-8 section-image" data-bg-style="{{data.background-image}}"  {% if data.id}}id="{{data.id}}"{% endif %}>
+<div class="features-8 section-image" data-bg-style="{{ include.data.background-image}}"  {% if include.data.id}}id="{{ include.data.id}}"{% endif %}>
   <div class="col-md-8 ml-auto mr-auto text-center">
-    <h2 class="title">{{data.title}}</h2>
-    <div class="h4 description">{{data.description}}</div>
+    <h2 class="title">{{ include.data.title}}</h2>
+    <div class="h4 description">{{ include.data.description}}</div>
   </div>
   <div class="container">
     <div class="row">
-      {% for data.items %}
+      {% for include.data.items %}
       <div class="col-md-3">
         <div class="card">
           <div class="card-image">

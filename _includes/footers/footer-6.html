@@ -1,19 +1,19 @@
-<footer class="footer footer-white footer-big"  {% if data.id}}id="{{data.id}}"{% endif %}>
+<footer class="footer footer-white footer-big"  {% if include.data.id}}id="{{ include.data.id}}"{% endif %}>
         <div class="container">
           <div class="content">
             <div class="row">
               <div class="col-md-3">
-                <a class="" href="//{{global.url}}">
-                    {% if data.navbrand.src}}
-                    <img data-img-src="{{data.navbrand.src}}" width="30" height="30" alt="">
+                <a class="" href="//{{site.url}}">
+                    {% if include.data.navbrand.src}}
+                    <img data-img-src="{{ include.data.navbrand.src}}" width="30" height="30" alt="">
                     {% endif %}
-                    {% if data.navbrand.text}}
-                    <h5>{{data.navbrand.text}}</h5>
+                    {% if include.data.navbrand.text}}
+                    <h5>{{ include.data.navbrand.text}}</h5>
                     {% endif %}
                 </a>
-                {{{data.col1.description}}}
+                {{{ include.data.col1.description}}}
               </div>
-              {% for data.cols %}
+              {% for include.data.cols %}
               <div class="{{class}}">
                 <h5>{{title}}</h5>
                 <ul class="links-vertical">
@@ -28,11 +28,11 @@
               </div>
               {% endfor %}
               <div class="col-md-3">
-                <h5>{{data.newsletter.title}}</h5>
-                {{{data.newsletter.description}}}
+                <h5>{{ include.data.newsletter.title}}</h5>
+                {{{ include.data.newsletter.description}}}
                 <form class="form form-newsletter" method="" action="">
                   <div class="form-group">
-                    <input type="email" class="form-control" placeholder="{{data.newsletter.input.placeholder}}">
+                    <input type="email" class="form-control" placeholder="{{ include.data.newsletter.input.placeholder}}">
                   </div>
                   <button type="button" class="btn btn-primary btn-icon btn-round" name="button">
                     <i class="now-ui-icons ui-1_email-85"></i>
@@ -43,7 +43,7 @@
           </div>
           <hr />
           <ul class="social-buttons">
-            {% for global.social %}
+            {% for site.social %}
             <li>
                 <a href="{{href}}" target="_blank" class="btn btn-icon btn-neutral btn-round {{btn}} btn-lg">
                 <i class="fab {{icon}}"></i>
@@ -55,7 +55,7 @@
             Copyright &copy;
             <script>
               document.write(new Date().getFullYear())
-            </script> {{global.name}} All Rights Reserved.
+            </script> {{site.name}} All Rights Reserved.
           </div>
         </div>
       </footer>

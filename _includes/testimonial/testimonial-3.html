@@ -1,14 +1,14 @@
-<div class="testimonials-3"{% if data.id}} id="{{data.id}}"{% endif %}>
+<div class="testimonials-3"{% if include.data.id}} id="{{ include.data.id}}"{% endif %}>
   <div class="container">
     <div class="row">
-          {% if data.header-section}}      
-      <div class="{{data.columnClass}}">
-        <div class="h2 title">{{data.title}}</div>
+          {% if include.data.header-section}}      
+      <div class="{{ include.data.columnClass}}">
+        <div class="h2 title">{{ include.data.title}}</div>
       </div>
       {% endif %}
     </div>
     <div class="row">
-      {% for data.items}}
+      {% for include.data.items}}
       <div class="{{columnClass}}">
         <div class="{{../data.cardclass}}">
           <div class="card-avatar">

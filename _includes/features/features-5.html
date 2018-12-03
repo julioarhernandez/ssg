@@ -1,11 +1,11 @@
-<div class="features-5"  {% if data.id}}id="{{data.id}}"{% endif %}>
+<div class="features-5"  {% if include.data.id}}id="{{ include.data.id}}"{% endif %}>
         <div class="container">
           <div class="row">
             <div class="col-md-5">
-             {% if data.header-section}}
-              <h2 class="title">{{data.title}}</h2>
+             {% if include.data.header-section}}
+              <h2 class="title">{{ include.data.title}}</h2>
               {% endif %}
-              {% for data.items %}
+              {% for include.data.items %}
               <div class="info info-horizontal">
                 <div class="icon icon-primary icon-circle">
                   <i class="now-ui-icons {{icon}}"></i>
@@ -19,7 +19,7 @@
             </div>
             <div class="col-md-7">
               <div class="tablet-container">
-                <img data-img-src="{{data.image.src}}"  alt="{{image.alt}}" title="{{image.title}}"/>
+                <img data-img-src="{{ include.data.image.src}}"  alt="{{image.alt}}" title="{{image.title}}"/>
               </div>
             </div>
           </div>

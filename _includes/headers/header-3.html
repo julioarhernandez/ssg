@@ -1,7 +1,7 @@
-<div class="header-3"  {% if data.id}}id="{{data.id}}"{% endif %}>
+<div class="header-3"  {% if include.data.id}}id="{{ include.data.id}}"{% endif %}>
         <div id="carouselExampleIndicators" class="carousel slide">
             <ol class="carousel-indicators">
-            {% for data.slider %}
+            {% for include.data.slider %}
             {% if forloop.index %}
             <li data-target="#carouselExampleIndicators" data-slide-to="{{{{ forloop.index }}}}"></li>
             {{else}}
@@ -10,7 +10,7 @@
             {% endfor %}
             </ol>
             <div class="carousel-inner" role="listbox">
-            {% for data.slider %}
+            {% for include.data.slider %}
             {% if forloop.index %}
             <div class="carousel-item">
             {{else}}
@@ -47,7 +47,7 @@
                                     {% if social}}
                                     <div class="h5">{{Connect}}</div>
                                     <div class="buttons">
-                                    {% for ../global.social %}
+                                    {% for ../site.social %}
                                     <a href="{{href}}" class="btn btn-icon btn-neutral btn-danger btn-round mt-2">
                                         <i class="fab {{icon}}"></i>
                                     </a>

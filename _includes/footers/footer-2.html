@@ -1,18 +1,18 @@
- <footer class="footer"  {% if data.id}}id="{{data.id}}"{% endif %}>
+ <footer class="footer"  {% if include.data.id}}id="{{ include.data.id}}"{% endif %}>
     <div class="container">
       <nav>
         <ul>
           <li>
-            <a href="//{{global.url}}" class="nav-link">
-                {% if data.navbrand.src}}
-                <img data-img-src="{{data.navbrand.src}}" width="30" height="30" alt="">
+            <a href="//{{site.url}}" class="nav-link">
+                {% if include.data.navbrand.src}}
+                <img data-img-src="{{ include.data.navbrand.src}}" width="30" height="30" alt="">
                 {% endif %}
-                {% if data.navbrand.text}}
-                {{data.navbrand.text}}
+                {% if include.data.navbrand.text}}
+                {{ include.data.navbrand.text}}
                 {% endif %}
             </a>
           </li>
-          {% for data.links %}
+          {% for include.data.links %}
           <li>
             <a href="//{{href}}" class="nav-link">
               {{text}}

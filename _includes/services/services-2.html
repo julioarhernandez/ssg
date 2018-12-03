@@ -1,7 +1,7 @@
-<div class="services-2"  {% if data.id}}id="{{data.id}}"{% endif %}>
-    <div class="{{data.section-class}}">
+<div class="services-2"  {% if include.data.id}}id="{{ include.data.id}}"{% endif %}>
+    <div class="{{ include.data.section-class}}">
         <div class="row">
-            {% for data.items}}
+            {% for include.data.items}}
             <div class="{{../data.block-class}}">
                 <div class="services-1-block text-center text-md-left py-5 px-4 px-md-5 d-flex flex-column flex-md-row">
                     <div class="left icon">

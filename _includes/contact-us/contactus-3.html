@@ -1,10 +1,10 @@
-<div class="contactus-1 contactus-3 section-image" data-bg-style="{{data.image}}"  {% if data.id}}id="{{data.id}}"{% endif %}>
+<div class="contactus-1 contactus-3 section-image" data-bg-style="{{ include.data.image}}"  {% if include.data.id}}id="{{ include.data.id}}"{% endif %}>
     <div class="container">
       <div class="row">
-          {% if data.header-section}}        
-          <div class="{{data.contentleft}}">
-            <h2 class="title">{{data.title}}</h2>
-            <div class="h4 description {{data.description-class}}">{{data.description}}</div>
+          {% if include.data.header-section}}        
+          <div class="{{ include.data.contentleft}}">
+            <h2 class="title">{{ include.data.title}}</h2>
+            <div class="h4 description {{ include.data.description-class}}">{{ include.data.description}}</div>
           </div>
           {% endif %}
           {% for contactus-3.content %}

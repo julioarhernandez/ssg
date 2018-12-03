@@ -1,16 +1,16 @@
-<div class="features-6"  {% if data.id}}id="{{data.id}}"{% endif %}>
+<div class="features-6"  {% if include.data.id}}id="{{ include.data.id}}"{% endif %}>
         <div class="container">
           <div class="row">
             <div class="col-md-8 ml-auto mr-auto text-center">
-                {% if data.header-section}}
-              <h2 class="title">{{data.title}}</h2>
-              <div class="h4 description">{{data.description}}</div>
+                {% if include.data.header-section}}
+              <h2 class="title">{{ include.data.title}}</h2>
+              <div class="h4 description">{{ include.data.description}}</div>
                 {% endif %}
             </div>
           </div>
           <div class="row">
             <div class="col-md-4">
-            {% for data.items-left %}
+            {% for include.data.items-left %}
               <div class="info info-horizontal">
                 <div class="icon {{icon-color}}">
                   <i class="now-ui-icons {{icon-class}}"></i>
@@ -24,11 +24,11 @@
             </div>
             <div class="col-md-4">
               <div class="phone-container">
-                <img data-img-src="{{data.image.src}}" alt="{{image.alt}}" title="{{image.title}}"/>
+                <img data-img-src="{{ include.data.image.src}}" alt="{{image.alt}}" title="{{image.title}}"/>
               </div>
             </div>
             <div class="col-md-4">
-            {% for data.items-right %}
+            {% for include.data.items-right %}
               <div class="info info-horizontal">
                 <div class="icon {{icon-color}}">
                   <i class="now-ui-icons {{icon-class}}"></i>

@@ -1,54 +1,54 @@
-<div class="contactus-2" data-bg-style="{{data.background-image}}"  {% if data.id}}id="{{data.id}}"{% endif %}>
+<div class="contactus-2" data-bg-style="{{ include.data.background-image }}"  {% if include.data.id %}id="{{ include.data.id}}"{% endif %}>
     <div id="contactUsMap" class="map"></div>
     <div class="col-lg-6 col-md-10">
       <div class="card card-contact card-raised">
-        <form role="form" id="contact-form" data-js="contact-submit" method="post" action="{{global.post-action}}">
-          <input type="hidden" name="_to" value="{{global.encrypted-email}}">
+        <form role="form" id="contact-form" data-js="contact-submit" method="post" action="{{site.site.post-action}}">
+          <input type="hidden" name="_to" value="{{site.encrypted-email}}">
           <div class="card-header text-center">
-            <h2 class="h4 card-title">{{data.title}}</h2>
+            <h2 class="h4 card-title">{{ include.data.title}}</h2>
           </div>
           <div class="card-body">
             <div class="row">
               <div class="col-md-6">
                 <div class="info info-horizontal">
                   <div class="icon icon-primary">
-                    <i class="now-ui-icons {{data.phone-info.icon}}"></i>
+                    <i class="now-ui-icons {{ include.data.phone-info.icon}}"></i>
                   </div>
                   <div class="description">
-                    <h3 class="h5 info-title">{{data.phone-info.title}}</h3>
-                    <p>{{{data.phone-info.content}}}</p>
+                    <h3 class="h5 info-title">{{ include.data.phone-info.title}}</h3>
+                    <p>{{{ include.data.phone-info.content}}}</p>
                   </div>
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="info info-horizontal">
                   <div class="icon icon-primary">
-                    <i class="now-ui-icons {{data.address-info.icon}}"></i>
+                    <i class="now-ui-icons {{ include.data.address-info.icon}}"></i>
                   </div>
                   <div class="description">
-                    <div class="h5 info-title">{{data.address-info.title}}</div>
-                    <p>{{{data.address-info.content}}}</p>
+                    <div class="h5 info-title">{{ include.data.address-info.title}}</div>
+                    <p>{{{ include.data.address-info.content}}}</p>
                   </div>
                 </div>
               </div>
             </div>
             <div class="row">
               <div class="col-md-6 pr-2">
-                <label>{{data.form-name.label}}</label>
+                <label>{{ include.data.form-name.label}}</label>
                 <div class="input-group">
                   <div class="input-group-prepend">
                     <span class="input-group-text"><i class="now-ui-icons users_circle-08"></i></span>
                   </div>
-                  <input type="text" name="name" class="form-control" placeholder="{{data.form-name.placeholder}}" autocomplete="given-name">
+                  <input type="text" name="name" class="form-control" placeholder="{{ include.data.form-name.placeholder}}" autocomplete="given-name">
                 </div>
               </div>
               <div class="col-md-6 pl-2">
-                <label>{{data.form-email.label}}</label>
+                <label>{{ include.data.form-email.label}}</label>
                 <div class="input-group">
                   <div class="input-group-prepend">
                     <span class="input-group-text"><i class="now-ui-icons ui-1_email-85"></i></span>
                   </div>
-                  <input type="email" name="email" class="form-control" placeholder="{{data.form-email.placeholder}}" autocomplete="email">
+                  <input type="email" name="email" class="form-control" placeholder="{{ include.data.form-email.placeholder}}" autocomplete="email">
                 </div>
               </div>
             </div>
@@ -58,12 +58,12 @@
                   <label class="form-check-label">
                     <input class="form-check-input" type="checkbox">
                     <span class="form-check-sign"></span>
-                    {{data.check}}
+                    {{ include.data.check}}
                   </label>
                 </div>
               </div>
               <div class="col-md-6">
-                <button type="submit" class="btn {{data.form-submit.class}} btn-round pull-right">{{data.form-submit.text}}</button>
+                <button type="submit" class="btn {{ include.data.form-submit.class}} btn-round pull-right">{{ include.data.form-submit.text}}</button>
               </div>
             </div>
               <div class="row">
@@ -73,7 +73,7 @@
                       <div class="alert-icon">
                         <i class="now-ui-icons ui-2_like"></i>
                       </div>
-                      {{{data.messages.success}}}
+                      {{{ include.data.messages.success}}}
                       <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                         <span aria-hidden="true">
                           <i class="now-ui-icons ui-1_simple-remove"></i>
@@ -86,7 +86,7 @@
                       <div class="alert-icon">
                         <i class="now-ui-icons objects_support-17"></i>
                       </div>
-                      {{{data.messages.error}}}
+                      {{{ include.data.messages.error}}}
                       <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                         <span aria-hidden="true">
                           <i class="now-ui-icons ui-1_simple-remove"></i>
