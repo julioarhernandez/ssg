@@ -12,7 +12,7 @@
       <div class="row">
         {% for include.data.items}}
         <div class="{{../data.columnClass}}">
-          <div class="card card-pricing {% if raised}}card-background card-raised{{else}}card-plain{% endif %}"{% if background-image}}data-bg-style="{{background-image}}"{% endif %}>
+          <div class="card card-pricing {% if raised}}card-background card-raised{{% else %}}card-plain{% endif %}"{% if background-image}}data-bg-style="{{background-image}}"{% endif %}>
             <div class="card-body">
               <h3 class="h5 category">Enterprise</h3>
               <h1 class="card-title">

@@ -10,8 +10,8 @@
         {% for include.data.items %}
         <div class="col-md-4">
           <div class="info">
-            <div class="icon {% if icon-color}}{{icon-color}}{{else}}icon-primary{% endif %} icon-circle">
-              <i class="now-ui-icons {% if icon-type}}{{icon-type}}{{else}}users_single-02{% endif %}"></i>
+            <div class="icon {% if icon-color}}{{icon-color}}{{% else %}}icon-primary{% endif %} icon-circle">
+              <i class="now-ui-icons {% if icon-type}}{{icon-type}}{{% else %}}users_single-02{% endif %}"></i>
             </div>
             <h3 class="h4 info-title">{{title}}</h3>
             <p class="description">{{description}}</p>
