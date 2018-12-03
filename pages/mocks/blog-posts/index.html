@@ -1,19 +1,16 @@
 ---
-layout: mocks
-meta-data: 
-    meta-description: "La publicidad es de vital importancia para cualquier negocio. Una presencia online profesional y equilibrada es la mejor oportunidad para mostrarle a tus clientes potenciales que tu tienes el producto o servicio que ellos necesitan. En Bizmarketing.us te ayudamos a posicionar positivamente tu negocio"
-    meta-title: "titulo de pagina indexes"
-    google-fonts: 
-    -
-        'Montserrat:400,700,200'
-    - 
-        'Open Sans Condensed:700'
-    - 
-        'Abril Fatface'
+layout: default.1
+metas:
+    title: "Page title asdasd"
+    description: "long desriptoin for decriscj sfd asdasd"
+    page: 
+        - "data-article.json"
+        - "data-corporation.json"
+permalink: /mocks/blog-posts/
 ---
-{{>separator text="blogposts-1"}}
-{{>blogposts-1 data=blogposts-1}}
-{{>separator text="blogposts-2"}}
-{{>blogposts-2 data=blogposts-2}}
-{{>separator text="latest-blogspots-5"}}
-{{>latest-blogspots-5 data=latest-blogspots-5}}
+{% include separators/separator.html text="blogposts-1" %}
+{% include blog-posts/blogposts-1.html data=site.data.mocks.blog-posts.blogposts-1 %}
+{% include separators/separator.html text="blogposts-2" %}
+{% include blog-posts/blogposts-2.html data=site.data.mocks.blog-posts.blogposts-2 %}
+{% include separators/separator.html text="latest-blogspots-5" %}
+{% include blog-posts/latest-blogspots-5.html data=site.data.mocks.blog-posts.latest-blogspots-5 %}

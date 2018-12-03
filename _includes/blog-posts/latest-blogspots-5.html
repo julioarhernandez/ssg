@@ -1,39 +1,39 @@
-<div class="blogs-5" data-background-color="gray"{% if data.id}} id="{{data.id}}"{% endif %}>
+<div class="blogs-5" data-background-color="gray"{% if include.data.id %} id="{{include.data.id}}"{% endif %}>
     <div class="container">
       <div class="row">
         <div class="col-md-10 ml-auto mr-auto">
-          {% if data.header-section}}
+          {% if include.data.header-section %}
           <div class="row">
             <div class="col-md-8 ml-auto mr-auto text-center">
-                <h2 class="title">{{data.title}}</h2>
-                <div class="h4 description">{{data.description}}</div>
+                <h2 class="title">{{include.data.title}}</h2>
+                <div class="h4 description">{{include.data.description}}</div>
             </div>
           </div>
           {% endif %}
           <div class="row">
-            {% for data.items}}
+            {% for item in include.data.items %}
             <div class="col-md-4">
               <div class="card card-blog">
                 <div class="card-image">
-                  <a href="{{link}}">
-                    <img class="img rounded" data-img-src="{{image.src}}" alt="{{image.alt}}" title="{{image.title}}">
+                  <a href="{{ item.link}}">
+                    <img class="img rounded" data-img-src="{{ item.image.src}}" alt="{{ item.image.alt}}" title="{{ item.image.title}}">
                   </a>
                 </div>
                 <div class="card-body">
-                  <div class="h6 category text-primary">{{subtitle}}</div>
+                  <div class="h6 category text-primary">{{ item.subtitle}}</div>
                   <div class="h5 card-title">
-                    {{title}}
+                    {{ item.title}}
                   </div>
                   <p class="card-description">
-                    {{description}}
+                    {{ item.description}}
                   </p>
                   <div class="card-footer">
                     <div class="author">
-                      <img data-img-src="{{footer-left-image.src}}" alt="{{footer-left-image.alt}}" title="{{footer-left-image.title}}" class="avatar img-raised">
-                      <span>{{footer-left-text}}</span>
+                      <img data-img-src="{{ item.footer-left-image.src}}" alt="{{ item.footer-left-image.alt}}" title="{{ item.footer-left-image.title}}" class="avatar img-raised">
+                      <span>{{ item.footer-left-text}}</span>
                     </div>
                     <div class="stats stats-right">
-                      <i class="now-ui-icons {{footer-right-icon}}"></i> {{footer-right-text}}
+                      <i class="now-ui-icons {{ item.footer-right-icon}}"></i> {{ item.footer-right-text}}
                     </div>
                   </div>
                 </div>

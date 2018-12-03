@@ -1,0 +1,37 @@
+<div class="team-1"  {% if include.data.id %}id="{{include.data.id}}"{% endif %}>
+    <div class="container">
+      {% if include.data.header-section %}
+      <div class="row">
+        <div class="col-md-8 ml-auto mr-auto text-center">
+          <h2 class="title">{{include.data.title}}</h2>
+          <div class="h4 description">{{include.data.description}}</div>
+        </div>
+      </div>
+      {% endif %}
+      <div class="row justify-content-center">
+        {% for item in include.data.items %}
+        <div class="col-md-4 ml-1 mr-1">
+          <div class="card card-profile card-plain">
+            <div class="card-avatar">
+              <a href="{{item.link}}">
+                <img class="img img-raised" data-img-src="{{item.image.src}}" alt="{{item.image.alt}}" title="{{item.image.title}}"/>
+              </a>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">{{item.title}}</h3>
+              <div class="h6 category text-primary">{{item.subtitle}}</div>
+              <p class="card-description">
+                {{item.description}}
+              </p>
+              <div class="card-footer">
+                {% for icon in item.icons %}
+                <a href="{{icon.link}}" class="btn btn-icon btn-primary btn-round"><i class="{{icon.class}}"></i></a>
+                {% endfor %}
+              </div>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>

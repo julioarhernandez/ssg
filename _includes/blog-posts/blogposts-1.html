@@ -1,32 +1,32 @@
 <div class="blogs-1" id="blogs-1">
   <div class="container">
     <div class="row">
-      {% if data.header-section}}
-      <h2 class="title">{{data.title}}</h2>
+      {% if include.data.header-section %}
+      <h2 class="title">{{include.data.title}}</h2>
       {% endif %}
       <div class="col-md-10 ml-auto mr-auto">
         <br />
         <div class="card card-plain card-blog">
-          {% for data.first-row}}
+          {% for item in include.data.first-row %}
           <div class="row">
             <div class="col-md-5">
               <div class="card-image">
-                <img class="img img-raised rounded" data-img-src="{{image.src}}" alt="{{image.alt}}" title="{{image.title}}" />
+                <img class="img img-raised rounded" data-img-src="{{ item.image.src}}" alt="{{ item.image.alt}}" title="{{ item.image.title}}" />
               </div>
             </div>
             <div class="col-md-7">
-              <div class="h6 category {{class}}">{{subtitle}}</div>
+              <div class="h6 category {{ item.class}}">{{ item.subtitle}}</div>
               <h3 class="card-title">
-                <a href="{{link}}">{{title}}</a>
+                <a href="{{ item.link}}">{{ item.title}}</a>
               </h3>
               <p class="card-description">
-                {{description}}
-                <a href="{{link}}">{{more-title}} </a>
+                {{ item.description}}
+                <a href="{{ item.link}}">{{ item.more-title}} </a>
               </p>
-              <p class="{{author}}">
+              <p class="{{ item.author}}">
                 by
-                <a href="{{link-author}}">
-                  <b>{{author}}</b>
+                <a href="{{ item.link-author}}">
+                  <b>{{ item.author}}</b>
                 </a>, 2 days ago
                 </a>
             </div>
@@ -34,29 +34,29 @@
           {% endfor %}
         </div>
         <div class="card card-plain card-blog">
-          {% for data.second-row}}
+          {% for item in include.data.second-row %}
           <div class="row">
             <div class="col-md-7">
-              <div class="h6 category {{class}}">
-                <i class="now-ui-icons now-ui-icons {{icon}}"></i> {{subtitle}}
+              <div class="h6 category {{ item.class}}">
+                <i class="now-ui-icons now-ui-icons {{ item.icon}}"></i> {{ item.subtitle}}
               </div>
               <h3 class="card-title">
-                <a href="{{link}}">{{title}}</a>
+                <a href="{{ item.link}}">{{ item.title}}</a>
               </h3>
               <p class="card-description">
-                {{description}}
-                <a href="{{link-more}}"> {{more-title}} </a>
+                {{ item.description}}
+                <a href="{{ item.link-more}}"> {{ item.more-title}} </a>
               </p>
               <p class="author">
                 by
-                <a href="{{link}}">
-                  <b>{{author}}</b>
+                <a href="{{ item.link}}">
+                  <b>{{ item.author}}</b>
                 </a>, 5 days ago
                 </a>
             </div>
             <div class="col-md-5">
               <div class="card-image">
-                <img class="img img-raised rounded" data-img-src="{{image.src}}" alt="{{image.alt}}" title="{{image.title}}" />
+                <img class="img img-raised rounded" data-img-src="{{ item.image.src}}" alt="{{ item.image.alt}}" title="{{ item.image.title}}" />
               </div>
             </div>
           </div>

@@ -2,27 +2,27 @@
   <div class="container">
     <div class="row">
       <div class="col-md-10 ml-auto mr-auto">
-        {% if data.header-section}}
+        {% if include.data.header-section %}
         <h2 class="title">Latest Blogposts 2</h2>
         {% endif %}
         <br />
         <div class="row justify-content-center">
-          {% for data.first-row}}
+          {% for item in include.data.first-row %}
           <div class="col-md-5">
             <div class="card card-plain card-blog">
               <div class="card-image">
-                <a href="{{link}}">
-                  <img class="img img-raised rounded" data-img-src="{{image.src}}" alt="{{image.alt}}" title="{{image.title}}"/>
+                <a href="{{ item.link}}">
+                  <img class="img img-raised rounded" data-img-src="{{ item.image.src}}" alt="{{ item.image.alt}}" title="{{ item.image.title}}"/>
                 </a>
               </div>
               <div class="card-body">
-                <div class="h6 category {{class}}">{{subtitle}}</div>
+                <div class="h6 category {{ item.class}}">{{ item.subtitle}}</div>
                 <h3 class="h5 card-title">
-                  <a href="{{link}}">{{title}}</a>
+                  <a href="{{ item.link}}">{{ item.title}}</a>
                 </h3>
                 <p class="card-description">
-                  {{description}}
-                  <a href="{{link-more}}">{{more-title}}</a>
+                  {{ item.description}}
+                  <a href="{{ item.link-more}}">{{ item.more-title}}</a>
                 </p>
               </div>
             </div>
@@ -30,7 +30,7 @@
           {% endfor %}
         </div>
         <div class="row justify-content-center">
-          {% for data.second-row}}
+          {% for include.data.second-row %}
           <div class="col-md-5">
             <div class="card card-plain card-blog">
               <div class="card-image">
