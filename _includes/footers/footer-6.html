@@ -11,7 +11,7 @@
                     <h5>{{ include.data.navbrand.text}}</h5>
                     {% endif %}
                 </a>
-                {{{ include.data.col1.description}}}
+                {{ include.data.col1.description}}
               </div>
               {% for include.data.cols %}
               <div class="{{class}}">
@@ -29,7 +29,7 @@
               {% endfor %}
               <div class="col-md-3">
                 <h5>{{ include.data.newsletter.title}}</h5>
-                {{{ include.data.newsletter.description}}}
+                {{ include.data.newsletter.description}}
                 <form class="form form-newsletter" method="" action="">
                   <div class="form-group">
                     <input type="email" class="form-control" placeholder="{{ include.data.newsletter.input.placeholder}}">

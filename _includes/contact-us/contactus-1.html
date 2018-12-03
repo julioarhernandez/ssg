@@ -13,7 +13,7 @@
             </div>
             <div class="description">
               <h3 class="h4 info-title">{{contact.title}}</h3>
-              <p class="description"> {{contact.{description}}}
+              <p class="description"> {{contact.{description}}
               </p>
             </div>
           </div>
@@ -72,7 +72,7 @@
                     </div>
                   </div>
                   <div class="col-md-6">
-                    <button type="submit" class="btn {% if contactus-1.content-right.submit.class}}{{include.data.content-right.submit.class}}{{else}}btn-primary{% endif %} btn-round pull-right" aria-label="{{include.data.content-right.submit.aria}}">{{include.data.content-right.submit.text}}</button>
+                    <button type="submit" class="btn {% if include.data.contactus-1.content-right.submit.class %}{{include.data.content-right.submit.class}}{%else%}btn-primary{% endif %} btn-round pull-right" aria-label="{{include.data.content-right.submit.aria}}">{{include.data.content-right.submit.text}}</button>
                   </div>
                 </div>
               </div>

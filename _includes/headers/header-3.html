@@ -3,9 +3,9 @@
             <ol class="carousel-indicators">
             {% for include.data.slider %}
             {% if forloop.index %}
-            <li data-target="#carouselExampleIndicators" data-slide-to="{{{{ forloop.index }}}}"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="{{{ forloop.index }}}"></li>
             {{else}}
-            <li data-target="#carouselExampleIndicators" data-slide-to="{{{{ forloop.index }}}}" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="{{{ forloop.index }}}" class="active"></li>
             {% endif %}
             {% endfor %}
             </ol>
