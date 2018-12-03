@@ -1,7 +1,7 @@
 <div class="header-3"  {% if include.data.id %}id="{{ include.data.id}}"{% endif %}>
         <div id="carouselExampleIndicators" class="carousel slide">
             <ol class="carousel-indicators">
-            {% for include.data.slider %}
+            {% for item in include.data.slider %}
             {% if forloop.index %}
             <li data-target="#carouselExampleIndicators" data-slide-to="{{{ forloop.index }}}"></li>
             {% else %}
@@ -10,7 +10,7 @@
             {% endfor %}
             </ol>
             <div class="carousel-inner" role="listbox">
-            {% for include.data.slider %}
+            {% for item in include.data.slider %}
             {% if forloop.index %}
             <div class="carousel-item">
             {% else %}

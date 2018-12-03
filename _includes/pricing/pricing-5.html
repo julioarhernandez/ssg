@@ -21,7 +21,7 @@
         <div class="tab-content tab-space">
           <div class="tab-pane active" id="personal">
             <div class="row">
-              {% for include.data.tab-one}}
+              {% for item in include.data.tab-one}}
               <div class="{{tab-class}}">
                 <div class="card card-pricing {{card-class}}">
                   <div class="card-body">
@@ -43,7 +43,7 @@
           </div>
           <div class="tab-pane" id="commercial">
             <div class="row">
-                {% for include.data.tab-two}}
+                {% for item in include.data.tab-two}}
                 <div class="{{tab-class}}">
                   <div class="card card-pricing {{card-class}}">
                     <div class="card-body">

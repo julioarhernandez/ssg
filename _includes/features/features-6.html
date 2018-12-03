@@ -10,7 +10,7 @@
           </div>
           <div class="row">
             <div class="col-md-4">
-            {% for include.data.items-left %}
+            {% for item in include.data.items-left %}
               <div class="info info-horizontal">
                 <div class="icon {{icon-color}}">
                   <i class="now-ui-icons {{icon-class}}"></i>
@@ -28,7 +28,7 @@
               </div>
             </div>
             <div class="col-md-4">
-            {% for include.data.items-right %}
+            {% for item in include.data.items-right %}
               <div class="info info-horizontal">
                 <div class="icon {{icon-color}}">
                   <i class="now-ui-icons {{icon-class}}"></i>

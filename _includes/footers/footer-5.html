@@ -5,7 +5,7 @@
                 <div class="col-md-2">
                 <h5>{{ include.data.col1.title}}</h5>
                   <ul class="links-vertical">
-                  {% for include.data.col1.items %}
+                  {% for item in include.data.col1.items %}
                   <li>
                     <a href="{{href}}" class="text-muted">
                       {{text}}
@@ -17,7 +17,7 @@
                <div class="col-md-2">
                 <h5>{{ include.data.col2.title}}</h5>
                 <ul class="links-vertical">
-                {% for include.data.col2.items %}
+                {% for item in include.data.col2.items %}
                 <li>
                     <a href="{{href}}" class="text-muted">
                     {{text}}
@@ -29,7 +29,7 @@
               <div class="col-md-4">
                 <h5>{{ include.data.col3.title}}</h5>
                 <div class="social-feed">
-                    {% for include.data.col3.items %}
+                    {% for item in include.data.col3.items %}
                     <div class="feed-line">
                         <i class="{{icon}}"></i>
                         <a href="{{href}}">
