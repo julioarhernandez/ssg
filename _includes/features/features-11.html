@@ -1,40 +1,40 @@
-<div class="features-4 features-11 {{ include.data.class}}" data-bg-style="{{ include.data.background-image}}"  {% if include.data.id %}id="{{ include.data.id}}"{% endif %}>
+<div class="features-4 features-11 {{ include.data.class }}" data-bg-style="{{ include.data.background-image }}"  {% if include.data.id %}id="{{ include.data.id}}"{% endif %}>
     <div class="container">
       <div class="row">
           <div class="col-md-8 ml-auto mr-auto text-center">
-            <div class="h6 text-muted {{ include.data.subtitle-class}}">{{ include.data.subtitle}}</div>
-            <h2 class="title {{ include.data.title-class}}">{{ include.data.title}}</h2>
-            <div class="h5 description {{ include.data.description-class}}">{{ include.data.description}}</div>
+            <div class="h6 text-muted {{ include.data.subtitle-class}}">{{ include.data.subtitle }}</div>
+            <h2 class="title {{ include.data.title-class}}">{{ include.data.title }}</h2>
+            <div class="h5 description {{ include.data.description-class}}">{{ include.data.description }}</div>
             <div class="section-space"></div>
           </div>
       </div>
       <div class="row">
         {% for item in include.data.items %}
         <div class="col-md-6 col-lg-3">
-            <div class="card card-profile card-profile-gay-2" data-bg-style="{{background-image}}">
+            <div class="card card-profile card-profile-gay-2" data-bg-style="{{ item.background-image }}">
                 <div class="card-avatar card-avatar-extra-small">
-                  <a href="{{link.href}}">
-                    <img class="img img-raised" data-img-src="{{image.src}}" alt="{{image.alt}}" title="{{image.title}}"/>
+                  <a href="{{ item.link.href }}">
+                    <img class="img img-raised" data-img-src="{{ item.image.src }}" alt="{{ item.image.alt }}" title="{{ item.image.title}}"/>
                   </a>
                 </div>
                 <div class="card-body">
-                  <h3 class="h4 text-montserrat text-uppercase mb-1">{{title}}</h3>
-                  <div class="h6 category {{subtitle-class}}">{{subtitle}}</div>
-                  {% if description}}
+                  <h3 class="h4 text-montserrat text-uppercase mb-1">{{ item.title }}</h3>
+                  <div class="h6 category {{ item.subtitle-class}}">{{ item.subtitle }}</div>
+                  {% if item.description %}
                   <p class="card-description">
-                    {{description}}
+                    {{ item.description }}
                   </p>
                   {% endif %}
-                  {% if items}}
+                  {% if item.items %}
                     <ul class="nc-icon-ul">
-                      {% for items %}
-                      <li class="mb-1"><i class="now-ui-icons circle"></i>{{text}}</li>
+                      {% for item in items %}
+                      <li class="mb-1"><i class="now-ui-icons circle"></i>{{item.text}}</li>
                       {% endfor %}
                     </ul>
                   {% endif %}
-                  {% if button}}
+                  {% if item.button %}
                   <div class="card-footer">
-                    <a href="{{link.href}}" class="{{link.class}}"><i class="{{link.icon-class}}"></i>{{link.text}}</a>
+                    <a href="{{item.link.href}}" class="{{item.link.class}}"><i class="{{item.link.icon-class}}"></i>{{item.link.text}}</a>
                   </div>
                   {% endif %}
                 </div>

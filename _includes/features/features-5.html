@@ -2,24 +2,24 @@
         <div class="container">
           <div class="row">
             <div class="col-md-5">
-             {% if include.data.header-section}}
-              <h2 class="title">{{ include.data.title}}</h2>
+             {% if include.data.header-section %}
+              <h2 class="title">{{ include.data.title }}</h2>
               {% endif %}
               {% for item in include.data.items %}
               <div class="info info-horizontal">
                 <div class="icon icon-primary icon-circle">
-                  <i class="now-ui-icons {{icon}}"></i>
+                  <i class="now-ui-icons {{ item.icon}}"></i>
                 </div>
                 <div class="description">
-                  <h3 class="h4 info-title">{{title}}</h3>
-                  <p>{{description}}</p>
+                  <h3 class="h4 info-title">{{ item.title }}</h3>
+                  <p>{{ item.description }}</p>
                 </div>
               </div>
               {% endfor %}
             </div>
             <div class="col-md-7">
               <div class="tablet-container">
-                <img data-img-src="{{ include.data.image.src}}"  alt="{{image.alt}}" title="{{image.title}}"/>
+                <img data-img-src="{{ include.data.image.src}}"  alt="{{include.data.image.alt}}" title="{{include.data.image.title}}"/>
               </div>
             </div>
           </div>

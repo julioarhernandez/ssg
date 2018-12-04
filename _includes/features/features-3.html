@@ -1,20 +1,20 @@
-<div class="features-3"  {% if include.data.id %}id="{{ include.data.id}}"{% endif %}>
+<div class="features-3"  {% if include.data.id %}id="{{ include.data.id }}"{% endif %}>
         <div class="container">
           <div class="row">
             <div class="col-md-8 ml-auto mr-auto">
-                <h2 class="title">{{ include.data.title}}</h2>
-                <div class="h4 description">{{ include.data.description}}</div>
+                <h2 class="title">{{ include.data.title }}</h2>
+                <div class="h4 description">{{ include.data.description }}</div>
             </div>
           </div>
           <div class="row">
             {% for item in include.data.items %}
             <div class="col-md-4">
               <div class="info info-hover">
-                <div class="icon {% if icon-color}}{{icon-color}}{% else %}icon-sucess{% endif %} icon-circle">
-                  <i class="now-ui-icons {% if icon-type}}{{icon-type}}{% else %}objects_globe{% endif %}"></i>
+                <div class="icon {% if item.icon-color %}{{ item.icon-color}}{% else %}icon-sucess{% endif %} icon-circle">
+                  <i class="now-ui-icons {% if icon-type %}{{ item.icon-type}}{% else %}objects_globe{% endif %}"></i>
                 </div>
-                <h3 class="h4 info-title">{{title}}</h3>
-                <p class="description">{{description}}</p>
+                <h3 class="h4 info-title">{{ item.title}}</h3>
+                <p class="description">{{ item.description}}</p>
               </div>
             </div>
             {% endfor %}

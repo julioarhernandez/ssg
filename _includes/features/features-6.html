@@ -2,22 +2,22 @@
         <div class="container">
           <div class="row">
             <div class="col-md-8 ml-auto mr-auto text-center">
-                {% if include.data.header-section}}
+              {% if include.data.header-section %}
               <h2 class="title">{{ include.data.title}}</h2>
-              <div class="h4 description">{{ include.data.description}}</div>
-                {% endif %}
+              <div class="h4 description">{{ include.data.description }}</div>
+              {% endif %}
             </div>
           </div>
           <div class="row">
             <div class="col-md-4">
             {% for item in include.data.items-left %}
               <div class="info info-horizontal">
-                <div class="icon {{icon-color}}">
-                  <i class="now-ui-icons {{icon-class}}"></i>
+                <div class="icon {{item.icon-color}}">
+                  <i class="now-ui-icons {{item.icon-class}}"></i>
                 </div>
                 <div class="description">
-                  <h3 class="h5 info-title">{{title}}</h3>
-                  <p>{{description}}</p>
+                  <h3 class="h5 info-title">{{item.title}}</h3>
+                  <p>{{item.description}}</p>
                 </div>
               </div>
               {% endfor %}
@@ -30,12 +30,12 @@
             <div class="col-md-4">
             {% for item in include.data.items-right %}
               <div class="info info-horizontal">
-                <div class="icon {{icon-color}}">
-                  <i class="now-ui-icons {{icon-class}}"></i>
+                <div class="icon {{item.icon-color}}">
+                  <i class="now-ui-icons {{item.icon-class}}"></i>
                 </div>
                 <div class="description">
-                  <h3 class="h5 info-title">{{title}}</h3>
-                  <p>{{description}}</p>
+                  <h3 class="h5 info-title">{{item.title}}</h3>
+                  <p>{{item.description}}</p>
                 </div>
               </div>
             {% endfor %}

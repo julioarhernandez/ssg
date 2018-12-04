@@ -1,7 +1,7 @@
 <div class="features-8 section-image" data-bg-style="{{ include.data.background-image}}"  {% if include.data.id %}id="{{ include.data.id}}"{% endif %}>
   <div class="col-md-8 ml-auto mr-auto text-center">
-    <h2 class="title">{{ include.data.title}}</h2>
-    <div class="h4 description">{{ include.data.description}}</div>
+    <h2 class="title">{{ include.data.title }}</h2>
+    <div class="h4 description">{{ include.data.description }}</div>
   </div>
   <div class="container">
     <div class="row">
@@ -9,14 +9,14 @@
       <div class="col-md-3">
         <div class="card">
           <div class="card-image">
-            <img data-img-src="{{image.src}}" class="rounded" alt="{{image.alt}}" title="{{image.title}}">
+            <img data-img-src="{{item.image.src}}" class="rounded" alt="{{item.image.alt}}" title="{{item.image.title}}">
           </div>
           <div class="info text-center">
             <div class="icon">
-              <i class="now-ui-icons {% if icon-type}}{{icon-type}}{% endif %}"></i>
+              <i class="now-ui-icons {% if item.icon-type %}{{item.icon-type}}{% endif %}"></i>
             </div>
-            <h3 class="h4 info-title">{{title}}</h3>
-            <p class="description">{{description}}</p>
+            <h3 class="h4 info-title">{{item.title}}</h3>
+            <p class="description">{{item.description}}</p>
           </div>
         </div>
       </div>

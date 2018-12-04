@@ -1,12 +1,12 @@
-<div class="features-4 features-9 {{ include.data.class}}" {% if include.data.id %}id="{{ include.data.id}}"{% endif %}>
+<div class="features-4 features-9 {{ include.data.class }}" {% if include.data.id %}id="{{ include.data.id}}"{% endif %}>
         <div class="container">
           <div class="row">
             <div class="col-md-6 col-lg-3">
-              <span class="title text-montserrat text-uppercase">{{ include.data.title}}</span>
-              <h2 class="h3 {{ include.data.subtitle.class}}">{{ include.data.subtitle.text}}</h2>
-              <div class="h4 description">{{ include.data.description}}</div>
-              {% if include.data.button.active}}
-              <a href="{{ include.data.button.href}}" class="{{ include.data.button.class}}">
+              <span class="title text-montserrat text-uppercase">{{ include.data.title }}</span>
+              <h2 class="h3 {{ include.data.subtitle.class}}">{{ include.data.subtitle.text }}</h2>
+              <div class="h4 description">{{ include.data.description }}</div>
+              {% if include.data.button.active %}
+              <a href="{{ include.data.button.href }}" class="{{ include.data.button.class }}">
                 {{ include.data.button.text}}
               </a>
               {% endif %}
@@ -15,19 +15,19 @@
             <div class="col-md-6 col-lg-3">
                 <div class="card card-profile card-profile-gay">
                     <div class="card-avatar card-avatar-small">
-                      <a href="{{link.href}}">
-                        <img class="img img-raised" data-img-src="{{image.src}}" alt="{{image.alt}}" title="{{image.title}}"/>
+                      <a href="{{ item.link.href }}">
+                        <img class="img img-raised" data-img-src="{{ item.image.src }}" alt="{{ item.image.alt }}" title="{{ item.image.title }}"/>
                       </a>
                     </div>
                     <div class="card-body">
-                      <h3 class="h4 text-montserrat text-uppercase">{{title}}</h3>
-                      <div class="h6 category text-primary">{{subtitle}}</div>
+                      <h3 class="h4 text-montserrat text-uppercase">{{ item.title }}</h3>
+                      <div class="h6 category text-primary">{{ item.subtitle }}</div>
                       <p class="card-description">
-                        {{description}}
+                        {{ item.description }}
                       </p>
-                      {% if button}}
+                      {% if item.button %}
                       <div class="card-footer">
-                        <a href="{{link.href}}" class="{{link.class}}"><i class="{{link.icon-class}}"></i>{{link.text}}</a>
+                        <a href="{{include.data.link.href}}" class="{{include.data.link.class}}"><i class="{{include.data.link.icon-class}}"></i>{{include.data.link.text}}</a>
                       </div>
                       {% endif %}
                     </div>

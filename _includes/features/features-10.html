@@ -1,9 +1,9 @@
-<div class="features-10 section-image {% ifequal include.data.filter false}}no-filter{{/ifequal}}" data-bg-style="{{ include.data.background-image}}"  {% if include.data.id %}id="{{ include.data.id}}"{% endif %}>
-  {% if include.data.header-section}}
+<div class="features-10 section-image {% if include.data.filter %}no-filter{% endif %}" data-bg-style="{{ include.data.background-image }}"  {% if include.data.id %}id="{{ include.data.id}}"{% endif %}>
+  {% if include.data.header-section %}
   <div class="container-fluid">
-    <div class="{{ include.data.header-section.class}}">
-      <h2 class="title">{{ include.data.title}}</h2>
-      <div class="h4 description">{{ include.data.description}}</div>
+    <div class="{{ include.data.header-section.class }}">
+      <h2 class="title">{{ include.data.title }}</h2>
+      <div class="h4 description">{{ include.data.description }}</div>
     </div>
   </div>
   {% endif %}
@@ -12,13 +12,13 @@
       <div class="{{ include.data.right-items}}">
         <div class="col-sm-12">
           {% for item in include.data.items %}
-          <div class="info info-horizontal {{item-class}}">
+          <div class="info info-horizontal {{item.item-class}}">
             <div class="icon icon-primary">
-              <i class="now-ui-icons {{icon-class}}"></i>
+              <i class="now-ui-icons {{item.icon-class}}"></i>
             </div>
             <div class="description">
-              <h3 class="h5 info-title {{title-class}}">{{title}}</h3>
-              <p class="description">{{description}}</p>
+              <h3 class="h5 info-title {{item.title-class}}">{{item.title}}</h3>
+              <p class="description">{{item.description}}</p>
             </div>
           </div>
           {% endfor %}
