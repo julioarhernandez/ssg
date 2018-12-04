@@ -4,7 +4,7 @@
               <div class="page-header-image" data-bg-style="{{ include.data.background-image}}"></div>
               <div class="container">
                 <div class="row">
-                  <div class="col-md-7{% ifequal include.data.content-align 'right'}} ml-auto text-right{{/ifequal}}{% ifequal include.data.content-align 'left'}} mr-auto text-left{{/ifequal}}">
+                  <div class="col-md-7{% ifequal include.data.content-align 'right'}} ml-auto text-right{% endif %}{% ifequal include.data.content-align 'left'}} mr-auto text-left{% endif %}">
                     <h1 class="title">{{ include.data.title}}</h1>
                     <div class="h4 description">{{ include.data.subtitle}}</div>
                     <br />
