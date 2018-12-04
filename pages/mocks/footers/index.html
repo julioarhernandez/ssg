@@ -1,25 +1,22 @@
 ---
-layout: mocks
-meta-data: 
-    meta-description: "La publicidad es de vital importancia para cualquier negocio. Una presencia online profesional y equilibrada es la mejor oportunidad para mostrarle a tus clientes potenciales que tu tienes el producto o servicio que ellos necesitan. En Bizmarketing.us te ayudamos a posicionar positivamente tu negocio"
-    meta-title: "titulo de pagina indexes"
-    google-fonts: 
-    -
-        'Montserrat:400,700,200'
-    - 
-        'Open Sans Condensed:700'
-    - 
-        'Abril Fatface'
+layout: default.1
+metas:
+    title: "Page title asdasd"
+    description: "long desriptoin for decriscj sfd asdasd"
+    page: 
+        - "data-article.json"
+        - "data-corporation.json"
+permalink: /mocks/footers/
 ---
-{{>separator text="footer-1"}}
-{{>footer-1 data=footer-1}}
-{{>separator text="footer-2"}}
-{{>footer-2 data=footer-2}}
-{{>separator text="footer-3"}}
-{{>footer-3 data=footer-3}}
-{{>separator text="footer-4"}}
-{{>footer-4 data=footer-4}}
-{{>separator text="footer-5"}}
-{{>footer-5 data=footer-5}}
-{{>separator text="footer-6"}}
-{{>footer-6 data=footer-6}}
+{% include separators/separator.html text="footer-1" %}
+{% include footers/footer-1.html data=site.data.mocks.footers.footer-1 %}
+{% include separators/separator.html text="footer-2" %}
+{% include footers/footer-2.html data=site.data.mocks.footers.footer-2 %}
+{% include separators/separator.html text="footer-3" %}
+{% include footers/footer-3.html data=site.data.mocks.footers.footer-3 %}
+{% include separators/separator.html text="footer-4" %}
+{% include footers/footer-4.html data=site.data.mocks.footers.footer-4 %}
+{% include separators/separator.html text="footer-5" %}
+{% include footers/footer-5.html data=site.data.mocks.footers.footer-5 %}
+{% include separators/separator.html text="footer-6" %}
+{% include footers/footer-6.html data=site.data.mocks.footers.footer-6 %}
