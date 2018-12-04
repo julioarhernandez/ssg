@@ -1,4 +1,4 @@
-<footer class="footer footer-big {% ifequal include.data.footer-color 'white'}}footer-white{{/ifequal}}" {% ifequal include.data.footer-color 'black'}}data-background-color="black"{{/ifequal}}  {% if include.data.id %}id="{{ include.data.id}}"{% endif %}>
+<footer class="footer footer-big {% if include.data.footer-color=='white' %}footer-white{% endif %}" {% if include.data.footer-color=='black' %}data-background-color="black"{% endif %}  {% if include.data.id %}id="{{ include.data.id}}"{% endif %}>
         <div class="container">
           <div class="content">
             <div class="row">
@@ -11,8 +11,8 @@
                 <div class="social-feed">
                     {% for item in include.data.col2.items %}
                     <div class="feed-line">
-                        <i class="{{icon}}"></i>
-                        <a href="{{href}}">
+                        <i class="{{item.icon}}"></i>
+                        <a href="{{item.href}}">
                         {{text}}
                         </a>
                     </div>
@@ -20,10 +20,10 @@
                 </div>
               </div>
               <div class="col-md-4">
-                <h5>{{ include.data.col3.title}}</h5>
+                <h5>{{ include.data.col3.title }}</h5>
                 <div class="gallery-feed">
                   {% for item in include.data.col3.items %}
-                  <img data-img-src="{{src}}" class="img img-raised rounded" alt="{{alt}}" />
+                  <img data-img-src="{{item.src}}" class="img img-raised rounded" alt="{{item.alt}}" />
                   {% endfor %}
                 </div>
               </div>
@@ -33,8 +33,8 @@
           <ul class="pull-left">
             {% for item in include.data.links %}
             <li>
-                <a href="//{{href}}">
-                {{text}}
+                <a href="//{{item.href}}">
+                {{item.text}}
                 </a>
             </li>
             {% endfor %}

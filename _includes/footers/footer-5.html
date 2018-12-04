@@ -1,51 +1,51 @@
-<footer class="footer footer-big {% ifequal include.data.footer-color 'white'}}footer-white{{/ifequal}}" {% ifequal include.data.footer-color 'black'}}data-background-color="black"{{/ifequal}}  {% if include.data.id %}id="{{ include.data.id}}"{% endif %}>
+<footer class="footer footer-big {% if include.data.footer-color=='white' %}footer-white{% endif %}" {% if include.data.footer-color=='black' %}data-background-color="black"{% endif %}  {% if include.data.id %}id="{{ include.data.id }}"{% endif %}>
         <div class="container">
           <div class="content">
             <div class="row">
                 <div class="col-md-2">
-                <h5>{{ include.data.col1.title}}</h5>
+                <h5>{{ include.data.col1.title }}</h5>
                   <ul class="links-vertical">
                   {% for item in include.data.col1.items %}
                   <li>
-                    <a href="{{href}}" class="text-muted">
-                      {{text}}
+                    <a href="{{ item.href }}" class="text-muted">
+                      {{ item.text }}
                     </a>
                   </li>
                   {% endfor %}
                 </ul>
               </div>
                <div class="col-md-2">
-                <h5>{{ include.data.col2.title}}</h5>
+                <h5>{{ include.data.col2.title }}</h5>
                 <ul class="links-vertical">
                 {% for item in include.data.col2.items %}
                 <li>
-                    <a href="{{href}}" class="text-muted">
-                    {{text}}
+                    <a href="{{item.href}}" class="text-muted">
+                    {{item.text}}
                     </a>
                 </li>
                 {% endfor %}
                 </ul>
               </div>
               <div class="col-md-4">
-                <h5>{{ include.data.col3.title}}</h5>
+                <h5>{{ include.data.col3.title }}</h5>
                 <div class="social-feed">
                     {% for item in include.data.col3.items %}
                     <div class="feed-line">
-                        <i class="{{icon}}"></i>
-                        <a href="{{href}}">
-                        {{text}}
+                        <i class="{{item.icon}}"></i>
+                        <a href="{{item.href}}">
+                        {{item.text}}
                         </a>
                     </div>
                     {% endfor %}
                 </div>
               </div>
               <div class="col-md-4">
-                <h5>{{ include.data.col4.title}}</h5>
+                <h5>{{ include.data.col4.title }}</h5>
                 <ul class="social-buttons">
-                    {% for site.social %}
+                    {% for social in site.social %}
                     <li>
-                        <a href="{{href}}" target="_blank" class="btn btn-icon btn-neutral btn-round {{btn}}">
-                        <i class="fab {{icon}}"></i>
+                        <a href="{{social.href}}" target="_blank" class="btn btn-icon btn-neutral btn-round {{social.btn}}">
+                        <i class="fab {{social.icon}}"></i>
                         </a>
                     </li>
                     {% endfor %}
