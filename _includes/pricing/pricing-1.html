@@ -1,6 +1,6 @@
 <div class="pricing-1 section-image" id="pricing-1" data-bg-style="{{ include.data.background-image}}"  {% if include.data.id %}id="{{ include.data.id}}"{% endif %}>
 <div class="container">
-        {% if include.data.header-section}}
+        {% if include.data.header-section %}
         <div class="row">
           <div class="col-md-6 ml-auto mr-auto text-center">
             <h2 class="title">{{ include.data.title}}</h2>
@@ -10,21 +10,21 @@
         </div>
         {% endif %}
         <div class="row">
-        {% for item in include.data.cards}}
-         <div class="{{../data.columnClass}}">
-           <div class="card card-pricing {% if highlight}}{% else %}card-plain{% endif %}">
+        {% for item in include.data.cards %}
+         <div class="{{include.data.columnClass}}">
+           <div class="card card-pricing {% if item.highlight %}{% else %}card-plain{% endif %}">
               <div class="card-body">
-                <h3 class="h5 category ">{{category}}</h3>
-                <div class="icon {{icon-color}}">
-                  <i class="now-ui-icons {{icon}}"></i>
+                <h3 class="h5 category ">{{item.category}}</h3>
+                <div class="icon {{item.icon-color}}">
+                  <i class="now-ui-icons {{item.icon}}"></i>
                 </div>
-                <div class="h3 card-title">{{price}}</div>
+                <div class="h3 card-title">{{item.price}}</div>
                 <ul>
-                {% for items}}
-                  <li>{{title}}</li>
+                {% for i in item.items %}
+                  <li>{{i.title}}</li>
                 {% endfor %}
                 </ul>
-                <a href="{{button.link}}" class="btn {{button.class}} btn-round">{{button.text}}</a>
+                <a href="{{item.button.link}}" class="btn {{item.button.class}} btn-round">{{item.button.text}}</a>
               </div>
             </div>
           </div>

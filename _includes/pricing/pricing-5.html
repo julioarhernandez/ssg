@@ -21,19 +21,19 @@
         <div class="tab-content tab-space">
           <div class="tab-pane active" id="personal">
             <div class="row">
-              {% for item in include.data.tab-one}}
-              <div class="{{tab-class}}">
-                <div class="card card-pricing {{card-class}}">
+              {% for item in include.data.tab-one %}
+              <div class="{{item.tab-class}}">
+                <div class="card card-pricing {{item.card-class}}">
                   <div class="card-body">
-                    <h3 class="h5 category">{{title}}</h3>
-                    <div class="h1 card-title">{{price}}</div>
+                    <h3 class="h5 category">{{item.title}}</h3>
+                    <div class="h1 card-title">{{item.price}}</div>
                     <ul>
-                      {% for items}}
-                        <li>{{title}}</li>
+                      {% for i in item.items %}
+                        <li>{{i.title}}</li>
                       {% endfor %}
                     </ul>
-                    <a href="{{button.href}}" class="btn {{button.class}} btn-round">
-                      {{button.text}}
+                    <a href="{{item.button.href}}" class="btn {{item.button.class}} btn-round">
+                      {{item.button.text}}
                     </a>
                   </div>
                 </div>
@@ -43,19 +43,19 @@
           </div>
           <div class="tab-pane" id="commercial">
             <div class="row">
-                {% for item in include.data.tab-two}}
-                <div class="{{tab-class}}">
-                  <div class="card card-pricing {{card-class}}">
+                {% for item in include.data.tab-two %}
+                <div class="{{item.tab-class}}">
+                  <div class="card card-pricing {{item.card-class}}">
                     <div class="card-body">
-                      <h3 class="h5 category">{{title}}</h3>
-                      <div class="h1 card-title">{{price}}</div>
+                      <h3 class="h5 category">{{item.title}}</h3>
+                      <div class="h1 card-title">{{item.price}}</div>
                       <ul>
-                        {% for items}}
-                          <li>{{title}}</li>
+                        {% for i in item.items %}
+                          <li>{{i.title}}</li>
                         {% endfor %}
                       </ul>
-                      <a href="{{button.href}}" class="btn {{button.class}} btn-round">
-                        {{button.text}}
+                      <a href="{{item.button.href}}" class="btn {{item.button.class}} btn-round">
+                        {{item.button.text}}
                       </a>
                     </div>
                   </div>

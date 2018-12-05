@@ -1,23 +1,20 @@
 ---
-layout: mocks
-meta-data: 
-    meta-description: "La publicidad es de vital importancia para cualquier negocio. Una presencia online profesional y equilibrada es la mejor oportunidad para mostrarle a tus clientes potenciales que tu tienes el producto o servicio que ellos necesitan. En Bizmarketing.us te ayudamos a posicionar positivamente tu negocio"
-    meta-title: "titulo de pagina indexes"
-    google-fonts: 
-    -
-        'Montserrat:400,700,200'
-    - 
-        'Open Sans Condensed:700'
-    - 
-        'Abril Fatface'
+layout: default.1
+metas:
+    title: "Page title asdasd"
+    description: "long desriptoin for decriscj sfd asdasd"
+    page: 
+        - "data-article.json"
+        - "data-corporation.json"
+permalink: /mocks/pricing/
 ---
-{{>separator text="pricing-1"}}
-{{>pricing-1 data=pricing-1}}
-{{>separator text="pricing-2"}}
-{{>pricing-2 data=pricing-2}}
-{{>separator text="pricing-3"}}
-{{>pricing-3 data=pricing-3}}
-{{>separator text="pricing-4"}}
-{{>pricing-4 data=pricing-4}}
-{{>separator text="pricing-5"}}
-{{>pricing-5 data=pricing-5}}
+{% include separators/separator.html text="pricing-1" %}
+{% include pricing/pricing-1.html data=site.data.mocks.pricing.pricing-1 %}
+{% include separators/separator.html text="pricing-2" %}
+{% include pricing/pricing-2.html data=site.data.mocks.pricing.pricing-2 %}
+{% include separators/separator.html text="pricing-3" %}
+{% include pricing/pricing-3.html data=site.data.mocks.pricing.pricing-3 %}
+{% include separators/separator.html text="pricing-4" %}
+{% include pricing/pricing-4.html data=site.data.mocks.pricing.pricing-4 %}
+{% include separators/separator.html text="pricing-5" %}
+{% include pricing/pricing-5.html data=site.data.mocks.pricing.pricing-5 %}
