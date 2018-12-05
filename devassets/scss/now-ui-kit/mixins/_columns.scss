@@ -1,0 +1,9 @@
+@mixin column-count($quantity){
+    @for $i from 1 through $quantity {
+        .column-count-#{$i} {
+            -webkit-column-count: #{$i} ;
+            -moz-column-count: #{$i};
+            column-count: #{$i};
+        }
+    }
+}
