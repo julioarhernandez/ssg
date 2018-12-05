@@ -1,0 +1,16 @@
+---
+layout: default.1
+metas:
+    title: "Page title asdasd"
+    description: "long desriptoin for decriscj sfd asdasd"
+    page: 
+        - "data-article.json"
+        - "data-corporation.json"
+permalink: /mocks/content/
+---
+{% include separators/separator.html text="content-1" %}
+{% include content/content-1.html data=site.data.mocks.content.content-1 %}
+{% include separators/separator.html text="content-2" %}
+{% include content/content-2.html data=site.data.mocks.content.content-2 %}
+{% include separators/separator.html text="content-3" %}
+{% include content/content-3.html data=site.data.mocks.content.content-3 %}

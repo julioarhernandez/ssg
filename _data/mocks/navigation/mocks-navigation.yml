@@ -22,6 +22,9 @@ navlinks:
         text: 'Projects'
         href: '/mocks/awesome-projects'
       -
+        text: 'Content'
+        href: '/mocks/content'
+      -
         text: 'Team'
         href: '/mocks/awesome-team'
       -
