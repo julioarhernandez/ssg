@@ -1,20 +1,20 @@
-<div class="services-1"  {% if include.data.id %}id="{{ include.data.id}}"{% endif %}>
+<div class="services-1" {% if include.data.id %}id="{{ include.data.id}}"{% endif %}>
     <div class="{{ include.data.section-class}}">
         <div class="row">
             <div class="{{ include.data.block-class}}">
                 <div class="services-1-block {{ include.data.title-block-class}} p-5 -vertical-center">
-                    <h2  class="h6 title text-uppercase m-0 p-0 -vertical-center">{{ include.data.title}}</h2>
-                    <span class="h4 subtitle m-0">{{ include.data.subtitle}}</span>
+                    <h2  class="h6 title text-uppercase m-0 p-0 -vertical-center">{{ include.data.title }}</h2>
+                    <span class="h4 subtitle m-0">{{ include.data.subtitle }}</span>
                 </div>
             </div>
-            {% for item in include.data.items}}
-            <div class="{{../data.block-class}}">
+            {% for item in include.data.items %}
+            <div class="{{include.data.block-class}}">
                 <div class="services-1-block text-center p-5">
                     <div class="icon mt-4">
-                        <i class="now-ui-icons {{icon-color}} {% if icon}}{{icon}}{% endif %}"></i>
+                        <i class="now-ui-icons {{item.icon-color}} {% if item.icon %}{{item.icon}}{% endif %}"></i>
                     </div>
-                    <h3 class="h4 info-title {{title-class}}">{{title}}</h3>
-                    <p class="description px-4 {{subtitle-class}}">{{subtitle}}</p>                
+                    <h3 class="h4 info-title {{item.title-class}}">{{item.title}}</h3>
+                    <p class="description px-4 {{item.subtitle-class}}">{{item.subtitle}}</p>                
                 </div>
             </div>
             {% endfor %}
