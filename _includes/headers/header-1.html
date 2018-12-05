@@ -1,10 +1,10 @@
       <!--     *********     HEADER 1      *********      -->
       <div class="header-1"  {% if include.data.id %}id="{{ include.data.id}}"{% endif %}>
-            <div class="page-header{% if include.data.filter}} header-filter{% endif %}">
+            <div class="page-header{% if include.data.filter %} header-filter{% endif %}">
               <div class="page-header-image" data-bg-style="{{ include.data.background-image}}"></div>
               <div class="container">
                 <div class="row">
-                  <div class="col-md-7{% ifequal include.data.content-align 'right'}} ml-auto text-right{% endif %}{% ifequal include.data.content-align 'left'}} mr-auto text-left{% endif %}">
+                  <div class="col-md-7{% if include.data.content-align =='right' %} ml-auto text-right{% endif %}{% if include.data.content-align == 'left' %} mr-auto text-left{% endif %}">
                     <h1 class="title">{{ include.data.title}}</h1>
                     <div class="h4 description">{{ include.data.subtitle}}</div>
                     <br />
@@ -18,9 +18,9 @@
                       <a href="#pablo" class="btn btn-icon btn-link btn-neutral btn-lg">
                         <i class="fab fa-get-pocket"></i>
                       </a>
-                      {% if hero.button}}
-                      <a href="{{ include.data.button.href}}" class="btn btn-info btn-lg mr-3">
-                       {{ include.data.button.text}}
+                      {% if include.data.button %}
+                      <a href="{{ include.data.button.href }}" class="btn btn-info btn-lg mr-3">
+                       {{ include.data.button.text }}
                       </a>
                       {% endif %}
                     </div>

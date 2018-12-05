@@ -1,55 +1,47 @@
-<div class="header-3"  {% if include.data.id %}id="{{ include.data.id}}"{% endif %}>
+<div class="header-3" {% if include.data.id %}id="{{ include.data.id }}"{% endif %}>
         <div id="carouselExampleIndicators" class="carousel slide">
             <ol class="carousel-indicators">
             {% for item in include.data.slider %}
-            {% if forloop.index %}
-            <li data-target="#carouselExampleIndicators" data-slide-to="{{{ forloop.index }}}"></li>
-            {% else %}
-            <li data-target="#carouselExampleIndicators" data-slide-to="{{{ forloop.index }}}" class="active"></li>
-            {% endif %}
+            <li data-target="#carouselExampleIndicators" data-slide-to="{{ forloop.index0 }}" {% if forloop.first %}class="active"{% endif %}></li>
             {% endfor %}
             </ol>
             <div class="carousel-inner" role="listbox">
             {% for item in include.data.slider %}
-            {% if forloop.index %}
-            <div class="carousel-item">
-            {% else %}
-            <div class="carousel-item active">
-            {% endif %}
+            <div class="carousel-item {% if forloop.first %}active{% endif %}">
                 <div class="page-header header-filter">
-                <div class="page-header-image" data-bg-style="{{background-image}}"></div>
+                <div class="page-header-image" data-bg-style="{{item.background-image}}"></div>
                 <div class="content-center">
-                    {% ifequal type 'A'}}
+                    {% if item.type == 'A' %}
                     <div class="container text-left">
                     <div class="content-center">
                         <div class="row">
                         <div class="col-md-5">
                             <div class="iframe-container">
-                            <iframe height="250" src="{{video-url}}" frameborder="0" allowfullscreen></iframe>
+                            <iframe height="250" src="{{item.video-url}}" frameborder="0" allowfullscreen></iframe>
                             </div>
                         </div>
                         <div class="col-md-6 ml-auto mr-auto text-right">
-                            <h1 class="title">{{title}}</h1>
-                            <div class="h4 description ">{{subtitle}}</div>
+                            <h1 class="title">{{item.title}}</h1>
+                            <div class="h4 description ">{{item.subtitle}}</div>
                         </div>
                         </div>
                     </div>
                     </div>
                     {% endif %}
-                    {% ifequal type 'B'}}
+                    {% if item.type == 'B' %}
                     <div class="container">
                         <div class="content-center">
                             <div class="row">
                                 <div class="col-md-8 ml-auto mr-auto text-center">
-                                    <h1 class="title">{{title}}</h1>
-                                    <div class="h4 description ">{{subtitle}}</div>
+                                    <h1 class="title">{{item.title}}</h1>
+                                    <div class="h4 description ">{{item.subtitle}}</div>
                                     <br />
-                                    {% if social}}
-                                    <div class="h5">{{Connect}}</div>
+                                    {% if item.social %}
+                                    <div class="h5">{{item.Connect}}</div>
                                     <div class="buttons">
-                                    {% for ../site.social %}
-                                    <a href="{{href}}" class="btn btn-icon btn-neutral btn-danger btn-round mt-2">
-                                        <i class="fab {{icon}}"></i>
+                                    {% for social in site.social %}
+                                    <a href="{{social.href}}" class="btn btn-icon btn-neutral btn-danger btn-round mt-2">
+                                        <i class="fab {{social.icon}}"></i>
                                     </a>
                                     {% endfor %}
                                     </div>
@@ -59,21 +51,21 @@
                         </div>
                     </div>
                     {% endif %}
-                    {% ifequal type 'C'}}
+                    {% if item.type == 'C' %}
                     <div class="container">
                         <div class="content-center">
                             <div class="row">
                             <div class="col-md-6 text-left">
-                                <h1 class="title">{{title}}</h1>
-                                <div class="h4 description ">{{subtitle}}</div>
+                                <h1 class="title">{{item.title}}</h1>
+                                <div class="h4 description ">{{item.subtitle}}</div>
                                 <br />
-                                {% if buttons}}
+                                {% if item.buttons %}
                                 <div class="buttons">
-                                <a href="{{buttons.more.href}}" class="btn btn-neutral btn-primary btn-lg mr-1">
-                                    <i class="now-ui-icons files_single-copy-04"></i> {{buttons.more.text}}
+                                <a href="{{item.buttons.more.href}}" class="btn btn-neutral btn-primary btn-lg mr-1">
+                                    <i class="now-ui-icons files_single-copy-04"></i> {{item.buttons.more.text}}
                                 </a>
-                                <a href="{{buttons.more.subscribe}}" class="btn btn-primary btn-lg">
-                                    <i class="now-ui-icons arrows-1_share-66"></i> {{buttons.subscribe.text}}
+                                <a href="{{item.buttons.more.subscribe}}" class="btn btn-primary btn-lg">
+                                    <i class="now-ui-icons arrows-1_share-66"></i> {{item.buttons.subscribe.text}}
                                 </a>
                                 </div>
                                 {% endif %}
