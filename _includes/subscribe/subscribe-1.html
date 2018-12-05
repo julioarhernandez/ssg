@@ -1,4 +1,4 @@
-<div class="subscribe-line subscribe-line-image {% if include.data.filter false}}no-filter{% endif %}" data-bg-style="{{ include.data.background-image}}"{% if include.data.id %} id="{{ include.data.id}}"{% endif %}>
+<div class="subscribe-line subscribe-line-image {% if include.data.filte==false %}no-filter{% endif %}" data-bg-style="{{ include.data.background-image}}"{% if include.data.id %} id="{{ include.data.id}}"{% endif %}>
     <div class="container">
       <div class="row">
         <div class="col-md-6 ml-auto mr-auto">
@@ -17,7 +17,7 @@
                       <div class="input-group-prepend">
                         <span class="input-group-text"><i class="now-ui-icons ui-1_email-85"></i></span>
                       </div>
-                      <input type="email" class="form-control" placeholder="{{ include.data.email.placeholder}}">
+                      <input type="email" class="form-control" placeholder="{{ include.data.email.placeholder }}">
                     </div>
                   </div>
                   <div class="col-sm-4">

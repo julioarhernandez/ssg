@@ -1,13 +1,13 @@
-<div class="subscribe-line subscribe-line-image {% if include.data.filter false}}no-filter{% endif %} {{ include.data.section-class}}" data-bg-style="{{ include.data.background-image}}"  {% if include.data.id %}id="{{ include.data.id}}"{% endif %}>
+<div class="subscribe-line subscribe-line-image {% if include.data.filter==false %}no-filter{% endif %} {{ include.data.section-class}}" data-bg-style="{{ include.data.background-image}}"  {% if include.data.id %}id="{{ include.data.id}}"{% endif %}>
     <div class="container">
       <div class="row">
         <div class="col-md-6 ml-auto mr-auto">
           <div class="text-center">
-            <h2 class="h4 title {{ include.data.title-class}}">{{ include.data.title}}</h2>
+            <h2 class="h4 title {{ include.data.title-class}}">{{ include.data.title }}</h2>
             <p class="description {{description-class}}">
-              {{ include.data.description}}
+              {{ include.data.description }}
             </p>
-            <a href={{ include.data.cta.href}} class="{{ include.data.cta.class}}">
+            <a href="{{ include.data.cta.href }}" class="{{ include.data.cta.class}}">
                 {{ include.data.cta.text}}
             </a>
           </div>

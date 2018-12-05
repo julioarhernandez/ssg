@@ -1,16 +1,15 @@
-<div class="subscribe-line subscribe-line-image {% if include.data.filter false}}no-filter{% endif %} {{ include.data.section-class}}  {% if include.data.id %}id="{{ include.data.id}}"{% endif %}"
-data-bg-style="{{ include.data.background-image}}">
+<div class="subscribe-line subscribe-line-image {% if include.data.filter==false %}no-filter{% endif %} {{ include.data.section-class }}  {% if include.data.id %}id="{{ include.data.id}}"{% endif %}" data-bg-style="{{ include.data.background-image}}">
   <div class="container">
     <div class="row">
       <div class="col-md-4">
-        <h2 class="h4 title {{ include.data.title-class}}">{{ include.data.title}}</h2>
+        <h2 class="h4 title {{ include.data.title-class }}">{{ include.data.title }}</h2>
       </div>
       <div class="col-md-5">
-        <p class="description {{ include.data.description-class}}">{{ include.data.description}}</p>
+        <p class="description {{ include.data.description-class}}">{{ include.data.description }}</p>
       </div>
       <div class="col-md-3">
-        <div class="{{ include.data.cta.position}}">
-          <a href={{ include.data.cta.href}} class="{{ include.data.cta.class}}">{{ include.data.cta.text}}</a>
+        <div class="{{ include.data.cta.position }}">
+          <a href="{{ include.data.cta.href }}" class="{{ include.data.cta.class}}">{{ include.data.cta.text }}</a>
         </div>
       </div>
     </div>
