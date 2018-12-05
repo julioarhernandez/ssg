@@ -1,23 +1,20 @@
 ---
-layout: mocks
-meta-data: 
-    meta-description: "La publicidad es de vital importancia para cualquier negocio. Una presencia online profesional y equilibrada es la mejor oportunidad para mostrarle a tus clientes potenciales que tu tienes el producto o servicio que ellos necesitan. En Bizmarketing.us te ayudamos a posicionar positivamente tu negocio"
-    meta-title: "titulo de pagina indexes"
-    google-fonts: 
-    -
-        'Montserrat:400,700,200'
-    - 
-        'Open Sans Condensed:700'
-    - 
-        'Abril Fatface'
+layout: default.1
+metas:
+    title: "Page title asdasd"
+    description: "long desriptoin for decriscj sfd asdasd"
+    page: 
+        - "data-article.json"
+        - "data-corporation.json"
+permalink: /mocks/headers/
 ---
-{{>separator text="header-1"}}
-{{>header-1 data=header-1}}
-{{>separator text="header-2"}}
-{{>header-2 data=header-2}}
-{{>separator text="header-3"}}
-{{>header-3 data=header-3}}
-{{>separator text="header-4"}}
-{{>header-4 data=header-4}}
-{{>separator text="header-5"}}
-{{>header-5 data=header-5}}
+{% include separators/separator.html text="header-1" %}
+{% include headers/header-1.html data=site.data.mocks.headers.header-1 %}
+{% include separators/separator.html text="header-2" %}
+{% include headers/header-2.html data=site.data.mocks.headers.header-2 %}
+{% include separators/separator.html text="header-3" %}
+{% include headers/header-3.html data=site.data.mocks.headers.header-3 %}
+{% include separators/separator.html text="header-4" %}
+{% include headers/header-4.html data=site.data.mocks.headers.header-4 %}
+{% include separators/separator.html text="header-5" %}
+{% include headers/header-5.html data=site.data.mocks.headers.header-5 %}
