@@ -1,19 +1,16 @@
 ---
-layout: mocks
-meta-data: 
-    meta-description: "La publicidad es de vital importancia para cualquier negocio. Una presencia online profesional y equilibrada es la mejor oportunidad para mostrarle a tus clientes potenciales que tu tienes el producto o servicio que ellos necesitan. En Bizmarketing.us te ayudamos a posicionar positivamente tu negocio"
-    meta-title: "titulo de pagina indexes"
-    google-fonts: 
-    -
-        'Montserrat:400,700,200'
-    - 
-        'Open Sans Condensed:700'
-    - 
-        'Abril Fatface'
+layout: default.1
+metas:
+    title: "Page title asdasd"
+    description: "long desriptoin for decriscj sfd asdasd"
+    page: 
+        - "data-article.json"
+        - "data-corporation.json"
+permalink: /mocks/testimonial/
 ---
-{{>separator text="testimonial-1"}}
-{{>testimonial-1 data=testimonial-1}}
-{{>separator text="testimonial-2"}}
-{{>testimonial-2 data=testimonial-2}}
-{{>separator text="testimonial-3"}}
-{{>testimonial-3 data=testimonial-3}}
+{% include separators/separator.html text="testimonial-1" %}
+{% include testimonial/testimonial-1.html data=site.data.mocks.testimonial.testimonial-1 %}
+{% include separators/separator.html text="testimonial-2" %}
+{% include testimonial/testimonial-2.html data=site.data.mocks.testimonial.testimonial-2 %}
+{% include separators/separator.html text="testimonial-3" %}
+{% include testimonial/testimonial-3.html data=site.data.mocks.testimonial.testimonial-3 %}

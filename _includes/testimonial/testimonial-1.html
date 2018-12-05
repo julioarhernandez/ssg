@@ -1,33 +1,33 @@
 <div class="testimonials-1 section-image" data-bg-style="{{ include.data.background-image}}"  {% if include.data.id %}id="{{ include.data.id}}"{% endif %}>
     <div class="container">
-    {% if include.data.header-section}}      
+    {% if include.data.header-section %}      
     <div class="row">
         <div class="col-md-6 ml-auto mr-auto text-center">
-          <div class="h2 title">{{ include.data.title}}</div>
-          <div class="h4 description ">{{ include.data.description}}</div>
+          <div class="h2 title">{{ include.data.title }}</div>
+          <div class="h4 description ">{{ include.data.description }}</div>
         </div>
       </div>
       {% endif %}
       <div class="row">
-        {% for item in include.data.items}}
-        <div class="{{columnClass}}">
+        {% for item in include.data.items %}
+        <div class="{{item.columnClass}}">
           <div class="card card-testimonial">
             <div class="card-avatar">
-              <a href="{{columnClass}}">
-                <img class="img img-raised" data-img-src="{{image.src}}" alt="{{image.alt}}" title="{{image.title}}"/>
+              <a href="{{item.columnClass}}">
+                <img class="img img-raised" data-img-src="{{item.image.src}}" alt="{{item.image.alt}}" title="{{item.image.title}}"/>
               </a>
             </div>
             <div class="card-body">
               <p class="card-description">
-                    {{description}}
+                    {{item.description}}
               </p>
             </div>
             <div class="icon icon-primary">
-              <i class="fa {{icon}}"></i>
+              <i class="fa {{item.icon}}"></i>
             </div>
             <div class="card-footer">
-              <div class="h4 card-title">{{title}}</div>
-              <p class="category">{{category}}</p>
+              <div class="h4 card-title">{{item.title}}</div>
+              <p class="category">{{item.category}}</p>
             </div>
           </div>
         </div>

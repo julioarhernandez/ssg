@@ -1,25 +1,25 @@
 <div class="testimonials-3"{% if include.data.id %} id="{{ include.data.id}}"{% endif %}>
   <div class="container">
     <div class="row">
-          {% if include.data.header-section}}      
-      <div class="{{ include.data.columnClass}}">
-        <div class="h2 title">{{ include.data.title}}</div>
+      {% if include.data.header-section %}      
+      <div class="{{ include.data.columnClass }}">
+        <div class="h2 title">{{ include.data.title }}</div>
       </div>
       {% endif %}
     </div>
     <div class="row">
-      {% for item in include.data.items}}
-      <div class="{{columnClass}}">
-        <div class="{{../data.cardclass}}">
+      {% for item in include.data.items %}
+      <div class="{{item.columnClass}}">
+        <div class="{{include.data.cardclass}}">
           <div class="card-avatar">
-            <a href="{{link}}">
-              <img class="img img-raised rounded" data-img-src="{{image.src}}" alt="{{image.alt}}" title="{{image.title}}"/>
+            <a href="{{item.link}}">
+              <img class="img img-raised rounded" data-img-src="{{item.image.src}}" alt="{{item.image.alt}}" title="{{item.image.title}}"/>
             </a>
           </div>
           <div class="card-body">
-            <div class="h3 card-title">{{title}}</div>
-            <div class="h6 category text-primary">{{subtitle}}</div>
-            <p class="card-description">{{description}}
+            <div class="h3 card-title">{{item.title}}</div>
+            <div class="h6 category text-primary">{{item.subtitle}}</div>
+            <p class="card-description">{{item.description}}
             </p>
           </div>
         </div>
