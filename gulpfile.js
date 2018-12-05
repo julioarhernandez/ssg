@@ -134,6 +134,7 @@ gulp.task('scripts', function () {
 gulp.task('watch', ['css'], function () {
     // Live reload with BrowserSync
     browserSync.reload;
+    gulp.watch(['_data/**/*.yml', '_includes/**/*.html', '_pages/**/*.html' ], ['jekyll', browserSync.reload]);
     gulp.watch(['src/assets/js/**/*.js'], ['scripts', browserSync.reload]);
     gulp.watch(['node_modules/bootstrap/scss/bootstrap.scss', 'devassets/scss/**/*.scss'], ['css', browserSync.reload]);
     console.log('Watching for changes');
