@@ -1,5 +1,14 @@
 id: ""
 title: 'Full-Funnel Social Analytics'
-title-class: "text-md-left text-center"
-description-class: "h4 description text-right"
-description: "Insight to help you create, connect, and convert. Understand Your Audience's Interests, Influence, Interactions, and Intent. Discover emerging topics and influencers to reach new audiences."
+title-class: "pt-0 mb-0 h3 text-md-left text-center"
+subtitle: "subtitle title of the module is this one"
+subtitle-class: "h4 mt-1 description text-left"
+description-class: "text-right"
+description: |
+                <p>Insight to help you create, connect, and convert. 
+                Understand Your Audience's Interests, Influence, 
+                Interactions, and Intent. Discover emerging topics and 
+                influen cers to reach new audiences. Insight to help you 
+                create, connect, and convert.</p><p>Understand Your Audience's 
+                Interests, Influence, Interactions, and Intent. Discover 
+                emerging topics and influencers to reach new audiences.</p>

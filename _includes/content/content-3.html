@@ -6,6 +6,9 @@
             </div>
             <div class="col-md-4">
                 <h2 class="title{% if include.data.title-class %} {{include.data.title-class}}{% endif %}">{{ include.data.title }}</h2>
+                {% if include.data.subtitle %}
+                <div class="{{ include.data.subtitle-class }}">{{ include.data.subtitle}}</div>
+                {% endif %}
             </div>
         </div>
     </div>
