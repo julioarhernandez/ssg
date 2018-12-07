@@ -4,7 +4,6 @@
     padding-top: 41px;
     &:after {
         position: absolute;
-        right: 0;
         top: 0;
         font-family: Montserrat;
         font-size: 70px;
@@ -14,10 +13,18 @@
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 68%, 0 68%);
         clip-path: polygon(0 0, 100% 0, 100% 68%, 0 68%);
         z-index: -1;
+        @media screen and (max-width: 767.9px){
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        @media screen and (min-width: 768px){
+            right: 0;
+        }
     }
+    
     @for $i from 1 through 9 {
         &-#{$i}:after {
-            content: "0#{$i}" ;
+            content: "0#{$i}";
         }
     }
 }
