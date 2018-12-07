@@ -7,6 +7,8 @@ navbrand:
   alt: 'Logo'
 showsocial: false
 transparent: false
+fixed: true
+sticky: true
 background-color: 'bg-white'
 navlink-align: 'right' 
 # navlink-align: 'right' 
