@@ -1,17 +1,64 @@
+---
+data:
+    id: ""
+    navbrand:
+        href: '/'
+        title: 'title'
+        text: ''
+        src: '/assets/img/logo.png'
+        alt: 'Logo'
+    showsocial: false
+    transparent: true
+    fixed: true
+    sticky: false
+    background-color: 'bg-dark'
+    navlink-align: 'right' 
+    # navlink-align: 'left' 
+    navlinks:
+    -
+        text: 'Home'
+        href: ''
+        page: 'index'
+    -
+        text: 'Services'
+        href: 'mocks/services/'
+        page: 'services'
+    -
+        text: 'About us'
+        href: '#about'
+        page: 'about'
+    -
+        text: 'Contact us'
+        href: '#contact-us'
+        page: 'contact'
+---
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>{{ page.title }}</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="/assets/css/styles.css">
+    {% include seo/meta.html metas=page.metas %}
+    <link rel="preload" href="/assets/css/styles.css " as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="/assets/css/app.css"></noscript>
+    {% include seo/json-ld.html metas=page.metas %}
 </head>
 <body>
-    {% include navigation.html %}
+    {% include navigation/navigation.html data=layout.data%}
     <div class="wrapper">
         {{ content }}
     </div>
     <script src="/assets/js/app.js"></script>
+    <!-- <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+            navigator.serviceWorker.register('/sw.js').then(registration => {
+                console.log('SW registered: ', registration);
+            }).catch(registrationError => {
+                console.log('SW registration failed: ', registrationError);
+            });
+            });
+        }
+    </script> -->
 </body>
 </html>

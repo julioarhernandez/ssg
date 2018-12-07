@@ -1,0 +1,58 @@
+<nav class="navbar navbar-expand-lg{%if include.data.fixed %} fixed-top{% endif %}{%if include.data.sticky %} sticky-top{% endif %}{%if include.data.transparent%} navbar-transparent{% endif %} {{include.data.background-color}} ">
+    <div class="container">
+        <div class="navbar-translate">
+            <a class="navbar-brand" href="{{include.data.navbrand.src}}">
+                {%if include.data.navbrand.src %}
+                <img data-img-src="{{include.data.navbrand.src}}" alt="{{include.data.navbrand.alt}}">
+                {% endif %}
+                {%if include.data.navbrand.text %}
+                {{include.data.navbrand.text}}
+                {% endif %}
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-bar bar1"></span>
+                <span class="navbar-toggler-bar bar2"></span>
+                <span class="navbar-toggler-bar bar3"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav {%if include.data.navlink-align == 'center' %}mx-auto{% endif %}{%if include.data.navlink-align == 'right'%}ml-auto{% endif %}">
+                {% for nav in site.navlinks %}
+                {% unless nav.subitems %}
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ nav.href }}">
+                        {{ nav.text }}
+                    </a>
+                </li>
+                {% endunless %}
+                {% if nav.subitems %}
+                <li class="nav-item dropdown"> 
+                    <a href="{{ nav.href }}" class="nav-link dropdown-toggle" id="navbarDropdownMenuLink1" data-toggle="dropdown" aria-expanded="true">
+                        <i class="now-ui-icons design_app"></i>
+                        <p>{{ nav.text }}</p>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink1">
+                        {% for item in nav.subitems %}
+                        <a class="dropdown-item" href="{{item.href}}">
+                            <i class="now-ui-icons business_chart-pie-36"></i> {{ item.text }}
+                        </a>
+                        {% endfor %}
+                    </div>
+                </li>
+                {% endif %}
+                {% endfor %}
+            </ul>
+            {% if site.showsocial %}
+            <ul class="nav navbar-nav">
+                {% for social in site.social %}
+                <li class="nav-item">
+                <a class="nav-link" href="{{ social.href}}">
+                    <i class="fab {{ social.icon}}"></i>
+                </a>
+                </li>
+                {% endfor %}
+            </ul>
+            {% endif %}
+        </div>
+    </div>
+</nav>

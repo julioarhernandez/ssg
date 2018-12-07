@@ -5,8 +5,8 @@
               <div class="container">
                 <div class="row">
                   <div class="col-md-7{% if include.data.content-align =='right' %} ml-auto text-right{% endif %}{% if include.data.content-align == 'left' %} mr-auto text-left{% endif %}">
-                    <h1 class="title">{{ include.data.title}}</h1>
-                    <div class="h4 description">{{ include.data.subtitle}}</div>
+                    <h1 class="{{ include.data.title-class}}">{{ include.data.title}}</h1>
+                    <div class="{{ include.data.description-class}}">{{ include.data.subtitle}}</div>
                     <br />
                     <div class="buttons">
                       <a href="#pablo" class="btn btn-icon btn-link btn-neutral btn-lg">

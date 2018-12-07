@@ -69,9 +69,9 @@ $(window).on('load', function () {
   // Check window size to set new background images sizes
   // If over 992px images will have @2x like: image@2x.jpg
   var bigImage = '';
-  if ($(window).width() > 992){
-    bigImage = "@2x";
-  } 
+  // if ($(window).width() > 992){
+  //   bigImage = "@2x";
+  // } 
   // Lazy for background images [data-bg-style]
   $('[data-bg-style]').each(function (i, el) {
     var $element = $(el);
