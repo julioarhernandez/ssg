@@ -1,6 +1,7 @@
 header-section: true
 title: 'What Clients Say'
 id: ""
+class: "pt-5"
 columnClass: 'col-md-6 ml-auto mr-auto text-center'
 cardclass:  'card card-testimonial card-plain'
 items:

@@ -2,6 +2,7 @@ header-section: true
 background-image: '/assets/img/bg19.jpg'
 title: 'What is ALPHA?'
 id: ""
+class: "pt-5"
 description: "If you’re selected for ALPHA you’ll also get 3 tickets, opportunity to access Investor Office Hours and Mentor Hours and much more all for €850."
 columnClass: 'col-md-4'
 items:

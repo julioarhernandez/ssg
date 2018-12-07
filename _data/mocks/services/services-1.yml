@@ -2,6 +2,7 @@ section-class: 'container-fluid'
 block-class: 'col-md-4'
 title: 'our special <span class="h1 mb-0 font-weight-bold text-primary d-block">Services</span>'
 id: "services"
+class: "pt-5"
 title-block-class: 'bg-dark text-white'
 subtitle: 'Join us to see what happennnnnnn'
 items:

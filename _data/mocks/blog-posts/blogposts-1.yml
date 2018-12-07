@@ -1,6 +1,7 @@
 header-section: true
 title: 'Latest Blogposts'
 id: ""
+class: "pt-5"
 first-row:
   -
     image:

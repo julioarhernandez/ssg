@@ -1,4 +1,4 @@
-<div class="features-10 section-image {% if include.data.filter %}no-filter{% endif %}" data-bg-style="{{ include.data.background-image }}"  {% if include.data.id %}id="{{ include.data.id}}"{% endif %}>
+<div class="features-10 section-image {{include.data.class}} {% if include.data.filter %}no-filter{% endif %}" data-bg-style="{{ include.data.background-image }}"  {% if include.data.id %}id="{{ include.data.id}}"{% endif %}>
   {% if include.data.header-section %}
   <div class="container-fluid">
     <div class="{{ include.data.header-section.class }}">

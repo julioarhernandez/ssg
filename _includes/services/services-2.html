@@ -1,4 +1,4 @@
-<div class="services-2"  {% if include.data.id %}id="{{ include.data.id}}"{% endif %}>
+<div class="services-2 {{include.data.class}}"  {% if include.data.id %}id="{{ include.data.id}}"{% endif %}>
     <div class="{{ include.data.section-class}}">
         <div class="row">
             {% for item in include.data.items%}

@@ -1,6 +1,7 @@
 header-section: true
 title: 'Working is a pleasure'
 id: ""
+class: "pt-5"
 image:
       src: '/assets/img/ipad2-inverted.png'
       alt: 'alt'

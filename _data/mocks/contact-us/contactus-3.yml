@@ -2,6 +2,7 @@ image:  '/assets/img/contact1.jpg'
 header-section: true
 title: 'Get in Touch'
 id: ""
+class: "pt-5"
 contentleft: 'col-md-4'
 description: "You need more information? Check what other persons are saying about our product. They are very happy with their purchase."
 description-class: 'h5'

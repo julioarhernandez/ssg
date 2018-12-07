@@ -1,5 +1,6 @@
 class: 'bg-primary-lightest' 
 id: "features"
+class: "pt-5"
 title: 'Beauty / hair / nails'
 subtitle: 
   text: 'Need a hair treatment?'

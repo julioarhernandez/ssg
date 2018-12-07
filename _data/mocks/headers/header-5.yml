@@ -1,5 +1,6 @@
 title: 'Enjoy the experience'
 id: ""
+class: "pt-5"
 subtitle: 
   text: 'Hair specialist <span class="text-primary">you deserve</span>'
   class: 'text-uppercase text-dark text-abril h1-responsive'

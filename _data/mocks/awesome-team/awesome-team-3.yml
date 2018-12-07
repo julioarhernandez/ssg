@@ -2,6 +2,7 @@ header-section: true
 background-image: '/assets/img/bg21.jpg'
 title: 'Our Awesome Team 3'
 id: ""
+class: "pt-5"
 description: "This is the paragraph where you can write more details about your team. Keep you user engaged by providing meaningful information."
 items:
   -

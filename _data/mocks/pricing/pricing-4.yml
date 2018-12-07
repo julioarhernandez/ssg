@@ -2,6 +2,7 @@ header-section: true
 background-image: '/assets/img/pricing3.jpg'
 title: 'Pick the best plan for you'
 id: ""
+class: "pt-5"
 description: "You have Free Unlimited Updates and Premium Support on each package."
 columnClass: 'col-md-4'
 items:

@@ -1,6 +1,7 @@
 footer-color: 'white'
 # footer-color: 'black'
 id: ""
+class: "pt-5"
 navbrand:
   href: '/'
   title: 'title'

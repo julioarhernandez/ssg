@@ -3,6 +3,7 @@ section-class: 'p-5'
 background-image: '/assets/img/bg1.jpg'
 title: '50% off'
 id: ""
+class: "pt-5"
 title-class: 'text-white text-uppercase text-abril h1 mt-0 pt-0 text-center'
 description: 'AWESOME TOTAL SALE -50% OFF FOR ALL <strong>SPA POCEDURES</strong> DURING THIS SEASON!'
 description-class: 'text-center'
