@@ -21,7 +21,7 @@ gulp.task('css', () => {
     .pipe(sass({ 
         outputStyle: 'compressed',
         sourceComments: 'map',
-        sourceMap: 'sass',
+        sourceMap: 'sass'
     }).on('error', sass.logError))
     .pipe(stripComments())
     .pipe(autoprefixer('last 2 versions'))
@@ -141,4 +141,5 @@ gulp.task('watch', ['css'], function () {
 });
 
 gulp.task('production', gulpSequence(['css', 'scripts', 'jekyll', 'manifest', 'sitemap', 'serve', 'watch'], ['embedjson', 'minhtml']));
-gulp.task('default', gulpSequence(['css', 'scripts', 'jekyll', 'manifest', 'sitemap', 'serve', 'watch'], ['embedjson']));
+gulp.task('default-dev', gulpSequence(['css', 'scripts', 'jekyll', 'manifest', 'sitemap', 'serve', 'watch'], ['embedjson']));
+gulp.task('default', gulpSequence(['css', 'scripts', 'jekyll', 'serve', 'watch']));
