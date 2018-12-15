@@ -9,3 +9,14 @@
 .mt-6{
     margin-top: 5rem;
 }
+.separator{
+    &:after{
+        content: "";
+        width: 200px;
+        height: 2px;
+        background-color: $primary-color;
+        display: block;
+        margin: 15px auto;
+
+    }
+}
