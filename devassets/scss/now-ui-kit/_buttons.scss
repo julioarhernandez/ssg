@@ -87,6 +87,10 @@
 .btn-warning { @include btn-styles($warning-color, $warning-states-color); }
 .btn-danger  { @include btn-styles($danger-color, $danger-states-color); }
 .btn-neutral { @include btn-styles($white-color, $white-color); }
+.btn-outline { 
+    border: 1px solid $white-color;
+    @include btn-styles(transparent, $primary-color); 
+}
 
 .btn-round{
     border-width: $border-thin;
