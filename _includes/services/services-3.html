@@ -1,0 +1,39 @@
+<div class="services-3 {{include.data.class}}"  {% if include.data.id %}id="{{ include.data.id}}"{% endif %}>
+    <div class="{{ include.data.section-class}}">
+        <div class="row">
+            {% for item in include.data.items%}
+            <div class="{{include.data.block-class}}">
+                {% if item.subitems %}
+                <div class="row">
+                    {% for it in item.subitems %}
+                        <div class="col-12">
+                            <a href="{{ it.link.href}}" title="{{ it.link.title }}">
+                            <div class="service-wrapper {{ it.wrapper-class }}">
+                                <div class="title {{ it.title-class }}">
+                                    {{ it.title }}
+                                </div>
+                                <div class="subtitle {{ it.subtitle-class }}">
+                                    {{ it.subtitle }}
+                                </div>
+                            </div>
+                            </a>
+                        </div>
+                    {% endfor %}
+                </div>
+                {% else %}
+                <a href="{{ item.link.href}}" title="{{ item.link.title }}">
+                    <div class="service-wrapper {{ item.wrapper-class }}">
+                        <div class="title {{ item.title-class }}">
+                            {{ item.title }}
+                        </div>
+                        <div class="subtitle {{ item.subtitle-class }}">
+                            {{ item.subtitle }}
+                        </div>
+                    </div>
+                </a>
+                {% endif %}
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>

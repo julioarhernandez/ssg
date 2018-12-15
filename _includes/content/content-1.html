@@ -1,8 +1,9 @@
 <div class="content-1 {{include.data.class}}"{% if include.data.id %} id="{{ include.data.id}}"{% endif %}>
     <div class="container">
         <div class="row">
-            <div class="col">
+            <div class="col-md-8 mx-auto">
                 <h2 class="title{% if include.data.title-class %} {{include.data.title-class}}{% endif %}">{{ include.data.title }}</h2>
+                <div class="separator"></div>
                 {% if include.data.subtitle %}
                 <div class="{{ include.data.subtitle-class }}">{{ include.data.subtitle}}</div>
                 {% endif %}
