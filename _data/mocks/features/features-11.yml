@@ -1,7 +1,7 @@
 background-image: '/assets/img/bg3.jpg' 
 title: 'Our specials'
 id: ""
-class: "pt-5"
+class: "mt-5"
 title-class: 'text-uppercase'
 subtitle: 'Need a hair treatment?'
 subtitle-class: ''

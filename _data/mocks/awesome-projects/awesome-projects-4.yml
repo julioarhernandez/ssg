@@ -2,7 +2,7 @@ header-section: true
 background-color: 'gray'
 title: 'Some of Our Awesome Projects - 4'
 id: ""
-class: "pt-5"
+class: "mt-5"
 subtitle: "Our Work"
 first-row:
   content-left:

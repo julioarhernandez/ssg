@@ -1,15 +1,15 @@
-title: 'The hero title2 of the page'
-title-class: 'title text-uppercase'
+title: 'Atrae mas clientes a tu negocio'
+title-class: 'title text-uppercase h4 text-center'
 id: ""
-class: "pt-5"
+class: ""
 subtitle: |
-  The riding of waves has likely existed since humans began swimming in the ocean. 
-  In this sense, bodysurfing is the oldest type of wave-catching. 
-  Standing up on what is now called a surfboard is a relatively recent innovation developed by the Polynesians.
-description-class: 'h4 description'
-background-image: /assets/img/bg17.jpg
+  Te ayudamos a darte la publicidad que mereces
+description-class: 'h5 text-center'
+background-image: '/assets/img/header-1.jpg'
 filter: false # false
-content-align: 'left' # 'left'
+content-align: 'center' # 'left'
+social: false
 button: 
-  text: 'Read more'
+  text: 'Conoce mas'
   href: '#'
+  class: 'btn btn-outline btn-round btn-lg text-center'

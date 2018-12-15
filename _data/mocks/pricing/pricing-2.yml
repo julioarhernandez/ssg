@@ -1,7 +1,7 @@
 header-section: true
 title: 'Pick the best plan for you'
 id: ""
-class: "pt-5"
+class: "mt-5"
 description: "You have Free Unlimited Updates and Premium Support on each package."
 columnClass: 'col-md-4'
 items:

@@ -1,0 +1,43 @@
+section-class: 'container'
+block-class: 'col-md-4'
+id: "services"
+class: "mt-5"
+items:
+  -
+    subitems:
+      - 
+        wrapper-class: "p-4 mb-4 pt-0 bg-secondary rounded"
+        title: 'SEO'
+        title-class: 'h3 font-weight-bold text-uppercase text-white mb-3'
+        subtitle: 'The study of your business, public andpotential '
+        subtitle-class: 'text-white description h4 mt-1'
+        link: 
+          href: "#"
+          title: "link"
+      - 
+        wrapper-class: "p-4 pt-0 bg-primary rounded"
+        title: 'Branding'
+        title-class: 'h3 font-weight-bold text-uppercase text-black mb-3'
+        subtitle: 'The study of your business, public andpotential'
+        subtitle-class: 'text-black description h4 mt-1'
+        link: 
+          href: "#"
+          title: "link"
+  -
+    wrapper-class: "bg-secondary h-100 p-4 d-flex flex-column rounded"
+    title: 'Web <br />development'
+    title-class: 'deco font-weight-bold h3 mt-auto text-uppercase text-white title'
+    subtitle: 'The study of your business, public andpotential'
+    subtitle-class: 'description h4 text-white mt-0'
+    link: 
+      href: "#"
+      title: "link"
+  -
+    wrapper-class: "bg-secondary h-100 p-4 d-flex flex-column rounded"
+    title: 'Email <br />Campaign'
+    title-class: 'deco font-weight-bold h3 mt-auto text-uppercase text-white title'
+    subtitle: 'The study of your business, public andpotential'
+    subtitle-class: 'description h4 text-white mt-0'
+    link: 
+      href: "#"
+      title: "link"

@@ -1,7 +1,7 @@
 background-image: '/assets/img/bg31.jpg'
 title: 'Choose a plan for your next projecttttttt'
 id: ""
-class: "pt-5"
+class: "mt-5"
 description: "You have Free Unlimited Updates and Premium Support on each package. You also have 20 days to request a refund if you're not happy with your purchase."
 buttons:
   left-text: 'Expensive'

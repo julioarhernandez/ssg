@@ -3,7 +3,7 @@ header-section:
   class: 'col-md-8 ml-auto'
 title: 'Working is a pleasure'
 id: ""
-class: "pt-5"
+class: "mt-5"
 description:  'This is the paragraph where you can write more details about your product. Keep you user engaged by providing meaningful information.'
 background-image: '/assets/img/bg2.jpg'
 image:

@@ -2,7 +2,7 @@ filter: false
 background-image: '/assets/img/bg1.jpg'
 title: 'What Clients Say'
 id: ""
-class: "pt-5"
+class: "mt-5"
 title-class: ''
 description: 'Join our newsletter and get news in your inbox every week! We hate spam too, so no worries about this.'
 description-class: ''
