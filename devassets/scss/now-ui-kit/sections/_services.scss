@@ -22,3 +22,14 @@
         font-size: $btn-icon-size-regular;
     }
 }
+.services-3{
+    .service{
+        &-wrapper{
+            min-height: 230px;
+        }
+
+    }
+    a{
+        text-decoration: none;
+    }
+}
