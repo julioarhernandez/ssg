@@ -5,7 +5,7 @@ class: ""
 subtitle: |
   Te ayudamos a darte la publicidad que mereces
 description-class: 'h5 text-center'
-background-image: '/assets/img/header-1.jpg'
+background-image: '/assets/img/home-hero.jpg'
 filter: false # false
 content-align: 'center' # 'left'
 social: false
