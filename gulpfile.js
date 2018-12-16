@@ -13,7 +13,10 @@ sitemap = require('gulp-sitemap'),
 stripJS = require('gulp-strip-comments'),
 uglify = require('gulp-uglify'),
 htmlmin = require('gulp-htmlmin'),
+newer = require('gulp-newer'),
 siteRoot = '_site',
+imageRoot = './devassets/img/**/*',
+imageDest = './assets/img',
 cssFiles = 'devassets/scss/app.scss';
 
 gulp.task('css', () => {
@@ -34,6 +37,14 @@ gulp.task('css', () => {
 gulp.task('manifest', function () {
     gulp.src('manifest.json')
         .pipe(gulp.dest(siteRoot));
+});
+
+//Copy Images from dev assets to assets
+gulp.task('images', function () {
+    console.log('Copying images');
+    gulp.src(imageRoot)
+    .pipe(newer(imageDest))
+    .pipe(gulp.dest(imageDest))
 });
 
 // Generate Embed JSON
@@ -140,6 +151,6 @@ gulp.task('watch', ['css'], function () {
     console.log('Watching for changes');
 });
 
-gulp.task('production', gulpSequence(['css', 'scripts', 'jekyll', 'manifest', 'sitemap', 'serve', 'watch'], ['embedjson', 'minhtml']));
-gulp.task('default-dev', gulpSequence(['css', 'scripts', 'jekyll', 'manifest', 'sitemap', 'serve', 'watch'], ['embedjson']));
-gulp.task('default', gulpSequence(['css', 'scripts', 'jekyll', 'serve', 'watch']));
+gulp.task('production', gulpSequence(['css', 'images', 'scripts', 'jekyll', 'manifest', 'sitemap', 'serve', 'watch'], ['embedjson', 'minhtml']));
+gulp.task('default-dev', gulpSequence(['css', 'images', 'scripts', 'jekyll', 'manifest', 'sitemap', 'serve', 'watch'], ['embedjson']));
+gulp.task('default', gulpSequence(['css', 'images', 'scripts', 'jekyll', 'serve', 'watch']));
