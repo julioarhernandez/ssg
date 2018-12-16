@@ -6,7 +6,8 @@ items:
   -
     subitems:
       - 
-        wrapper-class: "p-4 mb-4 pt-0 bg-secondary rounded"
+        wrapper-class: "p-4 mb-4 pt-0 bg-secondary bg-cover rounded"
+        background-image: ""
         title: 'SEO'
         title-class: 'h3 font-weight-bold text-uppercase text-white mb-3'
         subtitle: 'The study of your business, public andpotential '
@@ -15,7 +16,8 @@ items:
           href: "#"
           title: "link"
       - 
-        wrapper-class: "p-4 pt-0 bg-primary rounded"
+        wrapper-class: "p-4 pt-0 bg-primary bg-cover rounded"
+        background-image: ""
         title: 'Branding'
         title-class: 'h3 font-weight-bold text-uppercase text-black mb-3'
         subtitle: 'The study of your business, public andpotential'
@@ -24,7 +26,8 @@ items:
           href: "#"
           title: "link"
   -
-    wrapper-class: "bg-secondary h-100 p-4 d-flex flex-column rounded"
+    wrapper-class: "bg-secondary bg-cover bg-overlay bg-overlay-2 h-100 p-4 d-flex flex-column rounded"
+    background-image: "https://source.unsplash.com/random"
     title: 'Web <br />development'
     title-class: 'deco font-weight-bold h3 mt-auto text-uppercase text-white title'
     subtitle: 'The study of your business, public andpotential'
@@ -33,7 +36,8 @@ items:
       href: "#"
       title: "link"
   -
-    wrapper-class: "bg-secondary h-100 p-4 d-flex flex-column rounded"
+    wrapper-class: "bg-secondary bg-cover bg-overlay bg-overlay-2 h-100 p-4 d-flex flex-column rounded"
+    background-image: "https://source.unsplash.com/random"
     title: 'Email <br />Campaign'
     title-class: 'deco font-weight-bold h3 mt-auto text-uppercase text-white title'
     subtitle: 'The study of your business, public andpotential'

@@ -8,12 +8,14 @@
                     {% for it in item.subitems %}
                         <div class="col-12">
                             <a href="{{ it.link.href}}" title="{{ it.link.title }}">
-                            <div class="service-wrapper {{ it.wrapper-class }}">
-                                <div class="title {{ it.title-class }}">
-                                    {{ it.title }}
-                                </div>
-                                <div class="subtitle {{ it.subtitle-class }}">
-                                    {{ it.subtitle }}
+                            <div class="service-wrapper {{ it.wrapper-class }}"{% if it.background-image %} data-bg-style="{{ it.background-image }}"{% endif %}>
+                                <div class="services-3_content">
+                                    <div class="title {{ it.title-class }}">
+                                        {{ it.title }}
+                                    </div>
+                                    <div class="subtitle {{ it.subtitle-class }}">
+                                        {{ it.subtitle }}
+                                    </div>
                                 </div>
                             </div>
                             </a>
@@ -22,12 +24,14 @@
                 </div>
                 {% else %}
                 <a href="{{ item.link.href}}" title="{{ item.link.title }}">
-                    <div class="service-wrapper {{ item.wrapper-class }}">
-                        <div class="title {{ item.title-class }}">
-                            {{ item.title }}
-                        </div>
-                        <div class="subtitle {{ item.subtitle-class }}">
-                            {{ item.subtitle }}
+                    <div class="service-wrapper {{ item.wrapper-class }}"{% if item.background-image %} data-bg-style="{{ item.background-image }}"{% endif %}>
+                        <div class="services-3_content">
+                            <div class="title {{ item.title-class }}">
+                                {{ item.title }}
+                            </div>
+                            <div class="subtitle {{ item.subtitle-class }}">
+                                {{ item.subtitle }}
+                            </div>
                         </div>
                     </div>
                 </a>
