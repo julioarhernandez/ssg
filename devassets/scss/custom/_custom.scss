@@ -4,10 +4,10 @@
     }
 }
 .pt-6{
-    padding-top: 5rem;
+    padding-top: 5rem!important;
 }
 .mt-6{
-    margin-top: 5rem;
+    margin-top: 5rem!important;
 }
 .separator{
     &:after{
@@ -19,4 +19,13 @@
         margin: 15px auto;
 
     }
+}
+.bg-cover{
+    background-size: cover;
+}
+.bg-overlay{
+    @include bg-overlay();
+}
+.bg-overlay-white{
+    @include bg-overlay(#ffffff);
 }

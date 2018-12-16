@@ -1,10 +1,16 @@
 body{
     color: $black-color;
+    // background-color: $third-color;
     font-size: $font-size-base;
     font-family: $sans-serif-family;
     overflow-x: hidden;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
+    &.bg-primary,
+    &.bg-secondary,
+    &.bg-third{
+        color: $white-color-light;
+    }
 }
 
 .main{
