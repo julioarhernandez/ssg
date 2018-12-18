@@ -2,7 +2,9 @@
     <div class="container">
         <div class="row">
             <div class="col-md-8 mx-auto">
+                <header class="{{ include.data.header-class }}">
                 <h2 class="title{% if include.data.title-class %} {{include.data.title-class}}{% endif %}">{{ include.data.title }}</h2>
+                </header>
                 <div class="separator"></div>
                 {% if include.data.subtitle %}
                 <div class="{{ include.data.subtitle-class }}">{{ include.data.subtitle}}</div>

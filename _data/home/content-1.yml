@@ -1,7 +1,8 @@
 id: ""
 class: "mt-6"
+header-class: "text-center"
 title: 'Full-Funnel Social Analytics'
-title-class: "pt-0 mb-0 h3 text-center"
+title-class: "pt-0 mb-0 h3 deco text-uppercase"
 subtitle: ""
 subtitle-class: "h4 mt-1 description text-center"
 description-class: "text-center mt-4"
