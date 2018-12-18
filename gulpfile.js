@@ -17,6 +17,8 @@ newer = require('gulp-newer'),
 siteRoot = '_site',
 imageRoot = './devassets/img/**/*',
 imageDest = './assets/img',
+fontRoot = './devassets/fonts/',
+fontDest = './assets/fonts/',
 cssFiles = 'devassets/scss/app.scss';
 
 gulp.task('css', () => {
@@ -45,6 +47,21 @@ gulp.task('images', function () {
     gulp.src(imageRoot)
     .pipe(newer(imageDest))
     .pipe(gulp.dest(imageDest))
+});
+
+// Places font files in the assets folder
+gulp.task('font', function () {
+    return gulp.src([
+            fontRoot + '/*.eot', 
+            fontRoot + '/*.woff', 
+            fontRoot + '/*.woff2', 
+            fontRoot + '/*.ttf', 
+            fontRoot + '/*.otf',
+            fontRoot + '/*.svg'
+        ])
+        .pipe(newer(fontDest))
+        .pipe(gulp.dest(fontDest))
+        console.log('Copying fonts into assets folder');
 });
 
 // Generate Embed JSON
@@ -151,6 +168,6 @@ gulp.task('watch', ['css'], function () {
     console.log('Watching for changes');
 });
 
-gulp.task('production', gulpSequence(['css', 'images', 'scripts', 'jekyll', 'manifest', 'sitemap', 'serve', 'watch'], ['embedjson', 'minhtml']));
-gulp.task('default-dev', gulpSequence(['css', 'images', 'scripts', 'jekyll', 'manifest', 'sitemap', 'serve', 'watch'], ['embedjson']));
-gulp.task('default', gulpSequence(['css', 'images', 'scripts', 'jekyll', 'serve', 'watch']));
+gulp.task('production', gulpSequence(['css', 'font', 'images', 'scripts', 'jekyll', 'manifest', 'sitemap', 'serve', 'watch'], ['embedjson', 'minhtml']));
+gulp.task('default-dev', gulpSequence(['css',  'font', 'images', 'scripts', 'jekyll', 'manifest', 'sitemap', 'serve', 'watch'], ['embedjson']));
+gulp.task('default', gulpSequence(['css',  'font', 'images', 'scripts', 'jekyll', 'serve', 'watch']));
