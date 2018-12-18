@@ -1,0 +1,138 @@
+    /*
+    Flaticon icon font: Flaticon
+    Creation date: 20/07/2017 12:30
+    */
+
+    @font-face {
+  font-family: "Flaticon";
+  src: url("../fonts/Flaticon.eot");
+  src: url("../fonts/Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("../fonts/Flaticon.woff") format("woff"),
+       url("../fonts/Flaticon.ttf") format("truetype"),
+       url("../fonts/Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("../fonts/Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+.fi:before{
+  display: inline-block;
+  font-family: "Flaticon";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+}
+
+.flaticon-001-light-bulb-1:before { content: "\f100"; }
+.flaticon-002-sprout:before { content: "\f101"; }
+.flaticon-003-goal:before { content: "\f102"; }
+.flaticon-004-visualization:before { content: "\f103"; }
+.flaticon-005-trophy:before { content: "\f104"; }
+.flaticon-006-panel:before { content: "\f105"; }
+.flaticon-007-briefcase:before { content: "\f106"; }
+.flaticon-008-bar-chart:before { content: "\f107"; }
+.flaticon-009-startup:before { content: "\f108"; }
+.flaticon-010-dollar:before { content: "\f109"; }
+.flaticon-011-thinking:before { content: "\f10a"; }
+.flaticon-012-management:before { content: "\f10b"; }
+.flaticon-013-time:before { content: "\f10c"; }
+.flaticon-014-light-bulb:before { content: "\f10d"; }
+.flaticon-015-humanpictos:before { content: "\f10e"; }
+.flaticon-016-team:before { content: "\f10f"; }
+.flaticon-017-package:before { content: "\f110"; }
+.flaticon-018-teamwork:before { content: "\f111"; }
+.flaticon-019-care:before { content: "\f112"; }
+.flaticon-020-handshake:before { content: "\f113"; }
+.flaticon-021-puzzle:before { content: "\f114"; }
+.flaticon-022-networking-2:before { content: "\f115"; }
+.flaticon-023-user-1:before { content: "\f116"; }
+.flaticon-024-user:before { content: "\f117"; }
+.flaticon-025-chat:before { content: "\f118"; }
+.flaticon-026-networking-1:before { content: "\f119"; }
+.flaticon-027-group:before { content: "\f11a"; }
+.flaticon-028-worldwide:before { content: "\f11b"; }
+.flaticon-029-podium:before { content: "\f11c"; }
+.flaticon-030-idea-2:before { content: "\f11d"; }
+.flaticon-031-laptop-1:before { content: "\f11e"; }
+.flaticon-032-target:before { content: "\f11f"; }
+.flaticon-033-networking:before { content: "\f120"; }
+.flaticon-034-idea-1:before { content: "\f121"; }
+.flaticon-035-coin-1:before { content: "\f122"; }
+.flaticon-036-presentation:before { content: "\f123"; }
+.flaticon-037-flag:before { content: "\f124"; }
+.flaticon-038-diamond:before { content: "\f125"; }
+.flaticon-039-like:before { content: "\f126"; }
+.flaticon-040-settings:before { content: "\f127"; }
+.flaticon-041-ipo:before { content: "\f128"; }
+.flaticon-042-contract:before { content: "\f129"; }
+.flaticon-043-line-chart:before { content: "\f12a"; }
+.flaticon-044-coin:before { content: "\f12b"; }
+.flaticon-045-idea:before { content: "\f12c"; }
+.flaticon-046-hourglass:before { content: "\f12d"; }
+.flaticon-047-laptop:before { content: "\f12e"; }
+.flaticon-048-money-bag:before { content: "\f12f"; }
+.flaticon-049-stationery:before { content: "\f130"; }
+.flaticon-050-growth:before { content: "\f131"; }
+$font-Flaticon-001-light-bulb-1: "\f100";
+$font-Flaticon-002-sprout: "\f101";
+$font-Flaticon-003-goal: "\f102";
+$font-Flaticon-004-visualization: "\f103";
+$font-Flaticon-005-trophy: "\f104";
+$font-Flaticon-006-panel: "\f105";
+$font-Flaticon-007-briefcase: "\f106";
+$font-Flaticon-008-bar-chart: "\f107";
+$font-Flaticon-009-startup: "\f108";
+$font-Flaticon-010-dollar: "\f109";
+$font-Flaticon-011-thinking: "\f10a";
+$font-Flaticon-012-management: "\f10b";
+$font-Flaticon-013-time: "\f10c";
+$font-Flaticon-014-light-bulb: "\f10d";
+$font-Flaticon-015-humanpictos: "\f10e";
+$font-Flaticon-016-team: "\f10f";
+$font-Flaticon-017-package: "\f110";
+$font-Flaticon-018-teamwork: "\f111";
+$font-Flaticon-019-care: "\f112";
+$font-Flaticon-020-handshake: "\f113";
+$font-Flaticon-021-puzzle: "\f114";
+$font-Flaticon-022-networking-2: "\f115";
+$font-Flaticon-023-user-1: "\f116";
+$font-Flaticon-024-user: "\f117";
+$font-Flaticon-025-chat: "\f118";
+$font-Flaticon-026-networking-1: "\f119";
+$font-Flaticon-027-group: "\f11a";
+$font-Flaticon-028-worldwide: "\f11b";
+$font-Flaticon-029-podium: "\f11c";
+$font-Flaticon-030-idea-2: "\f11d";
+$font-Flaticon-031-laptop-1: "\f11e";
+$font-Flaticon-032-target: "\f11f";
+$font-Flaticon-033-networking: "\f120";
+$font-Flaticon-034-idea-1: "\f121";
+$font-Flaticon-035-coin-1: "\f122";
+$font-Flaticon-036-presentation: "\f123";
+$font-Flaticon-037-flag: "\f124";
+$font-Flaticon-038-diamond: "\f125";
+$font-Flaticon-039-like: "\f126";
+$font-Flaticon-040-settings: "\f127";
+$font-Flaticon-041-ipo: "\f128";
+$font-Flaticon-042-contract: "\f129";
+$font-Flaticon-043-line-chart: "\f12a";
+$font-Flaticon-044-coin: "\f12b";
+$font-Flaticon-045-idea: "\f12c";
+$font-Flaticon-046-hourglass: "\f12d";
+$font-Flaticon-047-laptop: "\f12e";
+$font-Flaticon-048-money-bag: "\f12f";
+$font-Flaticon-049-stationery: "\f130";
+$font-Flaticon-050-growth: "\f131";

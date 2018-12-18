@@ -1,0 +1,7 @@
+@mixin icon-size(){
+    @for $i from 1 through 6 {
+        .icon-#{$i} > i:before{
+           font-size: #{$i}rem;
+        }
+    }
+}
