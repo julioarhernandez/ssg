@@ -1,0 +1,51 @@
+have-title: false
+title: ''
+id: "features"
+class: "mt-0 pt-0"
+items-class: "col-md-3"
+description: "Havenly is a convenient, personal and affordable way to redecorate your home room by room. Collaborate with our professional interior designers on our online platform."
+items:
+  -
+    icon-color: 'icon-primary icon-5'
+    solid-bottom: true
+    icon-class: 'fi flaticon-005-trophy'
+    background-image: ''
+    title: '<strong>Collaborate on ideas</strong>'
+    title-class: 'h5 text-uppercase info-title'
+    description: "Your designer will come back to you with an initial set of ideas."
+    link:
+      text: 'Find More...'
+      href: '#'
+  -
+    icon-color: 'icon-primary icon-5'
+    solid-bottom: true
+    icon-class: 'fi flaticon-005-trophy'
+    background-image: ''
+    title: 'Pick your designer'
+    title-class: 'h5 text-uppercase info-title'
+    description: "Havenly interior designers are vetted professionals and real people."
+    link:
+      text: 'Find More...'
+      href: '#'
+  -
+    icon-color: 'icon-primary icon-5'
+    solid-bottom: true
+    icon-class: 'fi flaticon-005-trophy'
+    background-image: ''
+    title: 'Visualize your room'
+    title-class: 'h5 text-uppercase info-title'
+    description: "Share a floor plan, and we'll create a visualization of your room."
+    link:
+      text: 'Find More...'
+      href: '#'
+  -
+    icon-color: 'icon-primary icon-5'
+    solid-bottom: true
+    icon-class: 'fi flaticon-005-trophy'
+    background-image: ''
+    title: 'Pick your designer'
+    title-class: 'h5 text-uppercase info-title'
+    description: "Havenly interior designers are vetted professionals and real people."
+    link:
+      text: 'Find More...'
+      href: '#'
