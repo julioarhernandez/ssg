@@ -1,0 +1,59 @@
+<footer class="footer footer-7 {{include.data.class}}" {% if include.data.id %}id="{{ include.data.id}}"{% endif %}>
+        <div class="container">
+          <div class="content">
+            <div class="row">
+              <div class="col-md-3">
+                {% if include.data.col1.title %}
+                <span class="d-block mb-4 h6 color-primary">{{ include.data.col1.title }}</span>
+                {% endif %}
+                {{ include.data.col1.description }}
+                <ul class="social-buttons">
+                    {% for social in include.data.col1.social %}
+                    <li>
+                        <a href="{{social.href}}" target="_blank" class="btn btn-icon btn-transparent">
+                        <i class="{{social.icon}}"></i>
+                        </a>
+                    </li>
+                    {% endfor %}
+                </ul>
+              </div>
+              <div class="col-md-3">
+                  <span class="d-block mb-4 h6 color-primary">{{ include.data.col2.title }}</span>
+                <ul class="links-vertical">
+                    {% for item in include.data.col2.items %}
+                  <li>
+                    <a href="{{item.href}}">
+                      {{item.text}}
+                    </a>
+                  </li>
+                  {% endfor %}
+                </ul>
+              </div>
+              <div class="col-md-2">
+                <span class="d-block mb-4 h6 color-primary">{{ include.data.col3.title }}</span>
+                <ul class="links-vertical">
+                    {% for item in include.data.col3.items %}
+                  <li>
+                    <a href="{{item.href}}">
+                      {{item.text}}
+                    </a>
+                  </li>
+                  {% endfor %}
+                </ul>
+              </div>
+              <div class="col-md-4">
+                <span class="d-block mb-4 h6 color-primary">{{ include.data.col4.title }}</span>
+                {{ include.data.col4.description }}
+                <form class="form form-newsletter" method="" action="">
+                  <div class="form-group">
+                    <input type="email" class="form-control" placeholder="{{ include.data.col4.input.placeholder }}">
+                  </div>
+                  <button type="button" class="btn btn-primary btn-icon btn-round" name="button">
+                    <i class="now-ui-icons ui-1_email-85"></i>
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>

@@ -1,0 +1,53 @@
+id: ""
+class: "my-5"
+col1:
+  title: 'Bizmarketing.us © 2018'
+  description: "<p>Developed and designed by Bizmarketing.us</p>"
+  social:
+    -
+      icon: 'fab fa-twitter'
+      href: '#'
+    -
+      icon: 'fab fa-twitter'
+      href: '#'
+    -
+      icon: 'fab fa-twitter'
+      href: '#'
+    -
+      icon: 'fab fa-twitter'
+      href: '#'
+    -
+      icon: 'fab fa-twitter'
+      href: '#'
+col2:
+  title: 'Contact us'
+  items:
+    -
+      href: '#'
+      text: '11780 sw 18st. Miami, FL. 33175'
+    -
+      href: '#'
+      text: 'Email: biz@bizmarketing.us'
+    -
+      href: '#'
+      text: 'Phone: 786-520-5860'
+col3:
+  title: 'Sitemap'
+  items:
+    -
+      href: '#'
+      text: 'Home'
+    -
+      href: '#'
+      text: 'Services'
+    -
+      href: '#'
+      text: 'About us'
+    -
+      href: '#'
+      text: 'Contact us'
+col4:
+  title: 'newsletter'
+  description: "<p>Join our newsletter and get news in your inbox every week! We hate spam too, so no worries about this.</p>"
+  input: 
+    placeholder: 'Email here...'

@@ -1,5 +1,5 @@
 section-class: 'container'
-block-class: 'col-md-4'
+block-class: 'col-md-4 mb-4'
 id: "services"
 class: "mt-5"
 items:
@@ -26,7 +26,7 @@ items:
           href: "#"
           title: "link"
   -
-    wrapper-class: "bg-secondary bg-cover bg-overlay bg-overlay-2 h-100 p-4 d-flex flex-column rounded"
+    wrapper-class: mb-4 tall bg-secondary bg-cover bg-overlay bg-overlay-2 h-100 p-4 d-flex flex-column rounded"
     background-image: "https://source.unsplash.com/random"
     title: 'Web <br />development'
     title-class: 'deco font-weight-bold h3 mt-auto text-uppercase text-white title'
@@ -36,7 +36,7 @@ items:
       href: "#"
       title: "link"
   -
-    wrapper-class: "bg-secondary bg-cover bg-overlay bg-overlay-2 h-100 p-4 d-flex flex-column rounded"
+    wrapper-class: "mb-4 tall bg-secondary bg-cover bg-overlay bg-overlay-2 h-100 p-4 d-flex flex-column rounded"
     background-image: "https://source.unsplash.com/random"
     title: 'Email <br />Campaign'
     title-class: 'deco font-weight-bold h3 mt-auto text-uppercase text-white title'

@@ -26,6 +26,9 @@
     .service{
         &-wrapper{
             min-height: 230px;
+            &.tall{
+                min-height: 400px;
+            }
         }
 
     }
