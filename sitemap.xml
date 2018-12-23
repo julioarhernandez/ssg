@@ -2,62 +2,127 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
         <loc>http://www.bizmarketing.us/</loc>
-        <lastmod>2018-12-01T22:04:57.198Z</lastmod>
+        <lastmod>2018-12-13T05:34:04.325Z</lastmod>
         <priority>1</priority>
     </url>
     <url>
         <loc>http://www.bizmarketing.us/about/</loc>
-        <lastmod>2018-12-01T22:04:57.197Z</lastmod>
-        <priority>0.5</priority>
-    </url>
-    <url>
-        <loc>http://www.bizmarketing.us/blog/</loc>
-        <lastmod>2018-12-01T22:05:05.327Z</lastmod>
+        <lastmod>2018-12-13T05:34:04.318Z</lastmod>
         <priority>0.5</priority>
     </url>
     <url>
         <loc>http://www.bizmarketing.us/authors/jill.html</loc>
-        <lastmod>2018-12-01T22:05:05.333Z</lastmod>
+        <lastmod>2018-12-13T05:34:04.594Z</lastmod>
         <priority>0.5</priority>
     </url>
     <url>
         <loc>http://www.bizmarketing.us/authors/ted.html</loc>
-        <lastmod>2018-12-01T22:05:05.333Z</lastmod>
+        <lastmod>2018-12-13T05:34:04.595Z</lastmod>
         <priority>0.5</priority>
     </url>
     <url>
-        <loc>http://www.bizmarketing.us/shop/</loc>
-        <lastmod>2018-12-01T22:05:05.327Z</lastmod>
+        <loc>http://www.bizmarketing.us/blog/</loc>
+        <lastmod>2018-12-13T05:34:04.319Z</lastmod>
         <priority>0.5</priority>
     </url>
     <url>
         <loc>http://www.bizmarketing.us/shoes/nike.html</loc>
-        <lastmod>2018-12-01T22:05:05.334Z</lastmod>
+        <lastmod>2018-12-13T05:34:04.595Z</lastmod>
         <priority>0.5</priority>
     </url>
     <url>
         <loc>http://www.bizmarketing.us/shoes/yuta.html</loc>
-        <lastmod>2018-12-01T22:05:05.334Z</lastmod>
+        <lastmod>2018-12-13T05:34:15.789Z</lastmod>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>http://www.bizmarketing.us/shop/</loc>
+        <lastmod>2018-12-13T05:34:15.494Z</lastmod>
         <priority>0.5</priority>
     </url>
     <url>
         <loc>http://www.bizmarketing.us/staff/</loc>
-        <lastmod>2018-12-01T22:05:05.327Z</lastmod>
+        <lastmod>2018-12-13T05:34:15.496Z</lastmod>
         <priority>0.5</priority>
     </url>
     <url>
-        <loc>http://www.bizmarketing.us/2018/08/22/kiwifruit.html</loc>
-        <lastmod>2018-12-01T22:05:05.332Z</lastmod>
+        <loc>http://www.bizmarketing.us/mocks/awesome-projects/</loc>
+        <lastmod>2018-12-13T05:34:15.493Z</lastmod>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>http://www.bizmarketing.us/mocks/awesome-team/</loc>
+        <lastmod>2018-12-13T05:34:15.495Z</lastmod>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>http://www.bizmarketing.us/mocks/blog-posts/</loc>
+        <lastmod>2018-12-13T05:34:15.490Z</lastmod>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>http://www.bizmarketing.us/mocks/contact-us/</loc>
+        <lastmod>2018-12-13T05:34:15.495Z</lastmod>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>http://www.bizmarketing.us/mocks/content/</loc>
+        <lastmod>2018-12-13T05:34:15.489Z</lastmod>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>http://www.bizmarketing.us/mocks/features/</loc>
+        <lastmod>2018-12-13T05:34:15.489Z</lastmod>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>http://www.bizmarketing.us/mocks/footers/</loc>
+        <lastmod>2018-12-13T05:34:15.496Z</lastmod>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>http://www.bizmarketing.us/mocks/headers/</loc>
+        <lastmod>2018-12-13T05:34:15.490Z</lastmod>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>http://www.bizmarketing.us/mocks/navigation/</loc>
+        <lastmod>2018-12-13T05:34:15.489Z</lastmod>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>http://www.bizmarketing.us/mocks/pricing/</loc>
+        <lastmod>2018-12-13T05:34:15.494Z</lastmod>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>http://www.bizmarketing.us/mocks/services/</loc>
+        <lastmod>2018-12-13T05:34:15.494Z</lastmod>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>http://www.bizmarketing.us/mocks/subscribe/</loc>
+        <lastmod>2018-12-13T05:34:15.490Z</lastmod>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>http://www.bizmarketing.us/mocks/testimonial/</loc>
+        <lastmod>2018-12-13T05:34:15.493Z</lastmod>
         <priority>0.5</priority>
     </url>
     <url>
         <loc>http://www.bizmarketing.us/2018/08/21/apples.html</loc>
-        <lastmod>2018-12-01T22:05:05.332Z</lastmod>
+        <lastmod>2018-12-13T05:34:15.785Z</lastmod>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>http://www.bizmarketing.us/2018/08/22/kiwifruit.html</loc>
+        <lastmod>2018-12-13T05:34:15.785Z</lastmod>
         <priority>0.5</priority>
     </url>
     <url>
         <loc>http://www.bizmarketing.us/jekyll/update/2018/11/19/welcome-to-jekyll.html</loc>
-        <lastmod>2018-12-01T22:05:05.333Z</lastmod>
+        <lastmod>2018-12-13T05:34:15.786Z</lastmod>
         <priority>0.5</priority>
     </url>
 </urlset>
