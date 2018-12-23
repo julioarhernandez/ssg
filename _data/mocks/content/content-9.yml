@@ -1,0 +1,13 @@
+id: ""
+class: "mt-5"
+columnClass: "col-lg-6"
+background-color-class: "bg-secondary"
+title-class: "text-uppercase mb-3 mt-2 font-weight-bold text-primary"
+title: "Lorem ipsum dolor sit amet, ne partem qualisque accommodare sed"
+content: | 
+          Lorem ipsum dolor sit amet, ne partem qualisque accommodare sed, doming alterum sadipscing et est, ut probatus eleifend sed. Mucius doming cum ne. Sit eu latine principes, his in feugiat constituto. Vix latine moderatius eloquentiam ad.
+          Lorem ipsum dolor sit amet, ne partem qualisque accommodare sed, doming alterum sadipscing et est, ut probatus eleifend sed. Mucius doming cum ne. Sit eu latine principes, his in feugiat constituto. Vix latine moderatius eloquentiam ad.
+image:
+  class: ""
+  alt: "title"
+  src: "https://source.unsplash.com/random/300x200"

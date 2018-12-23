@@ -199,6 +199,30 @@
     }
 }
 
+.content-9{
+    &_textBox{
+        padding: 50px 100px 50px 50px;
+    }
+
+    &_image{
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        top: 50px;
+        left: -50px;
+        right: 50px;
+        bottom: 50px;
+        &Box{
+            padding: 50px 100px 50px 50px;
+        }
+        img{
+          height: 100%;
+          width: auto;
+          object-fit: cover;
+        }
+      }
+}
+
 .deco{
     position: relative;
     display: inline-block;

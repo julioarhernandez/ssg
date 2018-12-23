@@ -1,0 +1,19 @@
+<div class="content-9 {{include.data.class}}" {% if include.data.id %} id="{{ include.data.id}}" {% endif %}>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="content-9_textBox {{ include.data.background-color-class }}">
+                    <h2 class="{{ include.data.title-class}}">{{ include.data.title }}</h2>
+                    {{ include.data.content }}
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="content-9_imageBox">
+                    <div class="position-absolute content-9_image">
+                        <img src="{{ include.data.image.src }}" class="{{ include.data.image.class }}" alt="{{ include.data.image.alt }}">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

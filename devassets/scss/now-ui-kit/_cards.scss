@@ -22,7 +22,8 @@
     border:0;
   }
 
-  .card-bottom-solid{
+  .card-bottom-solid,
+  &.card-bottom-solid{
     border-bottom: 18px solid $primary-color;
     border-radius: $border-radius-small;
   }

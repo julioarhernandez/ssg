@@ -12,8 +12,8 @@
     <div class="row">
       {% for item in include.data.items %}
       <div class="{{ include.data.items-class }}">
-        <div class="card card-raised bg-secondary" data-background-color {% if item.background-image %}data-bg-style="{{item.background-image}}"{% endif %}>
-          <div class="info{% if item.solid-bottom %} card-bottom-solid{% endif %}">
+        <div class="card card-raised bg-secondary{% if item.solid-bottom %} card-bottom-solid{% endif %}" data-background-color {% if item.background-image %}data-bg-style="{{item.background-image}}"{% endif %}>
+          <div class="info">
             {% if item.icon-class %}
             <div class="icon {% if item.icon-color %}{{item.icon-color}}{% else %}icon-white{% endif %}">
               <i class="{{item.icon-class}}"></i>
